@@ -1,40 +1,40 @@
-import 'package:eventify/Pages/loadscreen.dart';
 import 'package:flutter/material.dart';
-import 'Pages/loadscreen.dart';
+import 'package:flutter/gestures.dart';
+import 'dart:ui';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/register.dart';
+//import 'package:myapp/page-1/home.dart';
+// import 'package:myapp/page-1/login.dart';
+// import 'package:myapp/page-1/get-started.dart';
+//import 'package:myapp/page-1/loading-screen.dart';
+// import 'package:myapp/page-1/home.dart';
+// import 'package:myapp/page-1/calendar.dart';
+// import 'package:myapp/page-1/dashboard.dart';
+// import 'package:myapp/page-1/map.dart';
+// import 'package:myapp/page-1/event-details.dart';
+// import 'package:myapp/page-1/join-register.dart';
+// import 'package:myapp/page-1/create-event.dart';
+// import 'package:myapp/page-1/saved-upcoming-events.dart';
+// import 'package:myapp/page-1/navbar.dart';
 
-
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.blue,
       ),
-      home: LoadScreen(),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Scene(),
+        ),
+      ),
     );
   }
 }

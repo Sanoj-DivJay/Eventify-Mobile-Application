@@ -1,4 +1,4 @@
-# eventify
+# test
 
 A new Flutter project.
 

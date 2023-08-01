@@ -1,5 +1,7 @@
-name: eventify
-description: A new Flutter project.
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -19,7 +21,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.5 <4.0.0'
+  sdk: '>=2.18.2 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -28,6 +30,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  google_fonts: ^4.0.4
   flutter:
     sdk: flutter
 
@@ -35,6 +38,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  #google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +66,134 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/page-1/images/icon-color.png
+    - assets/page-1/images/icon-sf-symbols-search.png
+    - assets/page-1/images/ri-time-line.png
+    - assets/page-1/images/.png
+    - assets/page-1/images/icon-reveal.png
+    - assets/page-1/images/ri-map-pin-2-line.png
+    - assets/page-1/images/ri-bookmark-line.png
+    - assets/page-1/images/ri-map-pin-2-line-DvR.png
+    - assets/page-1/images/ri-time-line-Z2h.png
+    - assets/page-1/images/ri-checkbox-circle-line.png
+    - assets/page-1/images/-QZF.png
+    - assets/page-1/images/save.png
+    - assets/page-1/images/placeholder-2.png
+    - assets/page-1/images/-cyf.png
+    - assets/page-1/images/vector-2.png
+    - assets/page-1/images/-5km.png
+    - assets/page-1/images/-awj.png
+    - assets/page-1/images/eventify-logo-lined-1.png
+    - assets/page-1/images/vector-2-ibB.png
+    - assets/page-1/images/-wkm.png
+    - assets/page-1/images/ellipse-8.png
+    - assets/page-1/images/location.png
+    - assets/page-1/images/blue-black-modern-simple-design-hotel-and-resort-logo-logos-2-1-bg.png
+    - assets/page-1/images/logo-1.png
+    - assets/page-1/images/part2.png
+    - assets/page-1/images/-LxR.png
+    - assets/page-1/images/navbar.png
+    - assets/page-1/images/group-18861.png
+    - assets/page-1/images/ci-menu-alt-03.png
+    - assets/page-1/images/group-18859.png
+    - assets/page-1/images/ri-time-line-kfT.png
+    - assets/page-1/images/oval-copy-4-bg.png
+    - assets/page-1/images/oval-copy-bg.png
+    - assets/page-1/images/ri-bookmark-line-n9P.png
+    - assets/page-1/images/ci-menu-alt-03-vwj.png
+    - assets/page-1/images/group-18858.png
+    - assets/page-1/images/-SHf.png
+    - assets/page-1/images/card.png
+    - assets/page-1/images/oval-bg.png
+    - assets/page-1/images/img.png
+    - assets/page-1/images/icon-sf-symbols-search-f9T.png
+    - assets/page-1/images/auto-group-8yim.png
+    - assets/page-1/images/card-twB.png
+    - assets/page-1/images/img-GAM.png
+    - assets/page-1/images/save-DNR.png
+    - assets/page-1/images/placeholder-2-zo3.png
+    - assets/page-1/images/icon-video-camera.png
+    - assets/page-1/images/icon-camera.png
+    - assets/page-1/images/time.png
+    - assets/page-1/images/location-sey.png
+    - assets/page-1/images/overlay.png
+    - assets/page-1/images/ci-menu-alt-03-HbX.png
+    - assets/page-1/images/group-18831.png
+    - assets/page-1/images/ri-bookmark-line-54m.png
+    - assets/page-1/images/test-account.png
+    - assets/page-1/images/part3.png
+    - assets/page-1/images/ri-bookmark-line-6LZ.png
+    - assets/page-1/images/arrow.png
+    - assets/page-1/images/ri-time-line-xyf.png
+    - assets/page-1/images/icon-marker.png
+    - assets/page-1/images/navbar-9NZ.png
+    - assets/page-1/images/search.png
+    - assets/page-1/images/microphone.png
+    - assets/page-1/images/icon-info.png
+    - assets/page-1/images/chevron-down.png
+    - assets/page-1/images/ci-menu-alt-03-hLd.png
+    - assets/page-1/images/icon.png
+    - assets/page-1/images/icon-sf-symbols-search-3QM.png
+    - assets/page-1/images/group-18835.png
+    - assets/page-1/images/ri-time-line-hiy.png
+    - assets/page-1/images/ri-map-pin-2-line-HuT.png
+    - assets/page-1/images/navbar-jmT.png
+    - assets/page-1/images/navbar-2R7.png
+    - assets/page-1/images/ri-time-line-kM7.png
+    - assets/page-1/images/placeholder-1.png
+    - assets/page-1/images/ellipse-73-bg.png
+    - assets/page-1/images/ri-bookmark-line-Ui5.png
+    - assets/page-1/images/card-fvy.png
+    - assets/page-1/images/controls-radio-checked.png
+    - assets/page-1/images/navbar-P6H.png
+    - assets/page-1/images/controls-radio.png
+    - assets/page-1/images/img-pem.png
+    - assets/page-1/images/polygon-1.png
+    - assets/page-1/images/phone.png
+    - assets/page-1/images/microphone-n3j.png
+    - assets/page-1/images/-SLZ.png
+    - assets/page-1/images/part1.png
+    - assets/page-1/images/microphone-M29.png
+    - assets/page-1/images/image-77.png
+    - assets/page-1/images/navbar-cm7.png
+    - assets/page-1/images/overlay-BQD.png
+    - assets/page-1/images/img-bg.png
+    - assets/page-1/images/-SrV.png
+    - assets/page-1/images/navbar-aSD.png
+    - assets/page-1/images/image-12-bg.png
+    - assets/page-1/images/controls-radio-checked-Dny.png
+    - assets/page-1/images/group-18832.png
+    - assets/page-1/images/navbar-7tM.png
+    - assets/page-1/images/img-bg-Uyo.png
+    - assets/page-1/images/controls-radio-DkM.png
+    - assets/page-1/images/shadow.png
+    - assets/page-1/images/overlay-fz9.png
+    - assets/page-1/images/location-mAR.png
+    - assets/page-1/images/img-3ZB.png
+    - assets/page-1/images/icon-video-camera-3mT.png
+    - assets/page-1/images/img-rvV.png
+    - assets/page-1/images/img-GKB.png
+    - assets/page-1/images/group-18496.png
+    - assets/page-1/images/navigation-bar-components-left-back.png
+    - assets/page-1/images/group-18857.png
+    - assets/page-1/images/overlay-dTP.png
+    - assets/page-1/images/img-KGD.png
+    - assets/page-1/images/ri-map-pin-2-line-aSu.png
+    - assets/page-1/images/ri-bookmark-line-8Gq.png
+    - assets/page-1/images/icon-calendar.png
+    - assets/page-1/images/icon-marker-5Bf.png
+    - assets/page-1/images/tt2-1.png
+    - assets/page-1/images/navbar-t2M.png
+    - assets/page-1/images/ri-time-line-ku7.png
+    - assets/page-1/images/icon-camera-h37.png
+    - assets/page-1/images/navigation-bar-components-left-back-eSM.png
+    - assets/page-1/images/vector-2-faq.png
+    - assets/page-1/images/chevron-down-2iD.png
+    - assets/page-1/images/mask-group.png
+    - assets/page-1/images/arrow-B53.png
+    - assets/page-1/images/arrow-Ar5.png
+    - assets/page-1/images/property-1variant2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
