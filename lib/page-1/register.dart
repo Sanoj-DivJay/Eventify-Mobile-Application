@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class Scene extends StatelessWidget {
   @override
@@ -427,17 +428,23 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               TextSpan(
-                                text: 'Terms & Conditions',
-                                style: SafeGoogleFont(
-                                  'Poppins',
-                                  fontSize: 12 * ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.5 * ffem / fem,
-                                  decoration: TextDecoration.underline,
-                                  color: Color(0xff5bb15a),
-                                  decorationColor: Color(0xff5bb15a),
-                                ),
-                              ),
+                                  text: 'Terms & Conditions',
+                                  style: SafeGoogleFont(
+                                    'Poppins',
+                                    fontSize: 12 * ffem,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1.5 * ffem / fem,
+                                    decoration: TextDecoration.underline,
+                                    color: Color(0xff5bb15a),
+                                    decorationColor: Color(0xff5bb15a),
+                                  ),
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () async {
+                                      var url = "https://www.google.co.uk";
+                                      if (await launchUrlString(url)) {
+                                        await launchUrlString(url);
+                                      }
+                                    }),
                               TextSpan(
                                 text: ' ',
                                 style: SafeGoogleFont(
