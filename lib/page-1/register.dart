@@ -469,17 +469,23 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               TextSpan(
-                                text: 'Privacy Policy',
-                                style: SafeGoogleFont(
-                                  'Poppins',
-                                  fontSize: 12 * ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.5 * ffem / fem,
-                                  decoration: TextDecoration.underline,
-                                  color: Color(0xff0084f1),
-                                  decorationColor: Color(0xff0084f1),
-                                ),
-                              ),
+                                  text: 'Privacy Policy',
+                                  style: SafeGoogleFont(
+                                    'Poppins',
+                                    fontSize: 12 * ffem,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1.5 * ffem / fem,
+                                    decoration: TextDecoration.underline,
+                                    color: Color(0xff0084f1),
+                                    decorationColor: Color(0xff0084f1),
+                                  ),
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () async {
+                                      var url = "https://www.google.co.uk";
+                                      if (await launchUrlString(url)) {
+                                        await launchUrlString(url);
+                                      }
+                                    }),
                             ],
                           ),
                         ),
