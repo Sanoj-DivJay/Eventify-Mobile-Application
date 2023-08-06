@@ -261,23 +261,44 @@ class Scene extends StatelessWidget {
                               ),
                             ),
                           ),
-                          TextButton(
-                            // loginHy3 (18:478)
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              padding: EdgeInsets.zero,
-                            ),
+                          /*Container(
                             child: Text(
-                              'Log In',
+                              'Log In ',
                               style: SafeGoogleFont(
                                 'Poppins',
                                 fontSize: 12 * ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.5 * ffem / fem,
-                                color: Color(0xff1598f7),
+                                color: Color(0xff000000),
                               ),
                             ),
-                          ),
+                          ),*/
+
+                          Text.rich(TextSpan(
+                              style: TextStyle(
+                                fontSize: 27,
+                              ),
+                              children: [
+                                TextSpan(
+                                    text: 'Log In',
+                                    style: SafeGoogleFont(
+                                      'Poppins',
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.5 * ffem / fem,
+                                      //decoration: TextDecoration.underline,
+                                      color: Color(0xff0084f1),
+                                      decorationColor: Color(0xff0084f1),
+                                    ),
+                                    recognizer: TapGestureRecognizer()
+                                      ..onTap = () async {
+                                        var url = "https://www.google.co.uk";
+                                        if (await launchUrlString(url)) {
+                                          await launchUrlString(url);
+                                        }
+                                      }),
+                                //more text paragraph, sentences here.
+                              ]))
                         ],
                       ),
                     ),
