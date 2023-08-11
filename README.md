@@ -1,6 +1,7 @@
 # test
 
 A new Flutter project.
+EVENTIFY
 
 ## Getting Started
 
