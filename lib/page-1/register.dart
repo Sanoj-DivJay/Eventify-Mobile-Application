@@ -123,97 +123,6 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-
-            /*Container(
-              // autogroupocfjQBB (KEZrGWca6vPhFGTNPtoCfj)
-              margin:
-                  EdgeInsets.fromLTRB(5.5 * fem, 0 * fem, 35 * fem, 10 * fem),
-              padding:
-                  EdgeInsets.fromLTRB(15 * fem, 15 * fem, 146 * fem, 16 * fem),
-              width: double.infinity,
-              decoration: BoxDecoration(
-                border: Border.all(color: Color(0xff8b8b8b)),
-                borderRadius: BorderRadius.circular(10 * fem),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  /*Container(
-                    // emailtMF (18:486)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 12 * fem, 1 * fem),
-                    child: Text(
-                      'E-mail',
-                      style: SafeGoogleFont(
-                        'Poppins',
-                        fontSize: 12 * ffem,
-                        fontWeight: FontWeight.w400,
-                        height: 1.5 * ffem / fem,
-                        color: Color(0xff8b8b8b),
-                      ),
-                    ),
-                  ),*/
-                  /*Container(
-                    // abcdgmailcomz9P (294:621)
-                    margin:
-                        EdgeInsets.fromLTRB(0 * fem, 1 * fem, 0 * fem, 0 * fem),
-                    child: Text(
-                      'abcd@gmail.com',
-                      style: SafeGoogleFont(
-                        'Poppins',
-                        fontSize: 12 * ffem,
-                        fontWeight: FontWeight.w400,
-                        height: 1.5 * ffem / fem,
-                        color: Color(0xff000000),
-                      ),
-                    ),
-                  ),*/
-                ],
-              ),
-            ),*/
-            /*Container(
-              // autogroupdwgrHuB (KEZrQvYDmGXeAxvpdrDWgR)
-              margin:
-                  EdgeInsets.fromLTRB(5.5 * fem, 0 * fem, 35 * fem, 11 * fem),
-              padding:
-                  EdgeInsets.fromLTRB(15 * fem, 16 * fem, 192 * fem, 16 * fem),
-              width: double.infinity,
-              decoration: BoxDecoration(
-                border: Border.all(color: Color(0xff8b8b8b)),
-                borderRadius: BorderRadius.circular(10 * fem),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    // phonenL9 (18:480)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 14 * fem, 0 * fem),
-                    child: Text(
-                      'Phone',
-                      style: SafeGoogleFont(
-                        'Poppins',
-                        fontSize: 12 * ffem,
-                        fontWeight: FontWeight.w400,
-                        height: 1.5 * ffem / fem,
-                        color: Color(0xff8b8b8b),
-                      ),
-                    ),
-                  ),
-                  Text(
-                    // gwK (294:622)
-                    '123456789',
-                    style: SafeGoogleFont(
-                      'Poppins',
-                      fontSize: 12 * ffem,
-                      fontWeight: FontWeight.w400,
-                      height: 1.5 * ffem / fem,
-                      color: Color(0xff000000),
-                    ),
-                  ),
-                ],
-              ),
-            ),*/
             Container(
               // autogroupycjtRtu (KEZrZvHEQpyNFZ24LcYcjT)
               width: double.infinity,
@@ -254,7 +163,7 @@ class Scene extends StatelessWidget {
                               'Already have an Account? ',
                               style: SafeGoogleFont(
                                 'Poppins',
-                                fontSize: 12 * ffem,
+                                fontSize: 11,
                                 fontWeight: FontWeight.w400,
                                 height: 1.5 * ffem / fem,
                                 color: Color(0xff000000),
@@ -283,7 +192,7 @@ class Scene extends StatelessWidget {
                                     text: 'Log In',
                                     style: SafeGoogleFont(
                                       'Poppins',
-                                      fontSize: 13,
+                                      fontSize: 11,
                                       fontWeight: FontWeight.w500,
                                       height: 1.5 * ffem / fem,
                                       //decoration: TextDecoration.underline,
@@ -303,119 +212,71 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
-                    // rectangle2byj (27:1856)
-                    left: 15.5 * fem,
-                    top: 240 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 304 * fem,
-                        height: 53 * fem,
-                        child: TextButton(
-                          onPressed: () {},
-                          style: TextButton.styleFrom(
-                            padding: EdgeInsets.zero,
-                          ),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(90 * fem),
-                              gradient: LinearGradient(
-                                begin: Alignment(-1, -0.54),
-                                end: Alignment(0.76, 0.679),
-                                colors: <Color>[
-                                  Color(0xff1e970a),
-                                  Color(0xff23c7d2)
-                                ],
-                                stops: <double>[0, 1],
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color(0x3f000000),
-                                  offset: Offset(0 * fem, 4 * fem),
-                                  blurRadius: 10.5 * fem,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
+                    child: Positioned(
+                      // rectangle2byj (27:1856)
+                      left: 15.5 * fem,
+                      top: 240 * fem,
+                      child: Align(
+                        child: SizedBox(
+                          width: 304 * fem,
+                          height: 53 * fem,
+                          child: TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.zero,
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(90 * fem),
+                                gradient: LinearGradient(
+                                  begin: Alignment(-1, -0.54),
+                                  end: Alignment(0.76, 0.679),
+                                  colors: <Color>[
+                                    Color(0xff1e970a),
+                                    Color(0xff23c7d2)
+                                  ],
+                                  stops: <double>[0, 1],
                                 ),
-                              ],
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Color.fromARGB(62, 201, 185, 185),
+                                    offset: Offset(0 * fem, 4 * fem),
+                                    blurRadius: 10.5 * fem,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                  Positioned(
-                    // signupn2d (18:471)
-                    left: 130.5 * fem,
-                    top: 251 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 78 * fem,
-                        height: 30 * fem,
-                        child: Text(
-                          'Sign Up',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w700,
-                            height: 1.5 * ffem / fem,
-                            color: Color(0xffffffff),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
+                    child: Positioned(
+                      // signupn2d (18:471)
+                      left: 130.5 * fem,
+                      top: 251 * fem,
+                      child: Align(
+                        child: SizedBox(
+                          width: 78 * fem,
+                          height: 30 * fem,
+                          child: Text(
+                            'Sign Up',
+                            style: SafeGoogleFont(
+                              'Poppins',
+                              fontSize: 20 * ffem,
+                              fontWeight: FontWeight.w700,
+                              height: 1.5 * ffem / fem,
+                              color: Color(0xffffffff),
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                  /*Positioned(
-                    // rectangle12URF (18:481)
-                    left: 5.5 * fem,
-                    top: 0 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 322 * fem,
-                        height: 49 * fem,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10 * fem),
-                            border: Border.all(color: Color(0xff8b8b8b)),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),*/
-                  /*Positioned(
-                    // passwordnwj (18:482)
-                    left: 20.5 * fem,
-                    top: 15 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 58 * fem,
-                        height: 18 * fem,
-                        child: Text(
-                          'Password',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 12 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.5 * ffem / fem,
-                            color: Color(0xff8b8b8b),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),*/
-                  /*Positioned(
-                    // iconrevealhoo (208:1104)
-                    left: 285.5 * fem,
-                    top: 17 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 24.94 * fem,
-                        height: 14.03 * fem,
-                        child: Image.asset(
-                          'assets/page-1/images/icon-reveal.png',
-                          width: 24.94 * fem,
-                          height: 14.03 * fem,
-                        ),
-                      ),
-                    ),
-                  ),*/
                   Positioned(
                     // bysigningupyouagreetoourtermsc (18:489)
                     left: 0 * fem,
@@ -513,27 +374,6 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                   ),
-                  /*Positioned(
-                    // abcd123cNM (294:623)
-                    left: 97.5 * fem,
-                    top: 15 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 50 * fem,
-                        height: 18 * fem,
-                        child: Text(
-                          'abcd123',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 12 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.5 * ffem / fem,
-                            color: Color(0xff000000),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),*/
                 ],
               ),
             ),
