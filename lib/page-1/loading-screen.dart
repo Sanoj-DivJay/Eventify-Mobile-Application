@@ -26,7 +26,7 @@ class Scene extends StatelessWidget {
               margin:
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 122.82 * fem),
               width: 802.37 * fem,
-              height: 802.37 * fem,
+              height: 640.37 * fem,
               decoration: BoxDecoration(
                   //image: DecorationImage (
                   //fit: BoxFit.cover,
