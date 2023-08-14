@@ -6,8 +6,13 @@ import 'package:myapp/utils.dart';
 //import 'package:myapp/page-1/register.dart';
 //import 'package:myapp/page-1/home.dart';
 // import 'package:myapp/page-1/login.dart';
+<<<<<<< Updated upstream
 // import 'package:myapp/page-1/get-started.dart';
 //import 'package:myapp/page-1/loading-screen.dart';
+=======
+import 'package:myapp/page-1/get-started.dart';
+import 'package:myapp/page-1/loading-screen.dart';
+>>>>>>> Stashed changes
 // import 'package:myapp/page-1/home.dart';
 // import 'package:myapp/page-1/calendar.dart';
 // import 'package:myapp/page-1/dashboard.dart';
@@ -32,7 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: Scene(),
+          child: LoadingScreen(),
         ),
       ),
     );
