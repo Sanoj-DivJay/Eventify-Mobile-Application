@@ -1,4 +1,4 @@
-import 'dart:js';
+//import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
@@ -40,7 +40,7 @@ class LoadingScreen extends StatelessWidget {
 
               child: Stack(
                 children: [
-                  Positioned(
+                  /*Positioned(
                     // calanderHUD (210:1947)
                     left: 162 * fem,
                     top: 29 * fem,
@@ -1199,7 +1199,7 @@ class LoadingScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  ),*/
                   Positioned(
                     // y9s (128:1122)
                     left: 23 * fem,

@@ -25,7 +25,7 @@ class GetStarted extends StatelessWidget {
             Container(
               // autogroupqxxdBay (KEZteXUwKHoqPMnV6VQXxD)
               width: double.infinity,
-              height: 609 * fem,
+              height: 500 * fem,
               child: Stack(
                 children: [
                   Positioned(
@@ -33,7 +33,7 @@ class GetStarted extends StatelessWidget {
                     left: 0 * fem,
                     top: 0 * fem,
                     child: Container(
-                      width: 393 * fem,
+                      width: 450 * fem,
                       height: 609 * fem,
                       decoration: BoxDecoration(
                         color: Color(0xffffffff),
@@ -41,17 +41,6 @@ class GetStarted extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            // placeholder22rV (205:1200)
-                            margin: EdgeInsets.fromLTRB(
-                                0 * fem, 3 * fem, 20 * fem, 0 * fem),
-                            width: 22 * fem,
-                            height: 22 * fem,
-                            child: Image.asset(
-                              'assets/page-1/images/placeholder-2.png',
-                              fit: BoxFit.cover,
-                            ),
-                          ),
                           Container(
                             // autogroupttayLsB (KEZtmc7USJ6rpT8iZjtTay)
                             width: 590 * fem,
@@ -61,7 +50,7 @@ class GetStarted extends StatelessWidget {
                                 Positioned(
                                   // ellipse8Gkq (128:1132)
                                   left: 42.0006103516 * fem,
-                                  top: 0 * fem,
+                                  top: -80 * fem,
                                   child: Align(
                                     child: SizedBox(
                                       width: 495.74 * fem,
@@ -74,7 +63,7 @@ class GetStarted extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                Positioned(
+                                /*Positioned(
                                   // BN1 (128:1169)
                                   left: 0 * fem,
                                   top: 149 * fem,
@@ -87,7 +76,7 @@ class GetStarted extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                ),
+                                ),*/
                               ],
                             ),
                           ),
@@ -97,12 +86,13 @@ class GetStarted extends StatelessWidget {
                   ),
                   Positioned(
                     // eventifylogolined1t1X (128:1145)
-                    left: 165 * fem,
+                    left: 77 * fem,
                     top: 167 * fem,
+
                     child: Align(
                       child: SizedBox(
-                        width: 193 * fem,
-                        height: 50 * fem,
+                        width: 250 * fem,
+                        height: 250 * fem,
                         child: Image.asset(
                           'assets/page-1/images/eventify-logo-lined-1.png',
                         ),
@@ -122,7 +112,7 @@ class GetStarted extends StatelessWidget {
                   Positioned(
                     // eventifysimplifiesnsbmeventman (128:1170)
                     left: 36 * fem,
-                    top: 84 * fem,
+                    top: 140 * fem,
                     child: Align(
                       child: SizedBox(
                         width: 321 * fem,
@@ -141,24 +131,25 @@ class GetStarted extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  /*Positioned(
                     // 9Lm (128:1151)
                     left: 0 * fem,
                     top: 0 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 393 * fem,
-                        height: 333 * fem,
+                        width: 120 * fem,
+                        height: 300 * fem,
                         child: Image.asset(
                           'assets/page-1/images/-awj.png',
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                  ),
+                  ),*/
                   Positioned(
                     // buttonGRP (208:1112)
                     left: 50 * fem,
-                    top: 200 * fem,
+                    top: 250 * fem,
                     child: TextButton(
                       onPressed: () {},
                       style: TextButton.styleFrom(
