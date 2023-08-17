@@ -4,7 +4,13 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  bool? check = false;
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
@@ -121,6 +127,7 @@ class LoginPage extends StatelessWidget {
                     child: SizedBox(
                       height: 50,
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Password',
@@ -128,123 +135,6 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
-                  /*Positioned(
-                    // group78p5f (53:579)
-                    left: 0 * fem,
-                    top: 0 * fem,
-                    child: Container(
-                      width: 304 * fem,
-                      height: 159 * fem,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10 * fem),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            // autogrouph6a57qT (KEZsjdqQ7u9MdCXosyh6a5)
-                            margin: EdgeInsets.fromLTRB(
-                                0 * fem, 0 * fem, 0 * fem, 29 * fem),
-                            padding: EdgeInsets.fromLTRB(
-                                11 * fem, 10 * fem, 11 * fem, 25 * fem),
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Color(0xff8b8b8b)),
-                              borderRadius: BorderRadius.circular(10 * fem),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                /*Container(
-                                  // enteremailorphone1vq (18:1668)
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 0 * fem, 0 * fem, 13 * fem),
-                                  child: Text(
-                                    'Enter email or phone',
-                                    style: SafeGoogleFont(
-                                      'Poppins',
-                                      fontSize: 12 * ffem,
-                                      fontWeight: FontWeight.w400,
-                                      height: 1.5 * ffem / fem,
-                                      color: Color(0xff8b8b8b),
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  // abcdgmailcomj69 (294:627)
-                                  'abcd@gmail.com',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 12 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.5 * ffem / fem,
-                                    color: Color(0xff000000),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            // autogroupb2idFqB (KEZsqt9zQKHZ8ARn7nb2id)
-                            padding: EdgeInsets.fromLTRB(
-                                11 * fem, 10 * fem, 17.06 * fem, 17 * fem),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Color(0xff8b8b8b)),
-                              borderRadius: BorderRadius.circular(10 * fem),
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  // passwordZ5B (18:1670)
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 0 * fem, 19 * fem, 1 * fem),
-                                  child: Text(
-                                    'Password',
-                                    style: SafeGoogleFont(
-                                      'Poppins',
-                                      fontSize: 12 * ffem,
-                                      fontWeight: FontWeight.w400,
-                                      height: 1.5 * ffem / fem,
-                                      color: Color(0xff8b8b8b),
-                                    ),
-                                  ),
-                                ),*/
-                                /*Container(
-                                  // abcd123FTo (294:628)
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 1 * fem, 120 * fem, 0 * fem),
-                                  child: Text(
-                                    'abcd123',
-                                    style: SafeGoogleFont(
-                                      'Poppins',
-                                      fontSize: 12 * ffem,
-                                      fontWeight: FontWeight.w400,
-                                      height: 1.5 * ffem / fem,
-                                      color: Color(0xff000000),
-                                    ),
-                                  ),
-                                ),*/
-                                /*Container(
-                                  // iconcolorMmj (210:2038)
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 3.03 * fem, 0 * fem, 0 * fem),
-                                  width: 24.94 * fem,
-                                  height: 14.03 * fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/icon-color.png',
-                                    width: 24.94 * fem,
-                                    height: 14.03 * fem,
-                                  ),
-                                ),*/
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),*/
                   Positioned(
                     // forgotpasswordfnR (18:1671)
                     left: 190 * fem,
@@ -268,27 +158,30 @@ class LoginPage extends StatelessWidget {
                   ),
                   Positioned(
                     // group10kJ5 (18:1672)
-                    left: 5 * fem,
-                    top: 178 * fem,
+                    left: -15 * fem,
+                    top: 150 * fem,
                     child: Container(
                       padding: EdgeInsets.fromLTRB(
                           1.83 * fem, 1.83 * fem, 0 * fem, 1.83 * fem),
-                      width: 110 * fem,
+                      //width: 10 * fem,
                       height: 22 * fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
-                            // richeckboxcirclelineqqK (18:1673)
-                            margin: EdgeInsets.fromLTRB(
-                                0 * fem, 0 * fem, 6.83 * fem, 0 * fem),
-                            width: 18.33 * fem,
-                            height: 18.33 * fem,
-                            child: Image.asset(
-                              'assets/page-1/images/ri-checkbox-circle-line.png',
-                              width: 18.33 * fem,
-                              height: 18.33 * fem,
-                            ),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Checkbox(
+                                checkColor: Colors.green,
+                                activeColor: Colors.black,
+                                value: check,
+                                onChanged: (bool? value) {
+                                  setState(() {
+                                    check = value;
+                                  });
+                                },
+                              )
+                            ],
                           ),
                           Container(
                             // remembermewtM (18:1675)
