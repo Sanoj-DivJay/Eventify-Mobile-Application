@@ -1,4 +1,4 @@
-# test
+# Eventify Mobile Application
 
 A new Flutter project.
 EVENTIFY
