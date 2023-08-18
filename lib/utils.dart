@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/gestures/tap.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -31,6 +32,7 @@ TextStyle SafeGoogleFont(
   Color? decorationColor,
   TextDecorationStyle? decorationStyle,
   double? decorationThickness,
+  //required TapGestureRecognizer recognizer,
 }) {
   try {
     return GoogleFonts.getFont(

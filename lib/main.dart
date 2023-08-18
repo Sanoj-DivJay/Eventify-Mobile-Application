@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/get-started.dart';
 import 'package:myapp/page-1/login.dart';
+import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
 //import 'package:myapp/page-1/register.dart';
 //import 'package:myapp/page-1/home.dart';

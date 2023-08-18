@@ -6,16 +6,18 @@ import 'package:myapp/utils.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class Scene extends StatelessWidget {
+class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
-      width: double.infinity,
+    return Material(
+        child: SingleChildScrollView(
+      //width: double.infinity,
       child: Container(
         // registertMw (18:225)
+
         padding: EdgeInsets.fromLTRB(30.5 * fem, 35 * fem, 0 * fem, 0 * fem),
         width: double.infinity,
         decoration: const BoxDecoration(
@@ -29,7 +31,7 @@ class Scene extends StatelessWidget {
               margin:
                   EdgeInsets.fromLTRB(72.5 * fem, 0 * fem, 103 * fem, 14 * fem),
               width: double.infinity,
-              height: 204 * fem,
+              height: 200 * fem,
               child: Stack(
                 children: [
                   Positioned(
@@ -380,6 +382,6 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
