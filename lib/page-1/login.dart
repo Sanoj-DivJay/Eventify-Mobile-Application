@@ -233,16 +233,18 @@ class _LoginPageState extends State<LoginPage> {
 
                           Container(
                               child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.green),
                             child: Text(
                               'Sign In',
                               style: SafeGoogleFont(
                                 'Poppins',
 
-                                fontSize: 15,
+                                fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                height: 1.5 * ffem / fem,
+                                height: 1.2 * ffem / fem,
                                 //decoration: TextDecoration.underline,
-                                color: const Color(0xff0084f1),
+                                //color: const Color(0xff0084f1),
                               ),
                             ),
                             onPressed: () {

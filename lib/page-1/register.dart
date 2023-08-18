@@ -15,11 +15,13 @@ class RegisterPage extends StatelessWidget {
     return Material(
         child: SingleChildScrollView(
       //width: double.infinity,
+
       child: Container(
         // registertMw (18:225)
 
         padding: EdgeInsets.fromLTRB(30.5 * fem, 35 * fem, 0 * fem, 0 * fem),
         width: double.infinity,
+
         decoration: const BoxDecoration(
           color: Color(0xffffffff),
         ),
@@ -153,7 +155,7 @@ class RegisterPage extends StatelessWidget {
                     top: 312 * fem,
                     child: Container(
                       width: 207.58 * fem,
-                      height: 18 * fem,
+                      height: 20 * fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
