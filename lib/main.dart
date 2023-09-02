@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/create-event.dart';
+import 'package:myapp/page-1/dashboard.dart';
+import 'package:myapp/page-1/event-register.dart';
 import 'package:myapp/page-1/get-started.dart';
+import 'package:myapp/page-1/home.dart';
 import 'package:myapp/page-1/login.dart';
 import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
@@ -35,7 +39,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: LoginPage(),
+          child: CreateEvent(),
         ),
       ),
     );
