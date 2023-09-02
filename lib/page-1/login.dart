@@ -147,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
                       width: 104 * fem,
                       height: 17 * fem,
                       child: Text(
-                        'Forget Password ? ',
+                        'Forgot Password ? ',
                         style: SafeGoogleFont(
                           'Poppins',
                           fontSize: 11 * ffem,
