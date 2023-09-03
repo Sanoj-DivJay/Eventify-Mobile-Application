@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: LoadingScreen(),
+          child: CreateEvent(),
         ),
       ),
     );

@@ -14,24 +14,24 @@ class _CreateEventState extends State<CreateEvent> {
   TextEditingController dateInput = TextEditingController();
   TextEditingController timeInput = TextEditingController();
 
-  /*List<String> price = <String>[
+  List<String> price = <String>[
     'Free',
-    '300',
-    '500',
-    '1000',
-    '1500',
-    '2000',
-    '2500',
-    '3000'
+    'LKR 300.00',
+    'LKR 500.00',
+    'LKR 1000.00',
+    'LKR 1500.00',
+    'LKR 2000.00',
+    'LKR 2500.00',
+    'LKR 3000.00'
   ];
 
-  late String SelectedPrice = "";
+  late String SelectedPrice;
 
   void _onPriceSelected(String? newValue) {
     setState(() {
       SelectedPrice = newValue ?? "";
     });
-  }*/
+  }
 
   @override
   void initState() {
@@ -248,7 +248,7 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
-                        /*Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(15, 300, 25, 0),
                           child: SizedBox(
                             height: 50,
@@ -267,7 +267,7 @@ class _CreateEventState extends State<CreateEvent> {
                               ),
                             ),
                           ),
-                        ),*/
+                        ),
                       ],
                     ),
                   ),
