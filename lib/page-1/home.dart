@@ -51,72 +51,27 @@ class HomePage extends StatelessWidget {
                                   // cimenualt03NPT (208:1131)
                                   margin: EdgeInsets.fromLTRB(
                                       0 * fem, 0 * fem, 31.75 * fem, 0 * fem),
-                                  width: 22.5 * fem,
+                                  width: 20.5 * fem,
                                   height: 15 * fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/ci-menu-alt-03.png',
-                                    width: 22.5 * fem,
-                                    height: 15 * fem,
+                                  child: Icon(
+                                    Icons.menu,
                                   ),
                                 ),
-                                Container(
-                                  // group34062fdT (208:1123)
-                                  padding: EdgeInsets.fromLTRB(11.27 * fem,
-                                      6 * fem, 9.38 * fem, 3 * fem),
-                                  width: 240 * fem,
-                                  height: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: Color(0x1e767680),
-                                    borderRadius:
-                                        BorderRadius.circular(22 * fem),
-                                  ),
+                                Center(
                                   child: Container(
-                                    // group24yPF (208:1125)
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          // iconsfsymbolssearch7VT (208:1126)
-                                          margin: EdgeInsets.fromLTRB(0 * fem,
-                                              0 * fem, 13.73 * fem, 4.26 * fem),
-                                          width: 11.63 * fem,
-                                          height: 12.78 * fem,
-                                          child: Image.asset(
-                                            'assets/page-1/images/icon-sf-symbols-search.png',
-                                            width: 11.63 * fem,
-                                            height: 12.78 * fem,
-                                          ),
+                                    width: 230 * fem,
+                                    height: 92 * fem,
+                                    child: const TextField(
+                                      decoration: InputDecoration(
+                                        prefixIcon: const Icon(
+                                          Icons.search,
                                         ),
-                                        Container(
-                                          // placeholderlabelatq (208:1128)
-                                          margin: EdgeInsets.fromLTRB(0 * fem,
-                                              0 * fem, 74.01 * fem, 3 * fem),
-                                          child: Text(
-                                            'Search Events',
-                                            style: SafeGoogleFont(
-                                              'Poppins',
-                                              fontSize: 15 * ffem,
-                                              fontWeight: FontWeight.w400,
-                                              height: 1.4666666667 * ffem / fem,
-                                              letterSpacing:
-                                                  -0.4079999924 * fem,
-                                              color: Color(0x993c3c43),
-                                            ),
-                                          ),
+                                        hintText: 'search event',
+                                        suffixIcon: Icon(
+                                          Icons.mic,
                                         ),
-                                        Container(
-                                          // microphoneTBw (208:1129)
-                                          width: 19.98 * fem,
-                                          height: 29 * fem,
-                                          child: Image.asset(
-                                            'assets/page-1/images/microphone-n3j.png',
-                                            fit: BoxFit.contain,
-                                          ),
-                                        ),
-                                      ],
+                                      ),
+                                      style: TextStyle(fontSize: 15),
                                     ),
                                   ),
                                 ),
@@ -124,9 +79,8 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // nk1 (208:1130)
                             width: 74 * fem,
-                            height: 92 * fem,
+                            height: 98 * fem,
                             child: Image.asset(
                               'assets/page-1/images/-LxR.png',
                               fit: BoxFit.cover,
