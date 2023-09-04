@@ -13,25 +13,7 @@ class CreateEvent extends StatefulWidget {
 class _CreateEventState extends State<CreateEvent> {
   TextEditingController dateInput = TextEditingController();
   TextEditingController timeInput = TextEditingController();
-
-  /*List<String> price = <String>[
-    'Free',
-    '300',
-    '500',
-    '1000',
-    '1500',
-    '2000',
-    '2500',
-    '3000'
-  ];
-
-  late String SelectedPrice = "";
-
-  void _onPriceSelected(String? newValue) {
-    setState(() {
-      SelectedPrice = newValue ?? "";
-    });
-  }*/
+  String SelectedPriceOption = "Free";
 
   @override
   void initState() {
@@ -248,26 +230,47 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
-                        /*Padding(
-                          padding: EdgeInsets.fromLTRB(15, 300, 25, 0),
-                          child: SizedBox(
-                            height: 50,
-                            child: DropdownButtonFormField<String>(
-                              value: SelectedPrice,
-                              onChanged: _onPriceSelected,
-                              items: price.map((String price) {
-                                return DropdownMenuItem<String>(
-                                  value: price,
-                                  child: Text(price),
-                                );
-                              }).toList(),
-                              decoration: InputDecoration(
-                                border: OutlineInputBorder(),
-                                labelText: 'Price',
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(15, 500, 25, 0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // ... existing code ...
+
+                              // Add radio buttons for Paid and Free options
+                              ListTile(
+                                title: Text(
+                                  'Paid',
+                                  style: TextStyle(fontSize: 16 * ffem),
+                                ),
+                                leading: Radio(
+                                  value: "Paid",
+                                  groupValue: SelectedPriceOption,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      SelectedPriceOption = value as String;
+                                    });
+                                  },
+                                ),
                               ),
-                            ),
+                              ListTile(
+                                title: Text(
+                                  'Free',
+                                  style: TextStyle(fontSize: 16 * ffem),
+                                ),
+                                leading: Radio(
+                                  value: "Free",
+                                  groupValue: SelectedPriceOption,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      SelectedPriceOption = value as String;
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
                           ),
-                        ),*/
+                        ),
                       ],
                     ),
                   ),
