@@ -13,6 +13,7 @@ class CreateEvent extends StatefulWidget {
 class _CreateEventState extends State<CreateEvent> {
   TextEditingController dateInput = TextEditingController();
   TextEditingController timeInput = TextEditingController();
+  TextEditingController priceInput = TextEditingController();
   String SelectedPriceOption = "Free";
 
   @override
@@ -86,7 +87,7 @@ class _CreateEventState extends State<CreateEvent> {
                     margin: EdgeInsets.fromLTRB(
                         0 * fem, 0 * fem, 0 * fem, 128.04 * fem),
                     width: double.infinity,
-                    height: 878.6 * fem,
+                    height: 900 * fem,
                     child: Stack(
                       children: [
                         Positioned(
@@ -96,7 +97,7 @@ class _CreateEventState extends State<CreateEvent> {
                           child: Align(
                             child: SizedBox(
                               width: 372 * fem,
-                              height: 850 * fem,
+                              height: 900 * fem,
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(14 * fem),
@@ -209,7 +210,7 @@ class _CreateEventState extends State<CreateEvent> {
                         const Padding(
                           padding: EdgeInsets.fromLTRB(15, 340, 25, 0),
                           child: SizedBox(
-                            height: 50,
+                            height: 20,
                             child: TextField(
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
@@ -232,43 +233,60 @@ class _CreateEventState extends State<CreateEvent> {
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(15, 500, 25, 0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              // ... existing code ...
-
-                              // Add radio buttons for Paid and Free options
-                              ListTile(
-                                title: Text(
-                                  'Paid',
-                                  style: TextStyle(fontSize: 16 * ffem),
-                                ),
-                                leading: Radio(
-                                  value: "Paid",
-                                  groupValue: SelectedPriceOption,
-                                  onChanged: (value) {
-                                    setState(() {
-                                      SelectedPriceOption = value as String;
-                                    });
-                                  },
-                                ),
+                          child: SingleChildScrollView(
+                            child: Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  ListTile(
+                                    title: Text(
+                                      'Paid',
+                                      style: TextStyle(fontSize: 16 * ffem),
+                                    ),
+                                    leading: Radio(
+                                      value: "Paid",
+                                      groupValue: SelectedPriceOption,
+                                      onChanged: (value) {
+                                        setState(() {
+                                          SelectedPriceOption = value as String;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  ListTile(
+                                    title: Text(
+                                      'Free',
+                                      style: TextStyle(fontSize: 16 * ffem),
+                                    ),
+                                    leading: Radio(
+                                      value: "Free",
+                                      groupValue: SelectedPriceOption,
+                                      onChanged: (value) {
+                                        setState(() {
+                                          SelectedPriceOption = value as String;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  Visibility(
+                                    visible: SelectedPriceOption == "Paid",
+                                    child: //Padding(
+                                        /*padding:
+                                          EdgeInsets.fromLTRB(15, 400, 25, 0),*/
+                                        SizedBox(
+                                      height: 50,
+                                      width: 120,
+                                      child: TextField(
+                                          controller: priceInput,
+                                          decoration: InputDecoration(
+                                            border: OutlineInputBorder(),
+                                            labelText: 'Price',
+                                          )),
+                                    ),
+                                  ),
+                                ],
                               ),
-                              ListTile(
-                                title: Text(
-                                  'Free',
-                                  style: TextStyle(fontSize: 16 * ffem),
-                                ),
-                                leading: Radio(
-                                  value: "Free",
-                                  groupValue: SelectedPriceOption,
-                                  onChanged: (value) {
-                                    setState(() {
-                                      SelectedPriceOption = value as String;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
                         ),
                       ],
