@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:myapp/utils.dart';
 import 'package:intl/intl.dart';
 
@@ -15,6 +18,18 @@ class _CreateEventState extends State<CreateEvent> {
   TextEditingController timeInput = TextEditingController();
   TextEditingController priceInput = TextEditingController();
   String SelectedPriceOption = "Free";
+  XFile? SelectedImage;
+
+  Future<void> _pickimage() async {
+    final ImagePicker _picker = ImagePicker();
+    XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+
+    if (image != null) {
+      setState(() {
+        SelectedImage = image;
+      });
+    }
+  }
 
   @override
   void initState() {
@@ -210,7 +225,7 @@ class _CreateEventState extends State<CreateEvent> {
                         const Padding(
                           padding: EdgeInsets.fromLTRB(15, 340, 25, 0),
                           child: SizedBox(
-                            height: 20,
+                            height: 50,
                             child: TextField(
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
@@ -238,19 +253,24 @@ class _CreateEventState extends State<CreateEvent> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  ListTile(
-                                    title: Text(
-                                      'Paid',
-                                      style: TextStyle(fontSize: 16 * ffem),
-                                    ),
-                                    leading: Radio(
-                                      value: "Paid",
-                                      groupValue: SelectedPriceOption,
-                                      onChanged: (value) {
-                                        setState(() {
-                                          SelectedPriceOption = value as String;
-                                        });
-                                      },
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    child: ListTile(
+                                      title: Text(
+                                        'Paid',
+                                        style: TextStyle(fontSize: 16 * ffem),
+                                      ),
+                                      leading: Radio(
+                                        value: "Paid",
+                                        groupValue: SelectedPriceOption,
+                                        onChanged: (value) {
+                                          setState(() {
+                                            SelectedPriceOption =
+                                                value as String;
+                                          });
+                                        },
+                                      ),
                                     ),
                                   ),
                                   ListTile(
@@ -289,6 +309,28 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
+
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(15, 680, 25, 0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    Color.fromRGBO(149, 236, 121, 0.996),
+                                foregroundColor:
+                                    Color.fromRGBO(4, 108, 68, 0.906)),
+                            onPressed: _pickimage,
+                            child: Text('Pick an Image'),
+                          ),
+                        ),
+
+                        // Display the selected image if available
+                        if (SelectedImage != null)
+                          Image.file(
+                            File(SelectedImage!.path),
+                            width: 100, // Set the width as per your requirement
+                            height:
+                                100, // Set the height as per your requirement
+                          ),
                       ],
                     ),
                   ),
