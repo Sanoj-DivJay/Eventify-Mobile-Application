@@ -92,6 +92,31 @@ class _CreateEventState extends State<CreateEvent> {
                       height: 20.5 * fem,
                     ),
                   ),
+                  Container(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (ErrorMessage.isNotEmpty)
+                            Container(
+                              margin: EdgeInsets.symmetric(vertical: 10 * fem),
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(8 * fem),
+                              ),
+                              child: Text(
+                                ErrorMessage,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16 * ffem,
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ),
                   Text(
                     // titlewt5 (I210:1471;84:2477)
                     'Create an event',
@@ -346,6 +371,16 @@ class _CreateEventState extends State<CreateEvent> {
                             width: 100,
                             height: 100,
                           ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                Color.fromRGBO(149, 236, 121, 0.996),
+                            foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
+                          ),
+                          onPressed:
+                              _SubmitandValidation, // Call the validation function
+                          child: Text('Submit'),
+                        ),
                       ],
                     ),
                   ),
