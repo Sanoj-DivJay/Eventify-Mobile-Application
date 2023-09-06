@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/create_event.dart';
 import 'package:myapp/utils.dart';
 
 class HomePage extends StatelessWidget {
@@ -1019,15 +1020,66 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              // navbarTus (205:1272)
-              margin: EdgeInsets.fromLTRB(5 * fem, 0 * fem, 0 * fem, 0 * fem),
-              width: 362 * fem,
-              height: 70 * fem,
-              child: Image.asset(
-                'assets/page-1/images/navbar.png',
-                width: 362 * fem,
-                height: 70 * fem,
+            Center(
+              child: Container(
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 185, 180, 182),
+                ),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      //Home Icon Button
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.home,
+                            size: 40,
+                          ),
+                        ),
+                      ),
+                      //calender Icon Button
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.calendar_month,
+                            size: 40,
+                          ),
+                        ),
+                      ),
+                      //bookmark Icon Button
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.bookmark,
+                            size: 40,
+                          ),
+                        ),
+                      ),
+                      //location Icon Button
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.location_on,
+                            size: 40,
+                          ),
+                        ),
+                      ),
+                      //settings Icon Button
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.settings,
+                            size: 40,
+                          ),
+                        ),
+                      ),
+                    ]),
               ),
             ),
           ],
