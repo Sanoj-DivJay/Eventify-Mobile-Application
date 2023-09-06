@@ -80,7 +80,7 @@ class RegisterPage extends StatelessWidget {
               margin:
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 16.5 * fem, 30 * fem),
               child: Text(
-                'Create your new account',
+                'Creat your new account',
                 style: SafeGoogleFont(
                   'Poppins',
                   fontSize: 18 * ffem,
