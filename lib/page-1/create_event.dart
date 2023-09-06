@@ -17,8 +17,11 @@ class _CreateEventState extends State<CreateEvent> {
   TextEditingController dateInput = TextEditingController();
   TextEditingController timeInput = TextEditingController();
   TextEditingController priceInput = TextEditingController();
+  TextEditingController EventName = TextEditingController();
+  TextEditingController Organizer = TextEditingController();
   String SelectedPriceOption = "Free";
   XFile? SelectedImage;
+  String ErrorMessage = "";
 
   Future<void> _pickimage() async {
     final ImagePicker _picker = ImagePicker();
@@ -28,6 +31,20 @@ class _CreateEventState extends State<CreateEvent> {
       setState(() {
         SelectedImage = image;
       });
+    }
+  }
+
+  void _SubmitandValidation() {
+    if (dateInput.text.isEmpty ||
+        EventName.text.isEmpty ||
+        Organizer.text.isEmpty ||
+        timeInput.text.isEmpty ||
+        priceInput.text.isEmpty) {
+      setState(() {
+        ErrorMessage = 'Please fill all the Required Fields!';
+      });
+    } else {
+      ErrorMessage = "";
     }
   }
 
@@ -129,11 +146,12 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(15, 20, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
+                              controller: EventName,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Event Name',
@@ -210,11 +228,12 @@ class _CreateEventState extends State<CreateEvent> {
                                 }),
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(15, 260, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
+                              controller: Organizer,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Organized By',
@@ -309,7 +328,6 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
-
                         Padding(
                           padding: const EdgeInsets.fromLTRB(15, 680, 25, 0),
                           child: ElevatedButton(
@@ -322,14 +340,11 @@ class _CreateEventState extends State<CreateEvent> {
                             child: Text('Pick an Image'),
                           ),
                         ),
-
-                        // Display the selected image if available
                         if (SelectedImage != null)
                           Image.file(
                             File(SelectedImage!.path),
-                            width: 100, // Set the width as per your requirement
-                            height:
-                                100, // Set the height as per your requirement
+                            width: 100,
+                            height: 100,
                           ),
                       ],
                     ),
