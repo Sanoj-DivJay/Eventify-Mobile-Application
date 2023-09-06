@@ -10,6 +10,7 @@ import 'package:myapp/page-1/home.dart';
 import 'package:myapp/page-1/login.dart';
 import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
+import 'package:image_picker/image_picker.dart';
 //import 'package:myapp/page-1/register.dart';
 //import 'package:myapp/page-1/home.dart';
 import 'package:myapp/page-1/login.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child:HomePage(),
+          child: CreateEvent(),
         ),
       ),
     );
