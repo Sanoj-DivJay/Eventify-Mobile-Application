@@ -323,12 +323,22 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
 
-Container(
+            Container(
               padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
               child: const TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Student Name',
+                ),
+              ),
+            ),
+
+            Container(
+              padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+              child: const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Index',
                 ),
               ),
             ),
