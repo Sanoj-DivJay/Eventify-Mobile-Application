@@ -322,322 +322,338 @@ class JoinRegister extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    // eventnameT2q (210:1717)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 1 * fem, 10 * fem),
-                    width: 361 * fem,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // titleNvV (210:1719)
-                          margin: EdgeInsets.fromLTRB(
-                              2.2 * fem, 0 * fem, 0 * fem, 4 * fem),
-                          child: RichText(
-                            text: TextSpan(
-                              style: SafeGoogleFont(
-                                'Roboto',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.375 * ffem / fem,
-                                letterSpacing: -0.4079999924 * fem,
-                                color: Color(0xff2c2738),
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'Student Name ',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xff2c2738),
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: '*',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xffff0000),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // controlstextfieldnormalPUD (I210:1718;84:2376)
-                          padding: EdgeInsets.fromLTRB(
-                              16 * fem, 16 * fem, 16 * fem, 12 * fem),
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xffdbe2ea)),
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(20 * fem),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x0a2c2738),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 4 * fem,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            'W.P. Perera',
-                            style: SafeGoogleFont(
-                              'Poppins',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5 * ffem / fem,
-                              color: Color(0xff000000),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    // eventdatecrm (210:1708)
-                    margin:
-                        EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 9 * fem),
-                    width: 361 * fem,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        RichText(
-                          // title9bo (210:1710)
-                          text: TextSpan(
-                            style: SafeGoogleFont(
-                              'Roboto',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.375 * ffem / fem,
-                              letterSpacing: -0.4079999924 * fem,
-                              color: Color(0xff2c2738),
-                            ),
-                            children: [
-                              TextSpan(
-                                text: 'Index ',
-                                style: SafeGoogleFont(
-                                  'Poppins',
-                                  fontSize: 16 * ffem,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.375 * ffem / fem,
-                                  letterSpacing: -0.4079999924 * fem,
-                                  color: Color(0xff2c2738),
-                                ),
-                              ),
-                              TextSpan(
-                                text: '*',
-                                style: SafeGoogleFont(
-                                  'Poppins',
-                                  fontSize: 16 * ffem,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.375 * ffem / fem,
-                                  letterSpacing: -0.4079999924 * fem,
-                                  color: Color(0xffff0000),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          // controlstextfieldnormalh13 (I210:1709;84:2376)
-                          padding: EdgeInsets.fromLTRB(
-                              16 * fem, 16 * fem, 16 * fem, 9 * fem),
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xffdbe2ea)),
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(20 * fem),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x0a2c2738),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 4 * fem,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            '20987',
-                            style: SafeGoogleFont(
-                              'Poppins',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5 * ffem / fem,
-                              color: Color(0xff000000),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    // eventdate8c9 (210:1711)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 1 * fem, 13.88 * fem),
-                    width: 361 * fem,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // title4Vo (210:1713)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 0 * fem, 0.12 * fem),
-                          child: RichText(
-                            text: TextSpan(
-                              style: SafeGoogleFont(
-                                'Roboto',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.375 * ffem / fem,
-                                letterSpacing: -0.4079999924 * fem,
-                                color: Color(0xff2c2738),
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'E-mail ',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xff2c2738),
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: '*',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xffff0000),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // controlstextfieldnormalDGD (I210:1712;84:2376)
-                          padding: EdgeInsets.fromLTRB(
-                              16 * fem, 16 * fem, 16 * fem, 12 * fem),
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xffdbe2ea)),
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(20 * fem),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x0a2c2738),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 4 * fem,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            'waniduperera@nsbm.ac.lk',
-                            style: SafeGoogleFont(
-                              'Poppins',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5 * ffem / fem,
-                              color: Color(0xff000000),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    // eventdatef8D (210:1714)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 1 * fem, 53.88 * fem),
-                    width: 361 * fem,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // titlezAV (210:1716)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 0 * fem, 0.12 * fem),
-                          child: RichText(
-                            text: TextSpan(
-                              style: SafeGoogleFont(
-                                'Roboto',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.375 * ffem / fem,
-                                letterSpacing: -0.4079999924 * fem,
-                                color: Color(0xff2c2738),
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'Mobile ',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xff2c2738),
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: '*',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xffff0000),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // controlstextfieldnormal78d (I210:1715;84:2376)
-                          padding: EdgeInsets.fromLTRB(
-                              16 * fem, 16 * fem, 16 * fem, 12 * fem),
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xffdbe2ea)),
-                            color: Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(20 * fem),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x0a2c2738),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 4 * fem,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            '+94 77 125 3456',
-                            style: SafeGoogleFont(
-                              'Poppins',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5 * ffem / fem,
-                              color: Color(0xff000000),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+
+Container(
+              padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+              child: const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Student Name',
+                ),
+              ),
+            ),
+
+
+
+
+
+
+                  // Container(
+                  //   // eventnameT2q (210:1717)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       0 * fem, 0 * fem, 1 * fem, 10 * fem),
+                  //   width: 361 * fem,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         // titleNvV (210:1719)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             2.2 * fem, 0 * fem, 0 * fem, 4 * fem),
+                  //         child: RichText(
+                  //           text: TextSpan(
+                  //             style: SafeGoogleFont(
+                  //               'Roboto',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.375 * ffem / fem,
+                  //               letterSpacing: -0.4079999924 * fem,
+                  //               color: Color(0xff2c2738),
+                  //             ),
+                  //             children: [
+                  //               TextSpan(
+                  //                 text: 'Student Name ',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xff2c2738),
+                  //                 ),
+                  //               ),
+                  //               TextSpan(
+                  //                 text: '*',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xffff0000),
+                  //                 ),
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlstextfieldnormalPUD (I210:1718;84:2376)
+                  //         padding: EdgeInsets.fromLTRB(
+                  //             16 * fem, 16 * fem, 16 * fem, 12 * fem),
+                  //         width: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           border: Border.all(color: Color(0xffdbe2ea)),
+                  //           color: Color(0xffffffff),
+                  //           borderRadius: BorderRadius.circular(20 * fem),
+                  //           boxShadow: [
+                  //             BoxShadow(
+                  //               color: Color(0x0a2c2738),
+                  //               offset: Offset(0 * fem, 4 * fem),
+                  //               blurRadius: 4 * fem,
+                  //             ),
+                  //           ],
+                  //         ),
+                  //         child: Text(
+                  //           'W.P. Perera',
+                  //           style: SafeGoogleFont(
+                  //             'Poppins',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.5 * ffem / fem,
+                  //             color: Color(0xff000000),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // eventdatecrm (210:1708)
+                  //   margin:
+                  //       EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 9 * fem),
+                  //   width: 361 * fem,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       RichText(
+                  //         // title9bo (210:1710)
+                  //         text: TextSpan(
+                  //           style: SafeGoogleFont(
+                  //             'Roboto',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.375 * ffem / fem,
+                  //             letterSpacing: -0.4079999924 * fem,
+                  //             color: Color(0xff2c2738),
+                  //           ),
+                  //           children: [
+                  //             TextSpan(
+                  //               text: 'Index ',
+                  //               style: SafeGoogleFont(
+                  //                 'Poppins',
+                  //                 fontSize: 16 * ffem,
+                  //                 fontWeight: FontWeight.w400,
+                  //                 height: 1.375 * ffem / fem,
+                  //                 letterSpacing: -0.4079999924 * fem,
+                  //                 color: Color(0xff2c2738),
+                  //               ),
+                  //             ),
+                  //             TextSpan(
+                  //               text: '*',
+                  //               style: SafeGoogleFont(
+                  //                 'Poppins',
+                  //                 fontSize: 16 * ffem,
+                  //                 fontWeight: FontWeight.w400,
+                  //                 height: 1.375 * ffem / fem,
+                  //                 letterSpacing: -0.4079999924 * fem,
+                  //                 color: Color(0xffff0000),
+                  //               ),
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlstextfieldnormalh13 (I210:1709;84:2376)
+                  //         padding: EdgeInsets.fromLTRB(
+                  //             16 * fem, 16 * fem, 16 * fem, 9 * fem),
+                  //         width: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           border: Border.all(color: Color(0xffdbe2ea)),
+                  //           color: Color(0xffffffff),
+                  //           borderRadius: BorderRadius.circular(20 * fem),
+                  //           boxShadow: [
+                  //             BoxShadow(
+                  //               color: Color(0x0a2c2738),
+                  //               offset: Offset(0 * fem, 4 * fem),
+                  //               blurRadius: 4 * fem,
+                  //             ),
+                  //           ],
+                  //         ),
+                  //         child: Text(
+                  //           '20987',
+                  //           style: SafeGoogleFont(
+                  //             'Poppins',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.5 * ffem / fem,
+                  //             color: Color(0xff000000),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // eventdate8c9 (210:1711)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       0 * fem, 0 * fem, 1 * fem, 13.88 * fem),
+                  //   width: 361 * fem,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         // title4Vo (210:1713)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             0 * fem, 0 * fem, 0 * fem, 0.12 * fem),
+                  //         child: RichText(
+                  //           text: TextSpan(
+                  //             style: SafeGoogleFont(
+                  //               'Roboto',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.375 * ffem / fem,
+                  //               letterSpacing: -0.4079999924 * fem,
+                  //               color: Color(0xff2c2738),
+                  //             ),
+                  //             children: [
+                  //               TextSpan(
+                  //                 text: 'E-mail ',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xff2c2738),
+                  //                 ),
+                  //               ),
+                  //               TextSpan(
+                  //                 text: '*',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xffff0000),
+                  //                 ),
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlstextfieldnormalDGD (I210:1712;84:2376)
+                  //         padding: EdgeInsets.fromLTRB(
+                  //             16 * fem, 16 * fem, 16 * fem, 12 * fem),
+                  //         width: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           border: Border.all(color: Color(0xffdbe2ea)),
+                  //           color: Color(0xffffffff),
+                  //           borderRadius: BorderRadius.circular(20 * fem),
+                  //           boxShadow: [
+                  //             BoxShadow(
+                  //               color: Color(0x0a2c2738),
+                  //               offset: Offset(0 * fem, 4 * fem),
+                  //               blurRadius: 4 * fem,
+                  //             ),
+                  //           ],
+                  //         ),
+                  //         child: Text(
+                  //           'waniduperera@nsbm.ac.lk',
+                  //           style: SafeGoogleFont(
+                  //             'Poppins',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.5 * ffem / fem,
+                  //             color: Color(0xff000000),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // eventdatef8D (210:1714)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       0 * fem, 0 * fem, 1 * fem, 53.88 * fem),
+                  //   width: 361 * fem,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         // titlezAV (210:1716)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             0 * fem, 0 * fem, 0 * fem, 0.12 * fem),
+                  //         child: RichText(
+                  //           text: TextSpan(
+                  //             style: SafeGoogleFont(
+                  //               'Roboto',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.375 * ffem / fem,
+                  //               letterSpacing: -0.4079999924 * fem,
+                  //               color: Color(0xff2c2738),
+                  //             ),
+                  //             children: [
+                  //               TextSpan(
+                  //                 text: 'Mobile ',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xff2c2738),
+                  //                 ),
+                  //               ),
+                  //               TextSpan(
+                  //                 text: '*',
+                  //                 style: SafeGoogleFont(
+                  //                   'Poppins',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xffff0000),
+                  //                 ),
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlstextfieldnormal78d (I210:1715;84:2376)
+                  //         padding: EdgeInsets.fromLTRB(
+                  //             16 * fem, 16 * fem, 16 * fem, 12 * fem),
+                  //         width: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           border: Border.all(color: Color(0xffdbe2ea)),
+                  //           color: Color(0xffffffff),
+                  //           borderRadius: BorderRadius.circular(20 * fem),
+                  //           boxShadow: [
+                  //             BoxShadow(
+                  //               color: Color(0x0a2c2738),
+                  //               offset: Offset(0 * fem, 4 * fem),
+                  //               blurRadius: 4 * fem,
+                  //             ),
+                  //           ],
+                  //         ),
+                  //         child: Text(
+                  //           '+94 77 125 3456',
+                  //           style: SafeGoogleFont(
+                  //             'Poppins',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.5 * ffem / fem,
+                  //             color: Color(0xff000000),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                   Container(
                     // navbarAsb (205:1522)
                     margin: EdgeInsets.fromLTRB(
