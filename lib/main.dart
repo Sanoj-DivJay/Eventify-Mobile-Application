@@ -7,6 +7,7 @@ import 'package:myapp/page-1/dashboard.dart';
 import 'package:myapp/page-1/event_register.dart';
 import 'package:myapp/page-1/get_started.dart';
 import 'package:myapp/page-1/home.dart';
+import 'package:myapp/page-1/join_register.dart';
 import 'package:myapp/page-1/login.dart';
 import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: CreateEvent(),
+          child: JoinRegister(),
         ),
       ),
     );
