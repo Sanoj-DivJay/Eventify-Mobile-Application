@@ -40,11 +40,27 @@ class _CreateEventState extends State<CreateEvent> {
         Organizer.text.isEmpty ||
         timeInput.text.isEmpty ||
         priceInput.text.isEmpty) {
-      setState(() {
-        ErrorMessage = 'Please fill all the Required Fields!';
-      });
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Validation Error!'),
+            content: Text('Please fill all the Required Fields!'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('OK'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
     } else {
-      ErrorMessage = "";
+      setState(() {
+        ErrorMessage = "";
+      });
     }
   }
 
@@ -360,32 +376,6 @@ class _CreateEventState extends State<CreateEvent> {
                             child: Text('Submit'),
                           ),
                         ),
-                        /*Container(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                if (ErrorMessage.isNotEmpty)
-                                  Container(
-                                    margin: EdgeInsets.symmetric(
-                                        vertical: 10 * fem),
-                                    //padding: EdgeInsets.fromLTRB(15, 20, 25, 0),
-                                    decoration: BoxDecoration(
-                                      color: Colors.red,
-                                      borderRadius:
-                                          BorderRadius.circular(10 * fem),
-                                    ),
-                                    child: Text(
-                                      ErrorMessage,
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 10 * ffem,
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),*/
                       ],
                     ),
                   ),
