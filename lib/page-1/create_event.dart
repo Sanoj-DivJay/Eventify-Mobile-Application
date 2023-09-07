@@ -351,7 +351,10 @@ class _CreateEventState extends State<CreateEvent> {
                                 backgroundColor:
                                     Color.fromRGBO(149, 236, 121, 0.996),
                                 foregroundColor:
-                                    Color.fromRGBO(4, 108, 68, 0.906)),
+                                    Color.fromRGBO(4, 108, 68, 0.906),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                )),
                             onPressed: _pickimage,
                             child: Text('Pick an Image'),
                           ),
@@ -366,11 +369,13 @@ class _CreateEventState extends State<CreateEvent> {
                           padding: const EdgeInsets.fromLTRB(15, 760, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor:
-                                  Color.fromRGBO(149, 236, 121, 0.996),
-                              foregroundColor:
-                                  Color.fromRGBO(4, 108, 68, 0.906),
-                            ),
+                                backgroundColor:
+                                    Color.fromRGBO(149, 236, 121, 0.996),
+                                foregroundColor:
+                                    Color.fromRGBO(4, 108, 68, 0.906),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                )),
                             onPressed:
                                 _SubmitandValidation, // Call the validation function
                             child: Text('Submit'),
