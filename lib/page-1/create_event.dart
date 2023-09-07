@@ -90,8 +90,8 @@ class _CreateEventState extends State<CreateEvent> {
           children: [
             Container(
               // autogroupevv5YL9 (KEaG4KyT6n6NGXyDhgevv5)
-              margin: EdgeInsets.fromLTRB(
-                  8.5 * fem, 0 * fem, 129.5 * fem, 22 * fem),
+              margin:
+                  EdgeInsets.fromLTRB(8.5 * fem, 0 * fem, 129.5 * fem, 0 * fem),
               width: double.infinity,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -133,9 +133,9 @@ class _CreateEventState extends State<CreateEvent> {
                   Container(
                     // autogroup1vrhn81 (KEaGS9gRT1HDihdhaF1Vrh)
                     margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 0 * fem, 128.04 * fem),
+                        0 * fem, 0 * fem, 0 * fem, 55 * fem),
                     width: double.infinity,
-                    height: 900 * fem,
+                    height: 850 * fem,
                     child: Stack(
                       children: [
                         Positioned(
@@ -145,7 +145,7 @@ class _CreateEventState extends State<CreateEvent> {
                           child: Align(
                             child: SizedBox(
                               width: 372 * fem,
-                              height: 900 * fem,
+                              height: 850 * fem,
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(14 * fem),
