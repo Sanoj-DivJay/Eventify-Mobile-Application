@@ -693,399 +693,400 @@ Container(
                       height: 70 * fem,
                     ),
                   ),
-                  Container(
-                    // ticketpricegqw (210:1720)
-                    margin: EdgeInsets.fromLTRB(
-                        20 * fem, 0 * fem, 12 * fem, 128.04 * fem),
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // titleRHj (210:1721)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 0 * fem, 9.16 * fem),
-                          child: RichText(
-                            text: TextSpan(
-                              style: SafeGoogleFont(
-                                'Roboto',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.375 * ffem / fem,
-                                letterSpacing: -0.4079999924 * fem,
-                                color: Color(0xff2c2738),
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'Ticket Price',
-                                ),
-                                TextSpan(
-                                  text: '*',
-                                  style: SafeGoogleFont(
-                                    'Roboto',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.375 * ffem / fem,
-                                    letterSpacing: -0.4079999924 * fem,
-                                    color: Color(0xffff0000),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // controlsplaceradioDDb (I210:1722;84:2459)
-                          margin: EdgeInsets.fromLTRB(
-                              2 * fem, 0 * fem, 261 * fem, 14.23 * fem),
-                          width: double.infinity,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // controlsradiocheckedL3K (I210:1722;84:2460)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 10 * fem, 0 * fem),
-                                width: 24 * fem,
-                                height: 24 * fem,
-                                child: Image.asset(
-                                  'assets/page-1/images/controls-radio-checked-Dny.png',
-                                  width: 24 * fem,
-                                  height: 24 * fem,
-                                ),
-                              ),
-                              Container(
-                                // label3iR (I210:1722;84:2461;84:2467)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 1 * fem, 0 * fem, 0 * fem),
-                                child: Text(
-                                  'Free',
-                                  style: SafeGoogleFont(
-                                    'IBM Plex Sans',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w500,
-                                    height: 1.3 * ffem / fem,
-                                    color: Color(0xff756e85),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          // autogroupnr17Zgm (KEaFYgAC5R5M3ZT53ynr17)
-                          margin: EdgeInsets.fromLTRB(
-                              2 * fem, 0 * fem, 0 * fem, 0 * fem),
-                          width: double.infinity,
-                          height: 37.21 * fem,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // controlsplaceradio5f7 (I210:1723;84:2459)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 5.02 * fem, 24 * fem, 8.19 * fem),
-                                height: double.infinity,
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Container(
-                                      // controlsradioob7 (I210:1723;84:2460)
-                                      margin: EdgeInsets.fromLTRB(
-                                          0 * fem, 0 * fem, 10 * fem, 0 * fem),
-                                      width: 24 * fem,
-                                      height: 24 * fem,
-                                      child: Image.asset(
-                                        'assets/page-1/images/controls-radio.png',
-                                        width: 24 * fem,
-                                        height: 24 * fem,
-                                      ),
-                                    ),
-                                    Container(
-                                      // labelvvd (I210:1723;84:2461;84:2467)
-                                      margin: EdgeInsets.fromLTRB(
-                                          0 * fem, 1 * fem, 0 * fem, 0 * fem),
-                                      child: Text(
-                                        'Paid',
-                                        style: SafeGoogleFont(
-                                          'IBM Plex Sans',
-                                          fontSize: 16 * ffem,
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.3 * ffem / fem,
-                                          color: Color(0xff756e85),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                // controlstextfielddisablederd (210:1724)
-                                padding: EdgeInsets.fromLTRB(
-                                    13 * fem, 8 * fem, 13 * fem, 8.21 * fem),
-                                width: 237 * fem,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Color(0xffdbe2ea)),
-                                  color: Color(0xffeaf4f8),
-                                  borderRadius: BorderRadius.circular(6 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x0a2c2738),
-                                      offset: Offset(0 * fem, 4 * fem),
-                                      blurRadius: 4 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Text(
-                                  'Enter the amount',
-                                  style: SafeGoogleFont(
-                                    'IBM Plex Sans',
-                                    fontSize: 16 * ffem,
-                                    fontWeight: FontWeight.w400,
-                                    height: 1.3 * ffem / fem,
-                                    color: Color(0xff2b2738),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    // uploadmedia5ww (210:1693)
-                    margin: EdgeInsets.fromLTRB(
-                        16 * fem, 0 * fem, 17.38 * fem, 41.23 * fem),
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // title1ah (210:1702)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 0 * fem, 9.17 * fem),
-                          child: Text(
-                            'Upload Media',
-                            style: SafeGoogleFont(
-                              'Roboto',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.375 * ffem / fem,
-                              letterSpacing: -0.4079999924 * fem,
-                              color: Color(0xff2c2738),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // autogroupj1sfuRB (KEaEwrpsTbv12zKhAYJ1sf)
-                          width: double.infinity,
-                          height: 75.42 * fem,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // controlsbuttonlargebrightnorma (210:1694)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 20.61 * fem, 0 * fem),
-                                width: 154.01 * fem,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Color(0xffdbe2ea)),
-                                  color: Color(0xffffffff),
-                                  borderRadius: BorderRadius.circular(6 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x142c2738),
-                                      offset: Offset(0 * fem, 4 * fem),
-                                      blurRadius: 4 * fem,
-                                    ),
-                                    BoxShadow(
-                                      color: Color(0x002c2738),
-                                      offset: Offset(0 * fem, 2 * fem),
-                                      blurRadius: 2 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      // buttontH7 (210:1696)
-                                      left: 55.0026855469 * fem,
-                                      top: 48.2700195312 * fem,
-                                      child: Align(
-                                        child: SizedBox(
-                                          width: 44 * fem,
-                                          height: 21 * fem,
-                                          child: Text(
-                                            'Photo',
-                                            textAlign: TextAlign.center,
-                                            style: SafeGoogleFont(
-                                              'IBM Plex Sans',
-                                              fontSize: 16 * ffem,
-                                              fontWeight: FontWeight.w500,
-                                              height: 1.3 * ffem / fem,
-                                              color: Color(0xff7c9bbf),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      // iconcameranNV (210:1697)
-                                      left: 55.3120117188 * fem,
-                                      top: 9.0505371094 * fem,
-                                      child: Align(
-                                        child: SizedBox(
-                                          width: 43.38 * fem,
-                                          height: 40.23 * fem,
-                                          child: Image.asset(
-                                            'assets/page-1/images/icon-camera.png',
-                                            width: 43.38 * fem,
-                                            height: 40.23 * fem,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                // controlsbuttonlargebrightnorma (210:1698)
-                                width: 154.01 * fem,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Color(0xffdbe2ea)),
-                                  color: Color(0xffffffff),
-                                  borderRadius: BorderRadius.circular(6 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x142c2738),
-                                      offset: Offset(0 * fem, 4 * fem),
-                                      blurRadius: 4 * fem,
-                                    ),
-                                    BoxShadow(
-                                      color: Color(0x002c2738),
-                                      offset: Offset(0 * fem, 2 * fem),
-                                      blurRadius: 2 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      // buttonwub (210:1700)
-                                      left: 56.0029296875 * fem,
-                                      top: 48.2700195312 * fem,
-                                      child: Align(
-                                        child: SizedBox(
-                                          width: 42 * fem,
-                                          height: 21 * fem,
-                                          child: Text(
-                                            'Video',
-                                            textAlign: TextAlign.center,
-                                            style: SafeGoogleFont(
-                                              'IBM Plex Sans',
-                                              fontSize: 16 * ffem,
-                                              fontWeight: FontWeight.w500,
-                                              height: 1.3 * ffem / fem,
-                                              color: Color(0xff7c9bbf),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      // iconvideocamera3Sq (210:1701)
-                                      left: 54.2275390625 * fem,
-                                      top: 9.0505371094 * fem,
-                                      child: Align(
-                                        child: SizedBox(
-                                          width: 43.38 * fem,
-                                          height: 40.23 * fem,
-                                          child: Image.asset(
-                                            'assets/page-1/images/icon-video-camera.png',
-                                            width: 43.38 * fem,
-                                            height: 40.23 * fem,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    // resetandcreatewo7 (210:1690)
-                    margin: EdgeInsets.fromLTRB(
-                        16.39 * fem, 0 * fem, 17.61 * fem, 0 * fem),
-                    width: double.infinity,
-                    height: 56.31 * fem,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          // controlsbuttonlargeghosthovere (I210:1691;84:2324)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 20 * fem, 0 * fem),
-                          width: 154 * fem,
-                          height: double.infinity,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xff087fae)),
-                            borderRadius: BorderRadius.circular(6 * fem),
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Reset',
-                              textAlign: TextAlign.center,
-                              style: SafeGoogleFont(
-                                'IBM Plex Sans',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.3 * ffem / fem,
-                                color: Color(0xff087fae),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // controlsbuttonlargeaccentdisab (I210:1692;84:2328)
-                          width: 154 * fem,
-                          height: double.infinity,
-                          decoration: BoxDecoration(
-                            color: Color(0xffdbe2ea),
-                            borderRadius: BorderRadius.circular(6 * fem),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x142c2738),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 4 * fem,
-                              ),
-                            ],
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Create',
-                              textAlign: TextAlign.center,
-                              style: SafeGoogleFont(
-                                'IBM Plex Sans',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.3 * ffem / fem,
-                                color: Color(0xff2b2738),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+
+                  // Container(
+                  //   // ticketpricegqw (210:1720)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       20 * fem, 0 * fem, 12 * fem, 128.04 * fem),
+                  //   width: double.infinity,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         // titleRHj (210:1721)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             0 * fem, 0 * fem, 0 * fem, 9.16 * fem),
+                  //         child: RichText(
+                  //           text: TextSpan(
+                  //             style: SafeGoogleFont(
+                  //               'Roboto',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w400,
+                  //               height: 1.375 * ffem / fem,
+                  //               letterSpacing: -0.4079999924 * fem,
+                  //               color: Color(0xff2c2738),
+                  //             ),
+                  //             children: [
+                  //               TextSpan(
+                  //                 text: 'Ticket Price',
+                  //               ),
+                  //               TextSpan(
+                  //                 text: '*',
+                  //                 style: SafeGoogleFont(
+                  //                   'Roboto',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.375 * ffem / fem,
+                  //                   letterSpacing: -0.4079999924 * fem,
+                  //                   color: Color(0xffff0000),
+                  //                 ),
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlsplaceradioDDb (I210:1722;84:2459)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             2 * fem, 0 * fem, 261 * fem, 14.23 * fem),
+                  //         width: double.infinity,
+                  //         child: Row(
+                  //           crossAxisAlignment: CrossAxisAlignment.center,
+                  //           children: [
+                  //             Container(
+                  //               // controlsradiocheckedL3K (I210:1722;84:2460)
+                  //               margin: EdgeInsets.fromLTRB(
+                  //                   0 * fem, 0 * fem, 10 * fem, 0 * fem),
+                  //               width: 24 * fem,
+                  //               height: 24 * fem,
+                  //               child: Image.asset(
+                  //                 'assets/page-1/images/controls-radio-checked-Dny.png',
+                  //                 width: 24 * fem,
+                  //                 height: 24 * fem,
+                  //               ),
+                  //             ),
+                  //             Container(
+                  //               // label3iR (I210:1722;84:2461;84:2467)
+                  //               margin: EdgeInsets.fromLTRB(
+                  //                   0 * fem, 1 * fem, 0 * fem, 0 * fem),
+                  //               child: Text(
+                  //                 'Free',
+                  //                 style: SafeGoogleFont(
+                  //                   'IBM Plex Sans',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w500,
+                  //                   height: 1.3 * ffem / fem,
+                  //                   color: Color(0xff756e85),
+                  //                 ),
+                  //               ),
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // autogroupnr17Zgm (KEaFYgAC5R5M3ZT53ynr17)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             2 * fem, 0 * fem, 0 * fem, 0 * fem),
+                  //         width: double.infinity,
+                  //         height: 37.21 * fem,
+                  //         child: Row(
+                  //           crossAxisAlignment: CrossAxisAlignment.center,
+                  //           children: [
+                  //             Container(
+                  //               // controlsplaceradio5f7 (I210:1723;84:2459)
+                  //               margin: EdgeInsets.fromLTRB(
+                  //                   0 * fem, 5.02 * fem, 24 * fem, 8.19 * fem),
+                  //               height: double.infinity,
+                  //               child: Row(
+                  //                 crossAxisAlignment: CrossAxisAlignment.center,
+                  //                 children: [
+                  //                   Container(
+                  //                     // controlsradioob7 (I210:1723;84:2460)
+                  //                     margin: EdgeInsets.fromLTRB(
+                  //                         0 * fem, 0 * fem, 10 * fem, 0 * fem),
+                  //                     width: 24 * fem,
+                  //                     height: 24 * fem,
+                  //                     child: Image.asset(
+                  //                       'assets/page-1/images/controls-radio.png',
+                  //                       width: 24 * fem,
+                  //                       height: 24 * fem,
+                  //                     ),
+                  //                   ),
+                  //                   Container(
+                  //                     // labelvvd (I210:1723;84:2461;84:2467)
+                  //                     margin: EdgeInsets.fromLTRB(
+                  //                         0 * fem, 1 * fem, 0 * fem, 0 * fem),
+                  //                     child: Text(
+                  //                       'Paid',
+                  //                       style: SafeGoogleFont(
+                  //                         'IBM Plex Sans',
+                  //                         fontSize: 16 * ffem,
+                  //                         fontWeight: FontWeight.w500,
+                  //                         height: 1.3 * ffem / fem,
+                  //                         color: Color(0xff756e85),
+                  //                       ),
+                  //                     ),
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //             ),
+                  //             Container(
+                  //               // controlstextfielddisablederd (210:1724)
+                  //               padding: EdgeInsets.fromLTRB(
+                  //                   13 * fem, 8 * fem, 13 * fem, 8.21 * fem),
+                  //               width: 237 * fem,
+                  //               height: double.infinity,
+                  //               decoration: BoxDecoration(
+                  //                 border: Border.all(color: Color(0xffdbe2ea)),
+                  //                 color: Color(0xffeaf4f8),
+                  //                 borderRadius: BorderRadius.circular(6 * fem),
+                  //                 boxShadow: [
+                  //                   BoxShadow(
+                  //                     color: Color(0x0a2c2738),
+                  //                     offset: Offset(0 * fem, 4 * fem),
+                  //                     blurRadius: 4 * fem,
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //               child: Text(
+                  //                 'Enter the amount',
+                  //                 style: SafeGoogleFont(
+                  //                   'IBM Plex Sans',
+                  //                   fontSize: 16 * ffem,
+                  //                   fontWeight: FontWeight.w400,
+                  //                   height: 1.3 * ffem / fem,
+                  //                   color: Color(0xff2b2738),
+                  //                 ),
+                  //               ),
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // uploadmedia5ww (210:1693)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       16 * fem, 0 * fem, 17.38 * fem, 41.23 * fem),
+                  //   width: double.infinity,
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         // title1ah (210:1702)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             0 * fem, 0 * fem, 0 * fem, 9.17 * fem),
+                  //         child: Text(
+                  //           'Upload Media',
+                  //           style: SafeGoogleFont(
+                  //             'Roboto',
+                  //             fontSize: 16 * ffem,
+                  //             fontWeight: FontWeight.w400,
+                  //             height: 1.375 * ffem / fem,
+                  //             letterSpacing: -0.4079999924 * fem,
+                  //             color: Color(0xff2c2738),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // autogroupj1sfuRB (KEaEwrpsTbv12zKhAYJ1sf)
+                  //         width: double.infinity,
+                  //         height: 75.42 * fem,
+                  //         child: Row(
+                  //           crossAxisAlignment: CrossAxisAlignment.center,
+                  //           children: [
+                  //             Container(
+                  //               // controlsbuttonlargebrightnorma (210:1694)
+                  //               margin: EdgeInsets.fromLTRB(
+                  //                   0 * fem, 0 * fem, 20.61 * fem, 0 * fem),
+                  //               width: 154.01 * fem,
+                  //               height: double.infinity,
+                  //               decoration: BoxDecoration(
+                  //                 border: Border.all(color: Color(0xffdbe2ea)),
+                  //                 color: Color(0xffffffff),
+                  //                 borderRadius: BorderRadius.circular(6 * fem),
+                  //                 boxShadow: [
+                  //                   BoxShadow(
+                  //                     color: Color(0x142c2738),
+                  //                     offset: Offset(0 * fem, 4 * fem),
+                  //                     blurRadius: 4 * fem,
+                  //                   ),
+                  //                   BoxShadow(
+                  //                     color: Color(0x002c2738),
+                  //                     offset: Offset(0 * fem, 2 * fem),
+                  //                     blurRadius: 2 * fem,
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //               child: Stack(
+                  //                 children: [
+                  //                   Positioned(
+                  //                     // buttontH7 (210:1696)
+                  //                     left: 55.0026855469 * fem,
+                  //                     top: 48.2700195312 * fem,
+                  //                     child: Align(
+                  //                       child: SizedBox(
+                  //                         width: 44 * fem,
+                  //                         height: 21 * fem,
+                  //                         child: Text(
+                  //                           'Photo',
+                  //                           textAlign: TextAlign.center,
+                  //                           style: SafeGoogleFont(
+                  //                             'IBM Plex Sans',
+                  //                             fontSize: 16 * ffem,
+                  //                             fontWeight: FontWeight.w500,
+                  //                             height: 1.3 * ffem / fem,
+                  //                             color: Color(0xff7c9bbf),
+                  //                           ),
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   ),
+                  //                   Positioned(
+                  //                     // iconcameranNV (210:1697)
+                  //                     left: 55.3120117188 * fem,
+                  //                     top: 9.0505371094 * fem,
+                  //                     child: Align(
+                  //                       child: SizedBox(
+                  //                         width: 43.38 * fem,
+                  //                         height: 40.23 * fem,
+                  //                         child: Image.asset(
+                  //                           'assets/page-1/images/icon-camera.png',
+                  //                           width: 43.38 * fem,
+                  //                           height: 40.23 * fem,
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //             ),
+                  //             Container(
+                  //               // controlsbuttonlargebrightnorma (210:1698)
+                  //               width: 154.01 * fem,
+                  //               height: double.infinity,
+                  //               decoration: BoxDecoration(
+                  //                 border: Border.all(color: Color(0xffdbe2ea)),
+                  //                 color: Color(0xffffffff),
+                  //                 borderRadius: BorderRadius.circular(6 * fem),
+                  //                 boxShadow: [
+                  //                   BoxShadow(
+                  //                     color: Color(0x142c2738),
+                  //                     offset: Offset(0 * fem, 4 * fem),
+                  //                     blurRadius: 4 * fem,
+                  //                   ),
+                  //                   BoxShadow(
+                  //                     color: Color(0x002c2738),
+                  //                     offset: Offset(0 * fem, 2 * fem),
+                  //                     blurRadius: 2 * fem,
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //               child: Stack(
+                  //                 children: [
+                  //                   Positioned(
+                  //                     // buttonwub (210:1700)
+                  //                     left: 56.0029296875 * fem,
+                  //                     top: 48.2700195312 * fem,
+                  //                     child: Align(
+                  //                       child: SizedBox(
+                  //                         width: 42 * fem,
+                  //                         height: 21 * fem,
+                  //                         child: Text(
+                  //                           'Video',
+                  //                           textAlign: TextAlign.center,
+                  //                           style: SafeGoogleFont(
+                  //                             'IBM Plex Sans',
+                  //                             fontSize: 16 * ffem,
+                  //                             fontWeight: FontWeight.w500,
+                  //                             height: 1.3 * ffem / fem,
+                  //                             color: Color(0xff7c9bbf),
+                  //                           ),
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   ),
+                  //                   Positioned(
+                  //                     // iconvideocamera3Sq (210:1701)
+                  //                     left: 54.2275390625 * fem,
+                  //                     top: 9.0505371094 * fem,
+                  //                     child: Align(
+                  //                       child: SizedBox(
+                  //                         width: 43.38 * fem,
+                  //                         height: 40.23 * fem,
+                  //                         child: Image.asset(
+                  //                           'assets/page-1/images/icon-video-camera.png',
+                  //                           width: 43.38 * fem,
+                  //                           height: 40.23 * fem,
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // resetandcreatewo7 (210:1690)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       16.39 * fem, 0 * fem, 17.61 * fem, 0 * fem),
+                  //   width: double.infinity,
+                  //   height: 56.31 * fem,
+                  //   child: Row(
+                  //     crossAxisAlignment: CrossAxisAlignment.center,
+                  //     children: [
+                  //       Container(
+                  //         // controlsbuttonlargeghosthovere (I210:1691;84:2324)
+                  //         margin: EdgeInsets.fromLTRB(
+                  //             0 * fem, 0 * fem, 20 * fem, 0 * fem),
+                  //         width: 154 * fem,
+                  //         height: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           border: Border.all(color: Color(0xff087fae)),
+                  //           borderRadius: BorderRadius.circular(6 * fem),
+                  //         ),
+                  //         child: Center(
+                  //           child: Text(
+                  //             'Reset',
+                  //             textAlign: TextAlign.center,
+                  //             style: SafeGoogleFont(
+                  //               'IBM Plex Sans',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w500,
+                  //               height: 1.3 * ffem / fem,
+                  //               color: Color(0xff087fae),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       Container(
+                  //         // controlsbuttonlargeaccentdisab (I210:1692;84:2328)
+                  //         width: 154 * fem,
+                  //         height: double.infinity,
+                  //         decoration: BoxDecoration(
+                  //           color: Color(0xffdbe2ea),
+                  //           borderRadius: BorderRadius.circular(6 * fem),
+                  //           boxShadow: [
+                  //             BoxShadow(
+                  //               color: Color(0x142c2738),
+                  //               offset: Offset(0 * fem, 4 * fem),
+                  //               blurRadius: 4 * fem,
+                  //             ),
+                  //           ],
+                  //         ),
+                  //         child: Center(
+                  //           child: Text(
+                  //             'Create',
+                  //             textAlign: TextAlign.center,
+                  //             style: SafeGoogleFont(
+                  //               'IBM Plex Sans',
+                  //               fontSize: 16 * ffem,
+                  //               fontWeight: FontWeight.w500,
+                  //               height: 1.3 * ffem / fem,
+                  //               color: Color(0xff2b2738),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                 ],
               ),
             ),
