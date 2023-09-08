@@ -362,6 +362,22 @@ Container(
                 ),
               ),
             ),
+            Padding(
+                          padding: const EdgeInsets.fromLTRB(15, 760, 25, 0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    Color.fromRGBO(149, 236, 121, 0.996),
+                                foregroundColor:
+                                    Color.fromRGBO(4, 108, 68, 0.906),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                )),
+                            onPressed:
+                                _SubmitandValidation, // Call the validation function
+                            child: Text('Submit'),
+                          ),
+                        ),
 
 
 
@@ -1106,4 +1122,44 @@ Container(
       ),
     );
   }
+
+  void _SubmitandValidation() {
+    void _SubmitandValidation() {
+    var dateInput;
+    var EventName;
+    var Organizer;
+    var timeInput;
+    var priceInput;
+    if (dateInput.text.isEmpty ||
+        EventName.text.isEmpty ||
+        Organizer.text.isEmpty ||
+        timeInput.text.isEmpty ||
+        priceInput.text.isEmpty) {
+      var context;
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Validation Error!'),
+            content: Text('Please fill all the Required Fields!'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('OK'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    } else {
+      setState(() {
+        var ErrorMessage = "";
+      });
+    }
+  }
+  }
+  
+  void setState(Null Function() param0) {}
 }
