@@ -291,7 +291,7 @@ class JoinRegister extends StatelessWidget {
               padding:
                   EdgeInsets.fromLTRB(5 * fem, 9 * fem, 5 * fem, 42.23 * fem),
               width: double.infinity,
-              height: 1237 * fem,
+              height: 430 * fem,
               decoration: BoxDecoration(
                 color: Color(0xfff9f9f9),
                 borderRadius: BorderRadius.circular(14 * fem),
@@ -681,18 +681,18 @@ Container(
                   //     ],
                   //   ),
                   // ),
-                  Container(
-                    // navbarAsb (205:1522)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 0 * fem, 259 * fem),
-                    width: 362 * fem,
-                    height: 70 * fem,
-                    child: Image.asset(
-                      'assets/page-1/images/navbar-2R7.png',
-                      width: 362 * fem,
-                      height: 70 * fem,
-                    ),
-                  ),
+                  // Container(
+                  //   // navbarAsb (205:1522)
+                  //   margin: EdgeInsets.fromLTRB(
+                  //       0 * fem, 0 * fem, 0 * fem, 259 * fem),
+                  //   width: 362 * fem,
+                  //   height: 70 * fem,
+                  //   child: Image.asset(
+                  //     'assets/page-1/images/navbar-2R7.png',
+                  //     width: 362 * fem,
+                  //     height: 70 * fem,
+                  //   ),
+                  // ),
 
                   // Container(
                   //   // ticketpricegqw (210:1720)
@@ -1089,7 +1089,18 @@ Container(
                   // ),
                 ],
               ),
-            ),
+            ), Container(
+                    // navbarAsb (205:1522)
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 0 * fem, 259 * fem),
+                    width: 362 * fem,
+                    height: 70 * fem,
+                    child: Image.asset(
+                      'assets/page-1/images/navbar-2R7.png',
+                      width: 362 * fem,
+                      height: 70 * fem,
+                    ),
+                  ),
           ],
         ),
       ),
