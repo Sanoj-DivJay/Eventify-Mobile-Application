@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:myapp/utils.dart';
 import 'package:intl/intl.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class CreateEvent extends StatefulWidget {
   @override
@@ -393,3 +395,7 @@ class _CreateEventState extends State<CreateEvent> {
     );
   }
 }
+
+//Firebase Document
+
+

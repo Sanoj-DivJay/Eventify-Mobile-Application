@@ -35,6 +35,8 @@ dependencies:
   url_launcher: ^6.1.8
   flutter:
     sdk: flutter
+  cloud_firestore: ^4.9.1
+  firebase_core: ^2.15.1  
    
     
 
