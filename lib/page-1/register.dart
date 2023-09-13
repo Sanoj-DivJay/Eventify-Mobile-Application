@@ -187,6 +187,10 @@ class RegisterPage extends StatelessWidget {
                                     color: Color.fromARGB(255, 8, 9, 9),
                                   ),
                             ),
+                            onPressed: () {
+                                  Navigator.push(
+                                    context,
+
 
 
 
