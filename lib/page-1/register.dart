@@ -186,6 +186,7 @@ class RegisterPage extends StatelessWidget {
                                     //decoration: TextDecoration.underline,
                                     color: Color.fromARGB(255, 8, 9, 9),
                                   ),
+                            ),
 
 
 
