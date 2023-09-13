@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
 
 class GetStarted extends StatelessWidget {
@@ -148,7 +149,10 @@ class GetStarted extends StatelessWidget {
                     top: 250 * fem,
                     child: TextButton(
                       onPressed: () {
-                        //Put Your Code Here (Chirath)
+                         (Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RegisterPage()));)
                       },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.zero,
