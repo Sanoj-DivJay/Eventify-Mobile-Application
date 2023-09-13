@@ -183,6 +183,10 @@ class RegisterPage extends StatelessWidget {
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
                                     height: 1.2 * ffem / fem,
+                                    //decoration: TextDecoration.underline,
+                                    color: Color.fromARGB(255, 8, 9, 9),
+                                  ),
+
 
 
 
