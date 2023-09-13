@@ -149,18 +149,18 @@ class RegisterPage extends StatelessWidget {
                   //Put Your code Here (Chirath)
                   SingleChildScrollView(
                       child: Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 280, 20, 0),
-                      child: Container(
+                    padding: const EdgeInsets.fromLTRB(10, 280, 20, 0),
+                    child: Container(
                         //width: 200 * fem,
                         height: 20 * fem,
                         child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
+                            children: [
                               Container(
                                 // alreadyhaveanaccountMvy (18:477)
                                 margin: EdgeInsets.fromLTRB(
                                     0 * fem, 0 * fem, 5 * fem, 0 * fem),
-                         child: Text(
+                                child: Text(
                                   'Already have an Account?',
                                   style: SafeGoogleFont(
                                     'Poppins',
@@ -171,14 +171,14 @@ class RegisterPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                        Container(
+                              Container(
                                   child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
+                                style: ElevatedButton.styleFrom(
                                     primary:
                                         Color.fromARGB(255, 184, 220, 187)),
-                            child: Text(
+                                child: Text(
                                   'Login',
-                                   style: SafeGoogleFont(
+                                  style: SafeGoogleFont(
                                     'Poppins',
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
@@ -186,25 +186,17 @@ class RegisterPage extends StatelessWidget {
                                     //decoration: TextDecoration.underline,
                                     color: Color.fromARGB(255, 8, 9, 9),
                                   ),
-                            ),
-                            onPressed: () {
+                                ),
+                                onPressed: () {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                    builder: (context) => LoginPage()),
-                                  ),
+                                        builder: (context) => LoginPage()),
+                                  );
                                 },
-                                  ))
-                ])),
-              )),
-
-
-
-
-
-
-
-
+                              ))
+                            ])),
+                  )),
 
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
