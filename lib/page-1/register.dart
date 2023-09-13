@@ -160,6 +160,17 @@ class RegisterPage extends StatelessWidget {
                                 // alreadyhaveanaccountMvy (18:477)
                                 margin: EdgeInsets.fromLTRB(
                                     0 * fem, 0 * fem, 5 * fem, 0 * fem),
+                         child: Text(
+                                  'Already have an Account? ',
+                                  style: SafeGoogleFont(
+                                    'Poppins',
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1.5 * ffem / fem,
+                                    color: Color(0xff000000),
+                                  ),
+                                ),
+                              ),
    
 
 
