@@ -182,6 +182,8 @@ class RegisterPage extends StatelessWidget {
                                     'Poppins',
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
+                                    height: 1.2 * ffem / fem,
+
 
 
 
