@@ -180,6 +180,9 @@ class RegisterPage extends StatelessWidget {
                                   'Login',
                                    style: SafeGoogleFont(
                                     'Poppins',
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w500,
+
 
 
 
