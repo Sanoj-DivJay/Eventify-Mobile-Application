@@ -147,6 +147,11 @@ class RegisterPage extends StatelessWidget {
                     ),
                   ),
                   //Put Your code Here (Chirath)
+                  SingleChildScrollView(
+                      child: Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 280, 20, 0),
+                      
+
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
                     child: Positioned(
