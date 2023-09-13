@@ -192,12 +192,11 @@ class RegisterPage extends StatelessWidget {
                                     context,
                                     MaterialPageRoute(
                                     builder: (context) => LoginPage()),
-                                  );
+                                  ),
                                 },
                                   ))
                 ])),
-                  
-
+              )),
 
 
 
