@@ -171,7 +171,9 @@ class RegisterPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-   
+                        Container(
+                                  child: ElevatedButton(
+
 
 
                   Padding(
