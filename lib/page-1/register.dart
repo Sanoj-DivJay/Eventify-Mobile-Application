@@ -194,6 +194,9 @@ class RegisterPage extends StatelessWidget {
                                     builder: (context) => LoginPage()),
                                   );
                                 },
+                                  ))
+                ])),
+                  
 
 
 
