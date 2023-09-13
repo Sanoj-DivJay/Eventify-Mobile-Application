@@ -178,6 +178,9 @@ class RegisterPage extends StatelessWidget {
                                         Color.fromARGB(255, 184, 220, 187)),
                             child: Text(
                                   'Login',
+                                   style: SafeGoogleFont(
+                                    'Poppins',
+
 
 
 
