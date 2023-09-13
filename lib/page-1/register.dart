@@ -173,6 +173,10 @@ class RegisterPage extends StatelessWidget {
                               ),
                         Container(
                                   child: ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    primary:
+                                        Color.fromARGB(255, 184, 220, 187)),
+
 
 
 
