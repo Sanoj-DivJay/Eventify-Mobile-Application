@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/create_event.dart';
+import 'package:myapp/page-1/get_started.dart';
 import 'package:myapp/utils.dart';
 //import 'package:myapp/page-1/loading_screen.dart';
 // import 'package:myapp/page-1/home.dart';
@@ -13,7 +13,11 @@ import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/saved-upcoming-events.dart';
 // import 'package:myapp/page-1/navbar.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -27,15 +31,9 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SingleChildScrollView(
-          child: CreateEvent(),
+          child: GetStarted(),
         ),
       ),
     );
   }
-}
-
-void database() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(CreateEvent());
 }

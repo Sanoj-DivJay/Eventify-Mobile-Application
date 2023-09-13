@@ -1,14 +1,10 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:myapp/utils.dart';
-import 'package:intl/intl.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
+import 'package:myapp/utils.dart';
 
 class CreateEvent extends StatefulWidget {
   @override
@@ -21,9 +17,15 @@ class _CreateEventState extends State<CreateEvent> {
   TextEditingController priceInput = TextEditingController();
   TextEditingController EventName = TextEditingController();
   TextEditingController Organizer = TextEditingController();
+  TextEditingController Location = TextEditingController();
+  TextEditingController EventDetails = TextEditingController();
+
   String SelectedPriceOption = "Free";
   XFile? SelectedImage;
   String ErrorMessage = "";
+
+  final CollectionReference EventsCollection =
+      FirebaseFirestore.instance.collection('Events');
 
   Future<void> _pickimage() async {
     final ImagePicker _picker = ImagePicker();
@@ -41,6 +43,7 @@ class _CreateEventState extends State<CreateEvent> {
         EventName.text.isEmpty ||
         Organizer.text.isEmpty ||
         timeInput.text.isEmpty ||
+        Location.text.isEmpty ||
         priceInput.text.isEmpty) {
       showDialog(
         context: context,
@@ -60,8 +63,16 @@ class _CreateEventState extends State<CreateEvent> {
         },
       );
     } else {
-      setState(() {
-        ErrorMessage = "";
+      EventsCollection.add({
+        'Event_Name': EventName.text,
+        'Date': dateInput.text,
+        'Time': timeInput.text,
+        'Organized_By': Organizer.text,
+        'Location': Location.text,
+        'Event_Details': EventDetails.text,
+        'Payment': priceInput,
+      }).then((_) {}).catchError((error) {
+        print("Error:$error");
       });
     }
   }
@@ -259,11 +270,12 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(15, 340, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
+                              controller: Location,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Location',

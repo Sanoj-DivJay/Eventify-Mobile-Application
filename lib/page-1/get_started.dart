@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/loading_screen.dart';
 
 class GetStarted extends StatelessWidget {
   @override
@@ -151,7 +147,9 @@ class GetStarted extends StatelessWidget {
                     left: 50 * fem,
                     top: 250 * fem,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        //Put Your Code Here (Chirath)
+                      },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.zero,
                       ),
