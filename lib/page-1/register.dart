@@ -176,6 +176,8 @@ class RegisterPage extends StatelessWidget {
                                   style: ElevatedButton.styleFrom(
                                     primary:
                                         Color.fromARGB(255, 184, 220, 187)),
+                            child: Text(
+                                  'Login'
 
 
 
