@@ -63,7 +63,7 @@ class _CreateEventState extends State<CreateEvent> {
         },
       );
     } else {
-      EventsCollection.add({
+      /*EventsCollection.add({
         'Event_Name': EventName.text,
         'Date': dateInput.text,
         'Time': timeInput.text,
@@ -73,7 +73,7 @@ class _CreateEventState extends State<CreateEvent> {
         'Payment': priceInput,
       }).then((_) {}).catchError((error) {
         print("Error:$error");
-      });
+      });*/
     }
   }
 

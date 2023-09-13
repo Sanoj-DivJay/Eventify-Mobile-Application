@@ -1,9 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -149,73 +146,7 @@ class RegisterPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
-                    // group54S5 (18:476)
-                    left: 61.5 * fem,
-                    top: 312 * fem,
-                    child: Container(
-                      width: 207.58 * fem,
-                      height: 20 * fem,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            // alreadyhaveanaccountMvy (18:477)
-                            margin: EdgeInsets.fromLTRB(
-                                0 * fem, 0 * fem, 11.58 * fem, 0 * fem),
-                            child: Text(
-                              'Already have an Account? ',
-                              style: SafeGoogleFont(
-                                'Poppins',
-                                fontSize: 11,
-                                fontWeight: FontWeight.w400,
-                                height: 1.5 * ffem / fem,
-                                color: Color(0xff000000),
-                              ),
-                            ),
-                          ),
-                          /*Container(
-                            child: Text(
-                              'Log In ',
-                              style: SafeGoogleFont(
-                                'Poppins',
-                                fontSize: 12 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.5 * ffem / fem,
-                                color: Color(0xff000000),
-                              ),
-                            ),
-                          ),*/
-
-                          Text.rich(TextSpan(
-                              style: TextStyle(
-                                fontSize: 27,
-                              ),
-                              children: [
-                                TextSpan(
-                                    text: 'Log In',
-                                    style: SafeGoogleFont(
-                                      'Poppins',
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w500,
-                                      height: 1.5 * ffem / fem,
-                                      //decoration: TextDecoration.underline,
-                                      color: Color(0xff0084f1),
-                                      decorationColor: Color(0xff0084f1),
-                                    ),
-                                    recognizer: TapGestureRecognizer()
-                                      ..onTap = () async {
-                                        var url = "https://www.google.co.uk";
-                                        if (await launchUrlString(url)) {
-                                          await launchUrlString(url);
-                                        }
-                                      }),
-                                //more text paragraph, sentences here.
-                              ]))
-                        ],
-                      ),
-                    ),
-                  ),
+                  //Put Your code Here (Chirath)
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
                     child: Positioned(

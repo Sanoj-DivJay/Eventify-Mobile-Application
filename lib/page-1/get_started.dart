@@ -149,10 +149,10 @@ class GetStarted extends StatelessWidget {
                     top: 250 * fem,
                     child: TextButton(
                       onPressed: () {
-                         (Navigator.push(
+                        (Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => RegisterPage()));)
+                                builder: (context) => RegisterPage())));
                       },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.zero,
