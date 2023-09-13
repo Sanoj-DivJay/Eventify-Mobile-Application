@@ -155,6 +155,12 @@ class RegisterPage extends StatelessWidget {
                         height: 20 * fem,
                         child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                              Container(
+                                // alreadyhaveanaccountMvy (18:477)
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 5 * fem, 0 * fem),
+   
 
 
                   Padding(
