@@ -35,8 +35,9 @@ dependencies:
   url_launcher: ^6.1.8
   flutter:
     sdk: flutter
-  cloud_firestore: ^4.9.1
-  firebase_core: ^2.15.1  
+  
+   
+  
    
     
 
@@ -48,6 +49,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   intl: ^0.18.1
   image_picker: ^0.8.4
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.9.0
+  cloud_firestore: ^4.9.1
    
   #google_fonts: ^3.0.1
 

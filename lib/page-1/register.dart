@@ -1,10 +1,37 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/login.dart';
 import 'package:myapp/utils.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class RegisterPage extends StatelessWidget {
+class RegisterPage extends StatefulWidget {
+  @override
+  _RegisterPageState createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  TextEditingController NameInput = TextEditingController();
+  TextEditingController EmailInput = TextEditingController();
+  TextEditingController PhoneInput = TextEditingController();
+  TextEditingController PasswordInput = TextEditingController();
+
+  String Name = "";
+  String Email = "";
+  String Phone = "";
+  String Password = "";
+
+  void _HandleSignUp() async {
+    try {
+      UserCredential userCredential = await _auth
+          .createUserWithEmailAndPassword(email: Email, password: Password);
+      print("User Registered!:${userCredential.user!.email}");
+    } catch (e) {}
+  }
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
@@ -89,40 +116,88 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
-              child: const TextField(
+              padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
+              child: TextFormField(
+                controller: NameInput,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Name',
                 ),
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
-              child: const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Email',
-                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return ("Please Enter Your Name");
+                  }
+                  return null;
+                },
+                onChanged: (value) {
+                  setState(() {
+                    Name = value;
+                  });
+                },
               ),
             ),
             Container(
               padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
-              child: const TextField(
+              child: TextFormField(
+                controller: EmailInput,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Email',
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return ("Please Enter Your Email");
+                  }
+                  return null;
+                },
+                onChanged: (value) {
+                  setState(() {
+                    Email = value;
+                  });
+                },
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
+              child: TextFormField(
+                controller: PhoneInput,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Phone',
                 ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return ("Please Enter Your Phone");
+                  }
+                  return null;
+                },
+                onChanged: (value) {
+                  setState(() {
+                    Phone = value;
+                  });
+                },
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
-              child: const TextField(
+              padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+              child: TextFormField(
+                controller: PasswordInput,
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
                 ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return ("Please Enter Your Password");
+                  }
+                  return null;
+                },
+                onChanged: (value) {
+                  setState(() {
+                    Password = value;
+                  });
+                },
               ),
             ),
             Container(
@@ -150,7 +225,7 @@ class RegisterPage extends StatelessWidget {
                   //Put Your code Here (Chirath)
                   SingleChildScrollView(
                       child: Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 280, 20, 0),
+                    padding: EdgeInsets.fromLTRB(58, 260, 20, 0),
                     child: Container(
                         //width: 200 * fem,
                         height: 20 * fem,
@@ -160,7 +235,7 @@ class RegisterPage extends StatelessWidget {
                               Container(
                                 // alreadyhaveanaccountMvy (18:477)
                                 margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 5 * fem, 0 * fem),
+                                    0 * fem, 0 * fem, 10 * fem, 0 * fem),
                                 child: Text(
                                   'Already have an Account?',
                                   style: SafeGoogleFont(
@@ -210,7 +285,11 @@ class RegisterPage extends StatelessWidget {
                           width: 304 * fem,
                           height: 53 * fem,
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              if (_formKey.currentState!.validate()) {
+                                _HandleSignUp();
+                              }
+                            },
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.zero,
                             ),
