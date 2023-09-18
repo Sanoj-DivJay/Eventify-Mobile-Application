@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "222099773421",
-    "project_id": "eventify-mobile-app",
-    "storage_bucket": "eventify-mobile-app.appspot.com"
+    "project_number": "43688104833",
+    "project_id": "eventify-mobile-application",
+    "storage_bucket": "eventify-mobile-application.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:222099773421:android:81a6b772c186067cb9f9e4",
+        "mobilesdk_app_id": "1:43688104833:android:2b61f89fa048db27990e80",
         "android_client_info": {
           "package_name": "com.example.test"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAbI9uviPIL2tO4wHYYWyug-bRVhibvjsY"
+          "current_key": "AIzaSyACq8prZe8IA-7OkNpsh8MJKaKA0lbBIag"
         }
       ],
       "services": {

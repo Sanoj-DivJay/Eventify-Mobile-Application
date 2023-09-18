@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_places/flutter_google_places.dart';
+import 'package:google_maps_webservice/places.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:myapp/utils.dart';
@@ -38,6 +40,22 @@ class _CreateEventState extends State<CreateEvent> {
     }
   }
 
+  Future<void> _pickedlocation() async {
+    Prediction? prediction = await PlacesAutocomplete.show(
+      context: context,
+      apiKey: 'AIzaSyDWqG-loYivoDEGXmNoPHqnsK3-09Kz9Z8',
+      mode: Mode.overlay,
+      language: 'en',
+      components: [Component(Component.country, 'US')],
+    );
+
+    if (prediction != null) {
+      setState(() {
+        Location.text = prediction.description!;
+      });
+    }
+  }
+
   void _SubmitandValidation() {
     if (dateInput.text.isEmpty ||
         EventName.text.isEmpty ||
@@ -63,7 +81,7 @@ class _CreateEventState extends State<CreateEvent> {
         },
       );
     } else {
-      /*EventsCollection.add({
+      EventsCollection.add({
         'Event_Name': EventName.text,
         'Date': dateInput.text,
         'Time': timeInput.text,
@@ -73,7 +91,7 @@ class _CreateEventState extends State<CreateEvent> {
         'Payment': priceInput,
       }).then((_) {}).catchError((error) {
         print("Error:$error");
-      });*/
+      });
     }
   }
 
@@ -279,6 +297,10 @@ class _CreateEventState extends State<CreateEvent> {
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Location',
+                                suffixIcon: IconButton(
+                                  icon: Icon(Icons.place),
+                                  onPressed: _pickedlocation,
+                                ),
                               ),
                             ),
                           ),

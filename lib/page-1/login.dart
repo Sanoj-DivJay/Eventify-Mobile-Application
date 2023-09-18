@@ -1,11 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -14,6 +10,28 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   bool? check = false;
+
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  TextEditingController EmailInput = TextEditingController();
+
+  TextEditingController PasswordInput = TextEditingController();
+
+  String Email = "";
+
+  String Password = "";
+
+  void _HandleLogin() async {
+    try {
+      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+          email: Email, password: Password);
+      print("User Logged In!:${userCredential.user!.email}");
+    } catch (e) {
+      print("Error During Login!:$e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
@@ -113,30 +131,54 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 10, 15, 0),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Enter Email or Phone',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 80, 15, 0),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Password',
-                        ),
-                      ),
-                    ),
+                  Container(
+                    child: Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
+                        child: Form(
+                          key: _formKey,
+                          child: Column(
+                            children: [
+                              TextFormField(
+                                controller: EmailInput,
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(),
+                                    labelText: 'Email'),
+                                validator: (value) {
+                                  if (value == null || value.isEmpty) {
+                                    return ("Please Enter Your Email");
+                                  }
+                                  return null;
+                                },
+                                onChanged: (value) {
+                                  setState(() {
+                                    Email = value;
+                                  });
+                                },
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                                child: TextFormField(
+                                  controller: PasswordInput,
+                                  obscureText: true,
+                                  decoration: InputDecoration(
+                                      border: OutlineInputBorder(),
+                                      labelText: 'Password'),
+                                  validator: (value) {
+                                    if (value == null || value.isEmpty) {
+                                      return ("Please Enter Your Password");
+                                    }
+                                    return null;
+                                  },
+                                  onChanged: (value) {
+                                    setState(() {
+                                      Password = value;
+                                    });
+                                  },
+                                ),
+                              )
+                            ],
+                          ),
+                        )),
                   ),
                   Positioned(
                     // forgotpasswordfnR (18:1671)
@@ -305,59 +347,28 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  Positioned(
-                    // rectangle2brR (27:1857)
-                    left: 0 * fem,
-                    top: 400 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 304 * fem,
-                        height: 53 * fem,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(90 * fem),
-                            gradient: LinearGradient(
-                              begin: Alignment(-1, -0.54),
-                              end: Alignment(0.76, 0.679),
-                              colors: <Color>[
-                                Color(0xff1e970a),
-                                Color(0xff23c7d2)
-                              ],
-                              stops: <double>[0, 1],
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x3f000000),
-                                offset: Offset(0 * fem, 4 * fem),
-                                blurRadius: 10.5 * fem,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    // group7CbK (18:1676)
-                    left: 125 * fem,
-                    top: 412 * fem,
-                    child: TextButton(
-                      onPressed: () {},
-                      style: TextButton.styleFrom(
-                        padding: EdgeInsets.zero,
-                      ),
-                      child: Container(
-                        width: 70.07 * fem,
-                        height: 47 * fem,
-                        child: Text(
-                          'Log In',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w700,
-                            height: 1.5 * ffem / fem,
-                            color: Color(0xffffffff),
-                          ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(110, 150, 10, 0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
+                          foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          )),
+                      onPressed: () {
+                        if (_formKey.currentState!.validate()) {
+                          _HandleLogin();
+                        }
+                      },
+                      child: Text(
+                        'Sign Up',
+                        style: SafeGoogleFont(
+                          'Poppins',
+                          fontSize: 20 * ffem,
+                          fontWeight: FontWeight.w700,
+                          height: 1.5 * ffem / fem,
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),

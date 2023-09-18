@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/login.dart';
 import 'package:myapp/utils.dart';
+
+import 'firebase_options.dart';
 //import 'package:myapp/page-1/loading_screen.dart';
 // import 'package:myapp/page-1/home.dart';
 // import 'package:myapp/page-1/calendar.dart';
@@ -15,7 +17,10 @@ import 'package:myapp/utils.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 

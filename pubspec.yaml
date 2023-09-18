@@ -52,6 +52,13 @@ dependencies:
   firebase_core: ^2.15.1
   firebase_auth: ^4.9.0
   cloud_firestore: ^4.9.1
+  flutter_google_places: ^0.3.0
+  google_api_headers: ^1.6.0
+  google_maps_webservice: ^0.0.20-nullsafety.5
+  geocoding: ^2.1.0
+  google_maps_flutter: ^2.5.0
+  location: ^5.0.3
+  geolocator: ^10.0.1
    
   #google_fonts: ^3.0.1
 
