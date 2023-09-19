@@ -6,6 +6,8 @@ import 'package:myapp/utils.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
@@ -67,7 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     top: 159 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 116 * fem,
+                        width: 230 * fem,
                         height: 45 * fem,
                         child: Text(
                           'Sign Up',
@@ -76,7 +78,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             fontSize: 30 * ffem,
                             fontWeight: FontWeight.w700,
                             height: 1.5 * ffem / fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -111,20 +113,20 @@ class _RegisterPageState extends State<RegisterPage> {
                   fontSize: 18 * ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.5 * ffem / fem,
-                  color: Color(0xff000000),
+                  color: const Color(0xff000000),
                 ),
               ),
             ),
             Container(
               child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 32, 20),
                   child: Form(
                     key: _formKey,
                     child: Column(
                       children: [
                         TextFormField(
                           controller: EmailInput,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               border: OutlineInputBorder(), labelText: 'Email'),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
@@ -143,7 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           child: TextFormField(
                             controller: PasswordInput,
                             obscureText: true,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Password'),
                             validator: (value) {
@@ -207,7 +209,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
             ),*/
 
-            Container(
+            SizedBox(
               // autogroupycjtRtu (KEZrZvHEQpyNFZ24LcYcjT)
               width: double.infinity,
               height: 461.11 * fem,
@@ -232,8 +234,8 @@ class _RegisterPageState extends State<RegisterPage> {
                   //Put Your code Here (Chirath)
                   SingleChildScrollView(
                       child: Padding(
-                    padding: EdgeInsets.fromLTRB(58, 260, 20, 0),
-                    child: Container(
+                    padding: const EdgeInsets.fromLTRB(58, 260, 20, 0),
+                    child: SizedBox(
                         //width: 200 * fem,
                         height: 20 * fem,
                         child: Row(
@@ -250,59 +252,70 @@ class _RegisterPageState extends State<RegisterPage> {
                                     fontSize: 11,
                                     fontWeight: FontWeight.w400,
                                     height: 1.5 * ffem / fem,
-                                    color: Color(0xff000000),
+                                    color: const Color(0xff000000),
                                   ),
                                 ),
                               ),
                               Container(
-                                  child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    primary:
-                                        Color.fromARGB(255, 184, 220, 187)),
-                                child: Text(
-                                  'Login',
-                                  style: SafeGoogleFont(
-                                    'Poppins',
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                    height: 1.2 * ffem / fem,
-                                    //decoration: TextDecoration.underline,
-                                    color: Color.fromARGB(255, 8, 9, 9),
+                                  child: SizedBox(
+                                width: 70 * fem,
+                                height: 30 * fem,
+                                child: ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor: const Color.fromARGB(
+                                          255, 184, 220, 187)),
+                                  child: Text(
+                                    'Login',
+                                    style: SafeGoogleFont(
+                                      'Poppins',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.2 * ffem / fem,
+                                      //decoration: TextDecoration.underline,
+                                      color: const Color.fromARGB(255, 8, 9, 9),
+                                    ),
                                   ),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const LoginPage()),
+                                    );
+                                  },
                                 ),
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => LoginPage()),
-                                  );
-                                },
                               ))
                             ])),
                   )),
 
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(110, 150, 10, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
-                          foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20.0),
-                          )),
-                      onPressed: () {
-                        if (_formKey.currentState!.validate()) {
-                          _HandleSignUp();
-                        }
-                      },
-                      child: Text(
-                        'Sign Up',
-                        style: SafeGoogleFont(
-                          'Poppins',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w700,
-                          height: 1.5 * ffem / fem,
-                          color: Color(0xffffffff),
+                    padding: const EdgeInsets.fromLTRB(75, 150, 0, 0),
+                    child: SizedBox(
+                      width: 200,
+                      height: 50,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromRGBO(149, 236, 121, 0.996),
+                            foregroundColor:
+                                const Color.fromRGBO(4, 108, 68, 0.906),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            )),
+                        onPressed: () {
+                          if (_formKey.currentState!.validate()) {
+                            _HandleSignUp();
+                          }
+                        },
+                        child: Text(
+                          'Sign Up',
+                          style: SafeGoogleFont(
+                            'Poppins',
+                            fontSize: 20 * ffem,
+                            fontWeight: FontWeight.w700,
+                            height: 1.5 * ffem / fem,
+                            color: const Color(0xffffffff),
+                          ),
                         ),
                       ),
                     ),
@@ -372,10 +385,10 @@ class _RegisterPageState extends State<RegisterPage> {
                               fontSize: 12 * ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.5 * ffem / fem,
-                              color: Color(0xff000000),
+                              color: const Color(0xff000000),
                             ),
                             children: [
-                              TextSpan(
+                              const TextSpan(
                                 text: 'By signing up you agree to our',
                               ),
                               TextSpan(
@@ -385,7 +398,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   fontSize: 12 * ffem,
                                   fontWeight: FontWeight.w500,
                                   height: 1.5 * ffem / fem,
-                                  color: Color(0xfff79515),
+                                  color: const Color(0xfff79515),
                                 ),
                               ),
                               TextSpan(
@@ -396,8 +409,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                     fontWeight: FontWeight.w500,
                                     height: 1.5 * ffem / fem,
                                     decoration: TextDecoration.underline,
-                                    color: Color(0xff5bb15a),
-                                    decorationColor: Color(0xff5bb15a),
+                                    color: const Color(0xff5bb15a),
+                                    decorationColor: const Color(0xff5bb15a),
                                   ),
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () async {
@@ -413,10 +426,10 @@ class _RegisterPageState extends State<RegisterPage> {
                                   fontSize: 12 * ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.5 * ffem / fem,
-                                  color: Color(0xff5bb15a),
+                                  color: const Color(0xff5bb15a),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'and',
                               ),
                               TextSpan(
@@ -426,7 +439,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   fontSize: 12 * ffem,
                                   fontWeight: FontWeight.w500,
                                   height: 1.5 * ffem / fem,
-                                  color: Color(0xfff79515),
+                                  color: const Color(0xfff79515),
                                 ),
                               ),
                               TextSpan(
@@ -437,8 +450,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                     fontWeight: FontWeight.w500,
                                     height: 1.5 * ffem / fem,
                                     decoration: TextDecoration.underline,
-                                    color: Color(0xff0084f1),
-                                    decorationColor: Color(0xff0084f1),
+                                    color: const Color(0xff0084f1),
+                                    decorationColor: const Color(0xff0084f1),
                                   ),
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () async {

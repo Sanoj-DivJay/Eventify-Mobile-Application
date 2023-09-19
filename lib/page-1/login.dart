@@ -4,6 +4,8 @@ import 'package:myapp/page-1/register.dart';
 import 'package:myapp/utils.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -37,13 +39,13 @@ class _LoginPageState extends State<LoginPage> {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // loginwcD (18:226)
         padding: EdgeInsets.fromLTRB(45 * fem, 21 * fem, 0 * fem, 0 * fem),
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -71,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                             fontSize: 30 * ffem,
                             fontWeight: FontWeight.w700,
                             height: 1.5 * ffem / fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -105,11 +107,11 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: 18 * ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.5 * ffem / fem,
-                  color: Color(0xff000000),
+                  color: const Color(0xff000000),
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               // autogroupzsedoAZ (KEZsWZNrZrZBUP85wYzSEd)
               width: 355.45 * fem,
               height: 542.11 * fem,
@@ -133,14 +135,14 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   Container(
                     child: Padding(
-                        padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
                         child: Form(
                           key: _formKey,
                           child: Column(
                             children: [
                               TextFormField(
                                 controller: EmailInput,
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                     border: OutlineInputBorder(),
                                     labelText: 'Email'),
                                 validator: (value) {
@@ -160,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: TextFormField(
                                   controller: PasswordInput,
                                   obscureText: true,
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                       border: OutlineInputBorder(),
                                       labelText: 'Password'),
                                   validator: (value) {
@@ -195,7 +197,7 @@ class _LoginPageState extends State<LoginPage> {
                           fontSize: 11 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.5 * ffem / fem,
-                          color: Color(0xff5bb15a),
+                          color: const Color(0xff5bb15a),
                         ),
                       ),
                     ),
@@ -238,7 +240,7 @@ class _LoginPageState extends State<LoginPage> {
                                 fontSize: 11 * ffem,
                                 fontWeight: FontWeight.w500,
                                 height: 1.5 * ffem / fem,
-                                color: Color(0xff949090),
+                                color: const Color(0xff949090),
                               ),
                             ),
                           ),
@@ -251,7 +253,7 @@ class _LoginPageState extends State<LoginPage> {
                     left: 36 * fem,
                     top: 470 * fem,
                     right: 10,
-                    child: Container(
+                    child: SizedBox(
                       width: 225 * fem,
                       height: 18 * fem,
                       child: Row(
@@ -268,7 +270,7 @@ class _LoginPageState extends State<LoginPage> {
                                 fontSize: 12 * ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.5 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: const Color(0xff000000),
                               ),
                             ),
                           ),
@@ -276,7 +278,8 @@ class _LoginPageState extends State<LoginPage> {
                           Container(
                               child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: Color.fromARGB(255, 184, 220, 187)),
+                                backgroundColor:
+                                    Color.fromARGB(255, 184, 220, 187)),
                             child: Text(
                               'Sign In',
                               style: SafeGoogleFont(
@@ -286,14 +289,14 @@ class _LoginPageState extends State<LoginPage> {
                                 fontWeight: FontWeight.w500,
                                 height: 1.2 * ffem / fem,
                                 //decoration: TextDecoration.underline,
-                                color: Color.fromARGB(255, 8, 9, 9),
+                                color: const Color.fromARGB(255, 8, 9, 9),
                               ),
                             ),
                             onPressed: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => RegisterPage()),
+                                    builder: (context) => const RegisterPage()),
                               );
                             },
                           )),
@@ -351,8 +354,10 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.fromLTRB(110, 150, 10, 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
-                          foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
+                          backgroundColor:
+                              const Color.fromRGBO(149, 236, 121, 0.996),
+                          foregroundColor:
+                              const Color.fromRGBO(4, 108, 68, 0.906),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                           )),
@@ -368,7 +373,7 @@ class _LoginPageState extends State<LoginPage> {
                           fontSize: 20 * ffem,
                           fontWeight: FontWeight.w700,
                           height: 1.5 * ffem / fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
