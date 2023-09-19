@@ -1,40 +1,25 @@
 //import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
+import 'dart:ui';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/get_started.dart';
+import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/get_started.dart';
 
-class LoadingScreen extends StatefulWidget {
-  const LoadingScreen({Key? key}) : super(key: key);
-
-  @override
-  State<LoadingScreen> createState() => _SplashState();
-}
-
-class _SplashState extends State<LoadingScreen> {
-  @override
-  void initState() {
-    super.initState();
-    _navigatetohome();
-  }
-
-  _navigatetohome() async {
-    await Future.delayed(const Duration(milliseconds: 2800), () {});
-    // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const GetStarted()));
-  }
-
+class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    //double ffem = fem * 0.97;
-    return SizedBox(
+    double ffem = fem * 0.97;
+    return Container(
       width: double.infinity,
       child: Container(
         // loadingscreen57F (128:1105)
         width: double.infinity,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -46,7 +31,7 @@ class _SplashState extends State<LoadingScreen> {
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 122.82 * fem),
               width: 802.37 * fem,
               height: 640.37 * fem,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   //image: DecorationImage (
                   //fit: BoxFit.cover,
                   //image: AssetImage (
@@ -1222,7 +1207,7 @@ class _SplashState extends State<LoadingScreen> {
                     child: Align(
                       child: SizedBox(
                         width: 347 * fem,
-                        height: 375 * fem,
+                        height: 378 * fem,
                         child: Image.asset(
                           'assets/page-1/images/.png',
                           fit: BoxFit.cover,

@@ -346,8 +346,8 @@ class JoinRegister extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(15, 760, 25, 0),
+                 Padding(
+                    padding: const EdgeInsets.fromLTRB(110, 150, 10, 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
@@ -355,9 +355,19 @@ class JoinRegister extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                           )),
-                      onPressed:
-                          _SubmitandValidation, // Call the validation function
-                      child: Text('Submit'),
+                      onPressed: () {
+                        
+                      },
+                      child: Text(
+                        'Sign Up',
+                        style: SafeGoogleFont(
+                          'Poppins',
+                          fontSize: 20 * ffem,
+                          fontWeight: FontWeight.w700,
+                          height: 1.5 * ffem / fem,
+                          color: Color(0xffffffff),
+                        ),
+                      ),
                     ),
                   ),
                 ],
