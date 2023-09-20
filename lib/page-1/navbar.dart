@@ -1,47 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/event_details.dart';
 
-class Scene extends StatelessWidget {
+class Navbar extends StatelessWidget {
+  int index = 0;
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 409;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
-    return Container(
-      width: double.infinity,
-      child: Container(
-        // navbarz8H (205:1210)
-        padding: EdgeInsets.fromLTRB(16*fem, 16*fem, 16*fem, 24*fem),
-        width: double.infinity,
-        decoration: BoxDecoration (
-          border: Border.all(color: Color(0xff9747ff)),
-          borderRadius: BorderRadius.circular(5*fem),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        bottomNavigationBar: NavigationBarTheme(
+          data: NavigationBarThemeData(
+            indicatorColor: Color.fromARGB(255, 130, 234, 180),
+          ),
+          child: NavigationBar(
+            height: 60,
+            backgroundColor: Color.fromARGB(255, 202, 197, 197),
+            selectedIndex: index,
+            onDestinationSelected: (index) {
+              // Handle the selection here if needed
+            },
+            destinations: const [
+              NavigationDestination(icon: Icon(Icons.home), label: ""),
+              NavigationDestination(
+                  icon: Icon(Icons.calendar_month), label: ""),
+              NavigationDestination(icon: Icon(Icons.bookmark), label: ""),
+              NavigationDestination(icon: Icon(Icons.settings), label: "")
+            ],
+          ),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              // property1defaulttzM (205:1209)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-              width: double.infinity,
-              height: 106*fem,
-            ),
-            Container(
-              // property1variant2EHX (205:1211)
-              width: 377*fem,
-              height: 106*fem,
-              child: Image.asset(
-                'assets/page-1/images/property-1variant2.png',
-                width: 377*fem,
-                height: 106*fem,
-              ),
-            ),
-          ],
+        appBar: AppBar(),
+        body: SafeArea(
+          child: EventDetails(), // Your existing EventDetails widget
         ),
       ),
-          );
+    );
   }
 }

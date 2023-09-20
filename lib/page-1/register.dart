@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -20,15 +21,34 @@ class _RegisterPageState extends State<RegisterPage> {
 
   TextEditingController PasswordInput = TextEditingController();
 
+  TextEditingController NameInput = TextEditingController();
+
+  TextEditingController PhoneInput = TextEditingController();
+
   String Email = "";
 
   String Password = "";
+
+  String Name = "";
+
+  String Phone = "";
 
   void _HandleSignUp() async {
     try {
       UserCredential userCredential = await _auth
           .createUserWithEmailAndPassword(email: Email, password: Password);
+
       print("User Registered!:${userCredential.user!.email}");
+
+      final db = FirebaseFirestore.instance;
+      final userRef = db.collection('users').doc(userCredential.user!.uid);
+      await userRef.set({
+        'email': Email,
+        'name': Name,
+        'phone': Phone,
+      });
+
+      //Add user details
     } catch (e) {
       print("Error During Registeration!:$e");
     }
@@ -125,20 +145,60 @@ class _RegisterPageState extends State<RegisterPage> {
                     child: Column(
                       children: [
                         TextFormField(
-                          controller: EmailInput,
+                          controller: NameInput,
                           decoration: const InputDecoration(
-                              border: OutlineInputBorder(), labelText: 'Email'),
+                              border: OutlineInputBorder(), labelText: 'Name'),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return ("Please Enter Your Email");
+                              return ("Please Enter Your Name");
                             }
                             return null;
                           },
                           onChanged: (value) {
                             setState(() {
-                              Email = value;
+                              Name = value;
                             });
                           },
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                          child: TextFormField(
+                            controller: EmailInput,
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Email'),
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return ("Please Enter Your Email");
+                              }
+                              return null;
+                            },
+                            onChanged: (value) {
+                              setState(() {
+                                Email = value;
+                              });
+                            },
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                          child: TextFormField(
+                            controller: PhoneInput,
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Phone'),
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return ("Please Enter Your Phone");
+                              }
+                              return null;
+                            },
+                            onChanged: (value) {
+                              setState(() {
+                                Phone = value;
+                              });
+                            },
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
@@ -165,50 +225,6 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   )),
             ),
-            /*Container(
-              padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
-              child: TextFormField(
-                controller: NameInput,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Name',
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return ("Please Enter Your Name");
-                  }
-                  return null;
-                },
-                onChanged: (value) {
-                  setState(() {
-                    Name = value;
-                  });
-                },
-              ),
-            ),*/
-
-            /* Container(
-              padding: EdgeInsets.fromLTRB(0, 0, 10, 20),
-              child: TextFormField(
-                controller: PhoneInput,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Phone',
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return ("Please Enter Your Phone");
-                  }
-                  return null;
-                },
-                onChanged: (value) {
-                  setState(() {
-                    Phone = value;
-                  });
-                },
-              ),
-            ),*/
-
             SizedBox(
               // autogroupycjtRtu (KEZrZvHEQpyNFZ24LcYcjT)
               width: double.infinity,
@@ -320,55 +336,6 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                   ),
-
-                  /*style: TextButton.styleFrom(
-                              padding: EdgeInsets.zero,
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(90 * fem),
-                                gradient: LinearGradient(
-                                  begin: Alignment(-1, -0.54),
-                                  end: Alignment(0.76, 0.679),
-                                  colors: <Color>[
-                                    Color(0xff1e970a),
-                                    Color(0xff23c7d2)
-                                  ],
-                                  stops: <double>[0, 1],
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Color.fromARGB(62, 201, 185, 185),
-                                    offset: Offset(0 * fem, 4 * fem),
-                                    blurRadius: 10.5 * fem,
-                                  ),
-                                ],
-                              ),*/
-
-                  /*Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 15, 50),
-                    child: Positioned(
-                      // signupn2d (18:471)
-                      left: 130.5 * fem,
-                      top: 251 * fem,
-                      child: Align(
-                        child: SizedBox(
-                          width: 78 * fem,
-                          height: 30 * fem,
-                          child: Text(
-                            'Sign Up',
-                            style: SafeGoogleFont(
-                              'Poppins',
-                              fontSize: 20 * ffem,
-                              fontWeight: FontWeight.w700,
-                              height: 1.5 * ffem / fem,
-                              color: Color(0xffffffff),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),*/
                   Positioned(
                     // bysigningupyouagreetoourtermsc (18:489)
                     left: 0 * fem,

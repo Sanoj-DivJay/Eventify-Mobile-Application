@@ -1,3 +1,5 @@
+//import 'dart:js';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/register.dart';
@@ -144,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                                 controller: EmailInput,
                                 decoration: const InputDecoration(
                                     border: OutlineInputBorder(),
-                                    labelText: 'Email'),
+                                    labelText: 'Enter Your Email'),
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
                                     return ("Please Enter Your Email");
@@ -364,10 +366,14 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
                           _HandleLogin();
+                          /*Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CreateEvent()));*/
                         }
                       },
                       child: Text(
-                        'Sign Up',
+                        'Login',
                         style: SafeGoogleFont(
                           'Poppins',
                           fontSize: 20 * ffem,

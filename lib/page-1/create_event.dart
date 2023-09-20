@@ -27,7 +27,7 @@ class _CreateEventState extends State<CreateEvent> {
   String ErrorMessage = "";
 
   final CollectionReference EventsCollection =
-      FirebaseFirestore.instance.collection('Events');
+      FirebaseFirestore.instance.collection('events');
 
   Future<void> _pickimage() async {
     final ImagePicker _picker = ImagePicker();
