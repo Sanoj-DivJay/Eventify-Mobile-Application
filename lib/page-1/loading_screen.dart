@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/gestures.dart';
 //import 'dart:ui';
 //import 'package:google_fonts/google_fonts.dart';
-//import 'package:myapp/page-1/get_started.dart';
+import 'package:myapp/page-1/get_started.dart';
 //import 'package:myapp/utils.dart';
 
 class LoadingScreen extends StatefulWidget {
@@ -15,11 +15,36 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> {
   @override
+  void initState() {
+    super.initState();
+    _navigatetohome();
+  }
+
+  _navigatetohome() async {
+    await Future.delayed(const Duration(milliseconds: 2800), () {});
+
+    Navigator.pushReplacement(
+      context,
+      PageRouteBuilder(
+        transitionDuration:
+            const Duration(milliseconds: 500), // Adjust duration as needed
+        pageBuilder: (_, _, __) => const GetStarted(),
+        transitionsBuilder: (_, animation, __, child) {
+          return FadeTransition(
+            opacity: Tween<double>(begin: 0.0, end: 1.0).animate(animation),
+            child: child,
+          );
+        },
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
-    return Container(
+    //double ffem = fem * 0.97;
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // loadingscreen57F (128:1105)
