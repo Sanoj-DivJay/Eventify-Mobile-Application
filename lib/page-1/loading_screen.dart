@@ -46,33 +46,33 @@ class _LoadingScreenState extends State<LoadingScreen> {
     //double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
-            child: Hero(
-            tag: 'hero-tag',
-      child: Container(
-        // loadingscreen57F (128:1105)
-        width: double.infinity,
-        decoration: BoxDecoration(
-          color: Color(0xffffffff),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              // autogroup1jv71Fo (KEZuMAysoE2xvq5hc21JV7)
-              margin:
-                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 122.82 * fem),
-              width: 802.37 * fem,
-              height: 640.37 * fem,
-              decoration: BoxDecoration(
-                  //image: DecorationImage (
-                  //fit: BoxFit.cover,
-                  //image: AssetImage (
-                  //'assets/page-1/images/blue-black-modern-simple-design-hotel-and-resort-logo-logos-2-1-bg.png',
-                  ),
+      child: Hero(
+        tag: 'hero-tag',
+        child: Container(
+          // loadingscreen57F (128:1105)
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            color: Color(0xffffffff),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                // autogroup1jv71Fo (KEZuMAysoE2xvq5hc21JV7)
+                margin: EdgeInsets.fromLTRB(
+                    0 * fem, 0 * fem, 0 * fem, 122.82 * fem),
+                width: 802.37 * fem,
+                height: 640.37 * fem,
+                decoration: const BoxDecoration(
+                    //image: DecorationImage (
+                    //fit: BoxFit.cover,
+                    //image: AssetImage (
+                    //'assets/page-1/images/blue-black-modern-simple-design-hotel-and-resort-logo-logos-2-1-bg.png',
+                    ),
 
-              child: Stack(
-                children: [
-                  /*Positioned(
+                child: Stack(
+                  children: [
+                    /*Positioned(
                     // calanderHUD (210:1947)
                     left: 162 * fem,
                     top: 29 * fem,
@@ -1232,58 +1232,59 @@ class _LoadingScreenState extends State<LoadingScreen> {
                       ),
                     ),
                   ),*/
-                  Positioned(
-                    // y9s (128:1122)
-                    left: 23 * fem,
-                    top: 237 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 347 * fem,
-                        height: 378 * fem,
-                        child: Image.asset(
-                          'assets/page-1/images/.png',
-                          fit: BoxFit.cover,
+                    Positioned(
+                      // y9s (128:1122)
+                      left: 23 * fem,
+                      top: 237 * fem,
+                      child: Align(
+                        child: SizedBox(
+                          width: 347 * fem,
+                          height: 378 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            Container(
-              // autogroupxp4dGuf (KEZvqoACvTruzCB1htxP4d)
-              margin:
-                  EdgeInsets.fromLTRB(134 * fem, 0 * fem, 136 * fem, 0 * fem),
-              width: double.infinity,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    // CYR (128:1126)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 17 * fem, 0 * fem),
-                    width: 62 * fem,
-                    height: 62 * fem,
-                    child: Image.asset(
-                      'assets/page-1/images/-wkm.png',
-                      fit: BoxFit.cover,
+              Container(
+                // autogroupxp4dGuf (KEZvqoACvTruzCB1htxP4d)
+                margin:
+                    EdgeInsets.fromLTRB(134 * fem, 0 * fem, 136 * fem, 0 * fem),
+                width: double.infinity,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      // CYR (128:1126)
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 17 * fem, 0 * fem),
+                      width: 62 * fem,
+                      height: 62 * fem,
+                      child: Image.asset(
+                        'assets/page-1/images/-wkm.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                  Container(
-                    // logo1Xah (217:584)
-                    margin:
-                        EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 1 * fem),
-                    width: 44 * fem,
-                    height: 43 * fem,
-                    child: Image.asset(
-                      'assets/page-1/images/logo-1.png',
-                      fit: BoxFit.cover,
+                    Container(
+                      // logo1Xah (217:584)
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 0 * fem, 1 * fem),
+                      width: 44 * fem,
+                      height: 43 * fem,
+                      child: Image.asset(
+                        'assets/page-1/images/logo-1.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
