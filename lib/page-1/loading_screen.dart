@@ -40,7 +40,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
       child: Hero(
         tag: 'hero-tag',
         child: Container(
-          // loadingscreen57F (128:1105)
           width: double.infinity,
           decoration: const BoxDecoration(
             color: Color(0xffffffff),
@@ -49,18 +48,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                // autogroup1jv71Fo (KEZuMAysoE2xvq5hc21JV7)
                 margin: EdgeInsets.fromLTRB(
                     0 * fem, 0 * fem, 0 * fem, 122.82 * fem),
                 width: 802.37 * fem,
                 height: 640.37 * fem,
-                decoration: const BoxDecoration(
-                    //image: DecorationImage (
-                    //fit: BoxFit.cover,
-                    //image: AssetImage (
-                    //'assets/page-1/images/blue-black-modern-simple-design-hotel-and-resort-logo-logos-2-1-bg.png',
-                    ),
-
+                decoration: const BoxDecoration(),
                 child: Stack(
                   children: [
                     /*Positioned(
