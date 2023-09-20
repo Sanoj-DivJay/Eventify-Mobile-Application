@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/get_started.dart';
 
@@ -56,7 +58,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
                 child: Stack(
                   children: [
                     Positioned(
-                      // y9s (128:1122)
                       left: 23 * fem,
                       top: 237 * fem,
                       child: Align(
@@ -74,7 +75,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
                 ),
               ),
               Container(
-                // autogroupxp4dGuf (KEZvqoACvTruzCB1htxP4d)
                 margin:
                     EdgeInsets.fromLTRB(134 * fem, 0 * fem, 136 * fem, 0 * fem),
                 width: double.infinity,
@@ -82,7 +82,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // CYR (128:1126)
                       margin: EdgeInsets.fromLTRB(
                           0 * fem, 0 * fem, 17 * fem, 0 * fem),
                       width: 62 * fem,
@@ -93,7 +92,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
                       ),
                     ),
                     Container(
-                      // logo1Xah (217:584)
                       margin: EdgeInsets.fromLTRB(
                           0 * fem, 0 * fem, 0 * fem, 1 * fem),
                       width: 44 * fem,
