@@ -106,7 +106,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   Positioned(
                     // ofF (27:1860)
-                    left: 0 * fem,
+                    left: 5 * fem,
                     top: 0 * fem,
                     child: Align(
                       child: SizedBox(
@@ -250,7 +250,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   //Put Your code Here (Chirath)
                   SingleChildScrollView(
                       child: Padding(
-                    padding: const EdgeInsets.fromLTRB(58, 260, 20, 0),
+                    padding: const EdgeInsets.fromLTRB(58, 145, 20, 0),
                     child: SizedBox(
                         //width: 200 * fem,
                         height: 20 * fem,
@@ -305,7 +305,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   )),
 
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(75, 150, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(75, 75, 0, 0),
                     child: SizedBox(
                       width: 200,
                       height: 50,
@@ -339,7 +339,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   Positioned(
                     // bysigningupyouagreetoourtermsc (18:489)
                     left: 0 * fem,
-                    top: 71 * fem,
+                    top: 10 * fem,
                     child: Align(
                       child: SizedBox(
                         width: 332 * fem,

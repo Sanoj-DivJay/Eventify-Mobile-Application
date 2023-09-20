@@ -273,7 +273,7 @@ class _LoginPageState extends State<LoginPage> {
                       Positioned(
                         // forgotpasswordfnR (18:1671)
                         left: 229 * fem,
-                        top: 155 * fem,
+                        top: 174 * fem,
 
                         child: SizedBox(
                           width: 104 * fem,
@@ -293,12 +293,11 @@ class _LoginPageState extends State<LoginPage> {
                       Positioned(
                         // group10kJ5 (18:1672)
                         left: -15 * fem,
-                        top: 150 * fem,
+                        top: 168 * fem,
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(
-                              2 * fem, 1.83 * fem, 0 * fem, 1.83 * fem),
+                          padding: const EdgeInsets.fromLTRB(2, 1, 0, 1.83),
                           //width: 10 * fem,
-                          height: 22 * fem,
+                          height: 29 * fem,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -320,7 +319,7 @@ class _LoginPageState extends State<LoginPage> {
                               Container(
                                 // remembermewtM (18:1675)
                                 margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 0 * fem),
+                                    0 * fem, 1 * fem, 0 * fem, 0 * fem),
                                 child: Text(
                                   'Remember me',
                                   style: SafeGoogleFont(
