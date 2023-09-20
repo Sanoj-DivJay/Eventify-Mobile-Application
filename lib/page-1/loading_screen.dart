@@ -46,6 +46,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
     //double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
+            child: Hero(
+            tag: 'hero-tag',
       child: Container(
         // loadingscreen57F (128:1105)
         width: double.infinity,
