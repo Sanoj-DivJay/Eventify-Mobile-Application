@@ -16,13 +16,10 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   _navigatetohome() async {
     await Future.delayed(const Duration(milliseconds: 2800), () {});
-
-    // ignore: use_build_context_synchronously
     Navigator.pushReplacement(
       context,
       PageRouteBuilder(
-        transitionDuration:
-            const Duration(milliseconds: 500), // Adjust duration as needed
+        transitionDuration: const Duration(milliseconds: 500),
         pageBuilder: (_, __, ___) => const GetStarted(),
         transitionsBuilder: (_, animation, __, child) {
           return FadeTransition(
@@ -38,7 +35,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    //double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
       child: Hero(
