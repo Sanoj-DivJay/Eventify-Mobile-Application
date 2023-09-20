@@ -19,12 +19,19 @@ class _CreateEventState extends State<CreateEvent> {
   TextEditingController priceInput = TextEditingController();
   TextEditingController EventName = TextEditingController();
   TextEditingController Organizer = TextEditingController();
-  TextEditingController Location = TextEditingController();
+  TextEditingController LocationInput = TextEditingController();
   TextEditingController EventDetails = TextEditingController();
 
   String SelectedPriceOption = "Free";
   XFile? SelectedImage;
   String ErrorMessage = "";
+
+  String eventname = "";
+  String date = "";
+  String price = "";
+  String Organize = "";
+  String Location = "";
+  String Details = "";
 
   final CollectionReference EventsCollection =
       FirebaseFirestore.instance.collection('events');
@@ -51,17 +58,17 @@ class _CreateEventState extends State<CreateEvent> {
 
     if (prediction != null) {
       setState(() {
-        Location.text = prediction.description!;
+        LocationInput.text = prediction.description!;
       });
     }
   }
 
-  void _SubmitandValidation() {
+  void _SubmitandValidation() async {
     if (dateInput.text.isEmpty ||
         EventName.text.isEmpty ||
         Organizer.text.isEmpty ||
         timeInput.text.isEmpty ||
-        Location.text.isEmpty ||
+        LocationInput.text.isEmpty ||
         priceInput.text.isEmpty) {
       showDialog(
         context: context,
@@ -81,17 +88,27 @@ class _CreateEventState extends State<CreateEvent> {
         },
       );
     } else {
-      EventsCollection.add({
-        'Event_Name': EventName.text,
-        'Date': dateInput.text,
-        'Time': timeInput.text,
-        'Organized_By': Organizer.text,
-        'Location': Location.text,
-        'Event_Details': EventDetails.text,
-        'Payment': priceInput,
-      }).then((_) {}).catchError((error) {
-        print("Error:$error");
+      final eventRef = EventsCollection.doc();
+      await eventRef.set({
+        'eventname': EventName.text,
+        'date': dateInput.text,
+        'time': timeInput.text,
+        'organizer': Organizer.text,
+        'location': LocationInput.text,
+        'price': priceInput.text,
+        'eventdetails': EventDetails.text,
       });
+
+      print('Event details added to Firestore!');
+
+      // Clear the form fields
+      dateInput.text = '';
+      EventName.text = '';
+      Organizer.text = '';
+      timeInput.text = '';
+      LocationInput.text = '';
+      priceInput.text = '';
+      EventDetails.text = '';
     }
   }
 
@@ -293,7 +310,7 @@ class _CreateEventState extends State<CreateEvent> {
                           child: SizedBox(
                             height: 50,
                             child: TextField(
-                              controller: Location,
+                              controller: LocationInput,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Location',
