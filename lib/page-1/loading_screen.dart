@@ -1,11 +1,5 @@
-//import 'dart:js';
-
 import 'package:flutter/material.dart';
-//import 'package:flutter/gestures.dart';
-//import 'dart:ui';
-//import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/get_started.dart';
-//import 'package:myapp/utils.dart';
 
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({Key? key}) : super(key: key);
