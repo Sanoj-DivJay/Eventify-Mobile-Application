@@ -23,12 +23,13 @@ class _LoadingScreenState extends State<LoadingScreen> {
   _navigatetohome() async {
     await Future.delayed(const Duration(milliseconds: 2800), () {});
 
+    // ignore: use_build_context_synchronously
     Navigator.pushReplacement(
       context,
       PageRouteBuilder(
         transitionDuration:
             const Duration(milliseconds: 500), // Adjust duration as needed
-        pageBuilder: (_, _, __) => const GetStarted(),
+        pageBuilder: (_, __, ___) => const GetStarted(),
         transitionsBuilder: (_, animation, __, child) {
           return FadeTransition(
             opacity: Tween<double>(begin: 0.0, end: 1.0).animate(animation),
