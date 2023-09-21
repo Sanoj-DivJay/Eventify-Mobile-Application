@@ -414,13 +414,20 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         if (SelectedImage != null)
-                          Image.file(
-                            File(SelectedImage!.path),
-                            width: 100,
-                            height: 100,
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(55, 600, 25, 0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(30.0),
+                              child: Image.file(
+                                File(SelectedImage!.path),
+                                width: 100,
+                                height: 50,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(255,655, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(255, 655, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:

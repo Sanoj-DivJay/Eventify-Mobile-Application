@@ -47,6 +47,17 @@ class _RegisterPageState extends State<RegisterPage> {
         'name': Name,
         'phone': Phone,
       });
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => LoginPage(),
+        ),
+      );
+
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => const LoginPage(),
+        ),
+      );
 
       //Add user details
     } catch (e) {
