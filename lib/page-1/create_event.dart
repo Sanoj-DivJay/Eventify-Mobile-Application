@@ -9,6 +9,8 @@ import 'package:intl/intl.dart';
 import 'package:myapp/utils.dart';
 
 class CreateEvent extends StatefulWidget {
+  const CreateEvent({super.key});
+
   @override
   _CreateEventState createState() => _CreateEventState();
 }
@@ -37,8 +39,8 @@ class _CreateEventState extends State<CreateEvent> {
       FirebaseFirestore.instance.collection('events');
 
   Future<void> _pickimage() async {
-    final ImagePicker _picker = ImagePicker();
-    XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+    final ImagePicker picker = ImagePicker();
+    XFile? image = await picker.pickImage(source: ImageSource.gallery);
 
     if (image != null) {
       setState(() {
@@ -74,11 +76,11 @@ class _CreateEventState extends State<CreateEvent> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Validation Error!'),
-            content: Text('Please fill all the Required Fields!'),
+            title: const Text('Validation Error!'),
+            content: const Text('Please fill all the Required Fields!'),
             actions: <Widget>[
               TextButton(
-                child: Text('OK'),
+                child: const Text('OK'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -167,13 +169,13 @@ class _CreateEventState extends State<CreateEvent> {
                       fontWeight: FontWeight.w600,
                       height: 1.2941176471 * ffem / fem,
                       letterSpacing: -0.4079999924 * fem,
-                      color: Color(0xff000000),
+                      color: const Color(0xff000000),
                     ),
                   ),
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               // group3SZw (210:1474)
               width: 502.22 * fem,
               child: Column(
@@ -198,10 +200,10 @@ class _CreateEventState extends State<CreateEvent> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(14 * fem),
-                                  color: Color(0xfff9f9f9),
+                                  color: const Color(0xfff9f9f9),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x3f000000),
+                                      color: const Color(0x3f000000),
                                       offset: Offset(0 * fem, 4 * fem),
                                       blurRadius: 6 * fem,
                                     ),
@@ -212,12 +214,12 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(15, 20, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 20, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
                               controller: EventName,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Event Name',
                               ),
@@ -225,12 +227,12 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(15, 100, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 100, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
                                 controller: dateInput,
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                     border: OutlineInputBorder(),
                                     labelText: 'Event Date',
                                     icon: Icon(Icons.calendar_today)),
@@ -259,12 +261,12 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(15, 180, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 180, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
                                 controller: timeInput,
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                     border: OutlineInputBorder(),
                                     labelText: 'Event Time',
                                     icon: Icon(Icons.timer)),
@@ -294,12 +296,12 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(15, 260, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 260, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
                               controller: Organizer,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
                                 labelText: 'Organized By',
                               ),
@@ -307,16 +309,16 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(15, 340, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(15, 340, 25, 0),
                           child: SizedBox(
                             height: 50,
                             child: TextField(
                               controller: LocationInput,
                               decoration: InputDecoration(
-                                border: OutlineInputBorder(),
+                                border: const OutlineInputBorder(),
                                 labelText: 'Location',
                                 suffixIcon: IconButton(
-                                  icon: Icon(Icons.place),
+                                  icon: const Icon(Icons.place),
                                   onPressed: _pickedlocation,
                                 ),
                               ),
@@ -387,7 +389,7 @@ class _CreateEventState extends State<CreateEvent> {
                                       width: 120,
                                       child: TextField(
                                           controller: priceInput,
-                                          decoration: InputDecoration(
+                                          decoration: const InputDecoration(
                                             border: OutlineInputBorder(),
                                             labelText: 'Price',
                                           )),
@@ -403,14 +405,14 @@ class _CreateEventState extends State<CreateEvent> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    Color.fromRGBO(149, 236, 121, 0.996),
+                                    const Color.fromRGBO(149, 236, 121, 0.996),
                                 foregroundColor:
-                                    Color.fromRGBO(4, 108, 68, 0.906),
+                                    const Color.fromRGBO(4, 108, 68, 0.906),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 )),
                             onPressed: _pickimage,
-                            child: Text('Pick an Image'),
+                            child: const Text('Pick an Image'),
                           ),
                         ),
                         if (SelectedImage != null)
@@ -431,21 +433,85 @@ class _CreateEventState extends State<CreateEvent> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    Color.fromRGBO(149, 236, 121, 0.996),
+                                    const Color.fromRGBO(149, 236, 121, 0.996),
                                 foregroundColor:
-                                    Color.fromRGBO(4, 108, 68, 0.906),
+                                    const Color.fromRGBO(4, 108, 68, 0.906),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 )),
                             onPressed:
                                 _SubmitandValidation, // Call the validation function
-                            child: Text('Submit'),
+                            child: const Text('Submit'),
                           ),
                         ),
                       ],
                     ),
                   ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+              child: SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    // icon button 1
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.home,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                    // icon button 2
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.calendar_month,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                    // icon button 3
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.bookmark,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                    //icon button 4
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.create,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
