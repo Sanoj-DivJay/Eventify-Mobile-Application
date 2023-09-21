@@ -1,5 +1,10 @@
-import 'package:flutter/material.dart';
+
+/*import 'package:flutter/material.dart';
 import 'package:myapp/page-1/event_details.dart';
+
+import 'package:flutter/material.dart';
+import 'package:myapp/page-1/create_event.dart';
+>>>>>>> Stashed changes
 
 class Navbar extends StatelessWidget {
   int index = 0;
@@ -30,9 +35,9 @@ class Navbar extends StatelessWidget {
         ),
         appBar: AppBar(),
         body: SafeArea(
-          child: EventDetails(), // Your existing EventDetails widget
+          child: CreateEvent(), // Your existing EventDetails widget
         ),
       ),
     );
   }
-}
+}*/

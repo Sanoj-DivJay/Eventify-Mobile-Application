@@ -1,10 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
 import 'package:myapp/page-1/register.dart';
-=======
-import 'package:myapp/page-1/event_details.dart';
->>>>>>> Stashed changes
 import 'package:myapp/utils.dart';
 
 import 'firebase_options.dart';
@@ -37,11 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           body: SingleChildScrollView(
-<<<<<<< Updated upstream
             child: RegisterPage(),
-=======
-            child: EvetntDetails(),
->>>>>>> Stashed changes
           ),
         ));
   }
