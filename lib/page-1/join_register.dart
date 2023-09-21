@@ -61,7 +61,7 @@ class JoinRegister extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(17 * fem),
                         child: Image.asset(
-                          'assets/page-1/images/assets/page-1/images/gf.jpeg.jpg',
+                          'assets/page-1/images/overlay-BQD.png',
                           fit: BoxFit.cover,
                         ),
                       ),
