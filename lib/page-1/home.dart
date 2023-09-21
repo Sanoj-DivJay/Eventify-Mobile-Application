@@ -1058,4 +1058,109 @@ class homepage extends StatelessWidget {
                                         ),
                                       ),
                                     ),
+                                    Container(
+                                      // timeRVb (208:1203)
+                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 21*fem, 0*fem),
+                                      width: double.infinity,
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            // ritimelineNQq (208:1205)
+                                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7*fem, 2*fem),
+                                            width: 11*fem,
+                                            height: 11*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/ri-time-line-hiy.png',
+                                              width: 11*fem,
+                                              height: 11*fem,
+                                            ),
+                                          ),
+                                          Text(
+                                            // pmto600pmJ3b (208:1204)
+                                            '04:00PM To 6.00PM ',
+                                            style: SafeGoogleFont (
+                                              'Poppins',
+                                              fontSize: 11*ffem,
+                                              fontWeight: FontWeight.w400,
+                                              height: 1.5*ffem/fem,
+                                              letterSpacing: 0.22*fem,
+                                              color: Color(0xff85819d),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                // autogroupa8hkp1w (MEy4HZ3Mffc5JBEDPSa8HK)
+                                width: double.infinity,
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      // locationy9j (208:1197)
+                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 8*fem, 0*fem),
+                                      width: 11*fem,
+                                      height: 11*fem,
+                                      child: Image.asset(
+                                        'assets/page-1/images/location.png',
+                                        width: 11*fem,
+                                        height: 11*fem,
+                                      ),
+                                    ),
+                                    Text(
+                                      // nsbmopenairtheatreUsB (208:1198)
+                                      'NSBM Open Air Theatre',
+                                      style: SafeGoogleFont (
+                                        'Poppins',
+                                        fontSize: 11*ffem,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.5*ffem/fem,
+                                        letterSpacing: 0.22*fem,
+                                        color: Color(0xff85819d),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          // ribookmarkline1cD (208:1209)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 10*fem),
+                          width: 28.08*fem,
+                          height: 28*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/ri-bookmark-line.png',
+                            width: 28.08*fem,
+                            height: 28*fem,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            // Container(
+            //   // navbarLPb (205:1272)
+            //   margin: EdgeInsets.fromLTRB(5*fem, 0*fem, 0*fem, 0*fem),
+            //   width: 362*fem,
+            //   height: 70*fem,
+            //   child: Image.asset(
+            //     'assets/page-1/images/navbar.png',
+            //     width: 362*fem,
+            //     height: 70*fem,
+            //   ),
+            // ),
+          ],
+        ),
+      ),
+          );
+  }
+}
                                             
