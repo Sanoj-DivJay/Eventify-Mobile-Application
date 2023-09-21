@@ -127,8 +127,9 @@ class _CreateEventState extends State<CreateEvent> {
 
     var read;
     var onTap;
-    return Container(
-      width: double.infinity,
+    return Material(
+      //mainAxisAlignment:MainAxisAlignment.center,
+      //width: double.infinity,
       child: SingleChildScrollView(
         // createeventdys (205:1565)
         padding: EdgeInsets.fromLTRB(9 * fem, 45 * fem, 0 * fem, 0 * fem),
