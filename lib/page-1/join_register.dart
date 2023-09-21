@@ -48,17 +48,16 @@ class JoinRegister extends StatelessWidget {
             // autogroupn9hjjdK (KEaE6DavL7F9QvwExFN9Hj)
             margin: EdgeInsets.fromLTRB(38 * fem, 0 * fem, 39 * fem, 29 * fem),
             width: double.infinity,
-            height: 210 * fem,
+            height: 180 * fem,
             child: Stack(
               children: [
                 Positioned(
-                  // image7749o (210:1673)
                   left: 34 * fem,
                   top: 0 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 228 * fem,
-                      height: 197 * fem,
+                      height: 180 * fem,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(17 * fem),
                         child: Image.asset(
@@ -69,208 +68,14 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                  // group18163MPo (210:1674)
-                  left: 0 * fem,
-                  top: 150 * fem,
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(
-                        14 * fem, 13 * fem, 14 * fem, 12.82 * fem),
-                    width: 295 * fem,
-                    height: 60 * fem,
-                    decoration: BoxDecoration(
-                      color: Color(0xfffefeff),
-                      borderRadius: BorderRadius.circular(30 * fem),
-                    ),
-                    child: ClipRect(
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(
-                          sigmaX: 10.8731269836 * fem,
-                          sigmaY: 10.8731269836 * fem,
-                        ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              // group18158CfK (210:1676)
-                              margin: EdgeInsets.fromLTRB(
-                                  0 * fem, 0 * fem, 48.02 * fem, 0 * fem),
-                              height: double.infinity,
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    // groupXSh (210:1677)
-                                    margin: EdgeInsets.fromLTRB(
-                                        0 * fem, 0 * fem, 9.24 * fem, 0 * fem),
-                                    width: 79.74 * fem,
-                                    height: double.infinity,
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          // ovalrE5 (210:1678)
-                                          left: 45.5678710938 * fem,
-                                          top: 0 * fem,
-                                          child: Align(
-                                            child: SizedBox(
-                                              width: 34.18 * fem,
-                                              height: 34.18 * fem,
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          17.0879993439 * fem),
-                                                  border: Border.all(
-                                                      color: Color(0xffffffff)),
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: AssetImage(
-                                                      'assets/page-1/images/oval-bg.png',
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Positioned(
-                                          // ovalcopyj2y (210:1679)
-                                          left: 22.7841796875 * fem,
-                                          top: 0 * fem,
-                                          child: Align(
-                                            child: SizedBox(
-                                              width: 34.18 * fem,
-                                              height: 34.18 * fem,
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          17.0879993439 * fem),
-                                                  border: Border.all(
-                                                      color: Color(0xffffffff)),
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: AssetImage(
-                                                      'assets/page-1/images/oval-copy-bg.png',
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Positioned(
-                                          // ovalcopy4Cx9 (210:1680)
-                                          left: 0 * fem,
-                                          top: 0.0002441406 * fem,
-                                          child: Align(
-                                            child: SizedBox(
-                                              width: 34.18 * fem,
-                                              height: 34.18 * fem,
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          17.0879993439 * fem),
-                                                  border: Border.all(
-                                                      color: Color(0xffffffff)),
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: AssetImage(
-                                                      'assets/page-1/images/oval-copy-4-bg.png',
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    // goingUuf (210:1681)
-                                    margin: EdgeInsets.fromLTRB(
-                                        0 * fem, 0.3 * fem, 0 * fem, 0 * fem),
-                                    child: Text(
-                                      '+20 Going',
-                                      style: SafeGoogleFont(
-                                        'Airbnb Cereal App',
-                                        fontSize: 15 * ffem,
-                                        fontWeight: FontWeight.w400,
-                                        height: 1.2575 * ffem / fem,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              // group18150yrR (210:1682)
-                              margin: EdgeInsets.fromLTRB(
-                                  0 * fem, 3 * fem, 0 * fem, 3.18 * fem),
-                              width: 67 * fem,
-                              height: double.infinity,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(13 * fem),
-                              ),
-                              child: ClipRect(
-                                // group18151uk5 (210:1683)
-                                child: BackdropFilter(
-                                  filter: ImageFilter.blur(
-                                    sigmaX: 13.5914087296 * fem,
-                                    sigmaY: 13.5914087296 * fem,
-                                  ),
-                                  child: Container(
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(13 * fem),
-                                      gradient: LinearGradient(
-                                        begin: Alignment(-1, -0.54),
-                                        end: Alignment(0.76, 0.679),
-                                        colors: <Color>[
-                                          Color(0xff1e970a),
-                                          Color(0xff23c7d2)
-                                        ],
-                                        stops: <double>[0, 1],
-                                      ),
-                                    ),
-                                    child: Center(
-                                      child: Center(
-                                        child: Text(
-                                          'Invite',
-                                          textAlign: TextAlign.center,
-                                          style: SafeGoogleFont(
-                                            'Airbnb Cereal App',
-                                            fontSize: 12 * ffem,
-                                            fontWeight: FontWeight.w400,
-                                            height: 1.2575 * ffem / fem,
-                                            color: Color(0xffffffff),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
           Container(
             // group3hfw (210:1688)
-            padding:
-                EdgeInsets.fromLTRB(5 * fem, 9 * fem, 5 * fem, 42.23 * fem),
+            padding: EdgeInsets.fromLTRB(5 * fem, 0 * fem, 5 * fem, 5.23 * fem),
             width: double.infinity,
-            height: 430 * fem,
+            height: 380 * fem,
             decoration: BoxDecoration(
               color: Color(0xfff9f9f9),
               borderRadius: BorderRadius.circular(14 * fem),
@@ -287,9 +92,11 @@ class JoinRegister extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
+                    padding: EdgeInsets.only(
+                        left: 0.0, right: 00.0, top: 2.0, bottom: 10.0),
                     // labelxLy (210:1826)
                     margin:
-                        EdgeInsets.fromLTRB(0 * fem, 6 * fem, 6 * fem, 0 * fem),
+                        EdgeInsets.fromLTRB(0 * fem, 2 * fem, 6 * fem, 0 * fem),
                     child: Text(
                       'Registration Form',
                       style: SafeGoogleFont(
@@ -303,7 +110,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 5, 10, 15),
+                    padding: const EdgeInsets.fromLTRB(0, 5, 10, 10),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -312,7 +119,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 10),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -321,7 +128,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 10),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -330,7 +137,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 10),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -354,6 +161,48 @@ class JoinRegister extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+          ),
+          Container(
+            margin:
+                EdgeInsets.only(left: 0.0, right: 0.0, top: 15.0, bottom: 0.0),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color.fromARGB(255, 114, 110, 110)),
+            height: 70,
+            width: double.infinity,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                // icon button 1
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Icon(Icons.home),
+                  ),
+                ),
+                // icon button 2
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Icon(Icons.location_on),
+                  ),
+                ),
+                // icon button 3
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Icon(Icons.bookmark),
+                  ),
+                ),
+                //icon button 4
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Icon(Icons.settings),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
