@@ -398,7 +398,7 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(15, 680, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(55, 655, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
@@ -419,7 +419,7 @@ class _CreateEventState extends State<CreateEvent> {
                             height: 100,
                           ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(255,685, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(255,655, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
