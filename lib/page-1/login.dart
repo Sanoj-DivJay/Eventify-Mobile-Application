@@ -232,7 +232,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Container(
                         child: Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 0, 31, 24),
+                            padding: const EdgeInsets.fromLTRB(0, 5, 31, 24),
                             child: Form(
                               key: _formKey,
                               child: Column(
