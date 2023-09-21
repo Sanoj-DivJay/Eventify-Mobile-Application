@@ -288,8 +288,8 @@ class JoinRegister extends StatelessWidget {
                 children: [
                   Container(
                     // labelxLy (210:1826)
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 6 * fem, 12 * fem),
+                    margin:
+                        EdgeInsets.fromLTRB(0 * fem, 6 * fem, 6 * fem, 0 * fem),
                     child: Text(
                       'Registration Form',
                       style: SafeGoogleFont(
@@ -303,7 +303,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+                    padding: const EdgeInsets.fromLTRB(0, 5, 10, 15),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -312,7 +312,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -321,7 +321,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -330,7 +330,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 20),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 15),
                     child: const TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -339,7 +339,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 48.0),
+                    padding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
