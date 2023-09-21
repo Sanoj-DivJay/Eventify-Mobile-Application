@@ -61,7 +61,7 @@ class JoinRegister extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(17 * fem),
                         child: Image.asset(
-                          'assets/page-1/images/image-77.png',
+                          'assets/page-1/images/assets/page-1/images/gf.jpeg.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -168,7 +168,7 @@ class JoinRegister extends StatelessWidget {
                 EdgeInsets.only(left: 0.0, right: 0.0, top: 15.0, bottom: 0.0),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 114, 110, 110)),
+                color: Color.fromARGB(255, 196, 197, 198)),
             height: 70,
             width: double.infinity,
             child: Row(
@@ -178,28 +178,52 @@ class JoinRegister extends StatelessWidget {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.home),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Color.fromARGB(
+                              255, 196, 197, 198)), // Button background color
+                    ),
+                    child: Icon(Icons.home,
+                        color: const Color.fromARGB(255, 247, 244, 244)),
                   ),
                 ),
                 // icon button 2
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.location_on),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Color.fromARGB(
+                              255, 196, 197, 198)), // Button background color
+                    ),
+                    child: Icon(Icons.calendar_month,
+                        color: const Color.fromARGB(255, 247, 244, 244)),
                   ),
                 ),
                 // icon button 3
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.bookmark),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Color.fromARGB(
+                              255, 196, 197, 198)), // Button background color
+                    ),
+                    child: Icon(Icons.bookmark,
+                        color: const Color.fromARGB(255, 247, 244, 244)),
                   ),
                 ),
                 //icon button 4
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.settings),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Color.fromARGB(
+                              255, 196, 197, 198)), // Button background color
+                    ),
+                    child: Icon(Icons.settings,
+                        color: const Color.fromARGB(255, 247, 244, 244)),
                   ),
                 ),
               ],
