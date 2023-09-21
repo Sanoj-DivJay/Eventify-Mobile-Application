@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
 class EvetntDetails extends StatelessWidget {
+  const EvetntDetails({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // eventdetails13P (205:1477)
         padding: EdgeInsets.fromLTRB(0 * fem, 45 * fem, 0 * fem, 0 * fem),
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -57,7 +59,7 @@ class EvetntDetails extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                             height: 1.2941176471 * ffem / fem,
                             letterSpacing: -0.4079999924 * fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ],
@@ -73,34 +75,34 @@ class EvetntDetails extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       height: 1.2941176471 * ffem / fem,
                       letterSpacing: -0.4079999924 * fem,
-                      color: Color(0xff000000),
+                      color: const Color(0xff000000),
                     ),
                   ),
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               // autogroupqmdkr5w (KEaCSMAzhw8RVjvDNyQmDK)
               width: double.infinity,
               height: 769 * fem,
               child: Stack(
                 children: [
-                  Positioned(
-                    // navbarPLm (205:1478)
-                    left: 16 * fem,
-                    top: 687 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 362 * fem,
-                        height: 70 * fem,
-                        child: Image.asset(
-                          'assets/page-1/images/navbar-P6H.png',
-                          width: 362 * fem,
-                          height: 70 * fem,
-                        ),
-                      ),
-                    ),
-                  ),
+                  // Positioned(
+                  //   // navbarPLm (205:1478)
+                  //   left: 16 * fem,
+                  //   top: 687 * fem,
+                  //   child: Align(
+                  //     child: SizedBox(
+                  //       width: 362 * fem,
+                  //       height: 70 * fem,
+                  //       child: Image.asset(
+                  //         'assets/page-1/images/navbar-P6H.png',
+                  //         width: 362 * fem,
+                  //         height: 70 * fem,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                   Positioned(
                     // topttdetailssmj (208:1227)
                     left: 16 * fem,
@@ -142,7 +144,7 @@ class EvetntDetails extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                                 height: 1.1578947368 * ffem / fem,
                                 letterSpacing: -0.4079999924 * fem,
-                                color: Color(0xff270404),
+                                color: const Color(0xff270404),
                               ),
                             ),
                           ),
@@ -154,7 +156,7 @@ class EvetntDetails extends StatelessWidget {
                               fontSize: 17 * ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.5 * ffem / fem,
-                              color: Color(0xff756e85),
+                              color: const Color(0xff756e85),
                             ),
                           ),
                         ],
@@ -205,10 +207,10 @@ class EvetntDetails extends StatelessWidget {
                                         fontWeight: FontWeight.w400,
                                         height: 1.4666666667 * ffem / fem,
                                         letterSpacing: -0.4079999924 * fem,
-                                        color: Color(0xff2c2738),
+                                        color: const Color(0xff2c2738),
                                       ),
                                       children: [
-                                        TextSpan(
+                                        const TextSpan(
                                           text: 'Location : ',
                                         ),
                                         TextSpan(
@@ -219,7 +221,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w600,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff2c2738),
+                                            color: const Color(0xff2c2738),
                                           ),
                                         ),
                                       ],
@@ -262,7 +264,7 @@ class EvetntDetails extends StatelessWidget {
                                         fontWeight: FontWeight.w400,
                                         height: 1.4666666667 * ffem / fem,
                                         letterSpacing: -0.4079999924 * fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                       children: [
                                         TextSpan(
@@ -273,7 +275,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                         TextSpan(
@@ -284,7 +286,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w600,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                         TextSpan(
@@ -295,7 +297,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                         TextSpan(
@@ -306,7 +308,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w600,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -350,7 +352,7 @@ class EvetntDetails extends StatelessWidget {
                                         fontSize: 16 * ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.25 * ffem / fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                       children: [
                                         TextSpan(
@@ -360,7 +362,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontSize: 15 * ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.3333333333 * ffem / fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                         TextSpan(
@@ -370,7 +372,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontSize: 15 * ffem,
                                             fontWeight: FontWeight.w600,
                                             height: 1.3333333333 * ffem / fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                         TextSpan(
@@ -381,7 +383,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontSize: 15 * ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.3333333333 * ffem / fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -423,10 +425,10 @@ class EvetntDetails extends StatelessWidget {
                                         fontWeight: FontWeight.w400,
                                         height: 1.4666666667 * ffem / fem,
                                         letterSpacing: -0.4079999924 * fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                       children: [
-                                        TextSpan(
+                                        const TextSpan(
                                           text: 'Contact : ',
                                         ),
                                         TextSpan(
@@ -437,7 +439,7 @@ class EvetntDetails extends StatelessWidget {
                                             fontWeight: FontWeight.w600,
                                             height: 1.4666666667 * ffem / fem,
                                             letterSpacing: -0.4079999924 * fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -447,180 +449,246 @@ class EvetntDetails extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Container(
-                            // joiny2h (213:2422)
-                            margin: EdgeInsets.fromLTRB(
-                                62 * fem, 0 * fem, 64 * fem, 106.69 * fem),
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(34 * fem),
-                            ),
-                            child: Center(
-                              // bgHp5 (213:2423)
-                              child: SizedBox(
-                                width: double.infinity,
-                                height: 40 * fem,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.circular(34 * fem),
-                                    color: Color(0xffffffff),
-                                    border: Border(),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Container(
+                      
+                          //Container(
+                            //   // joiny2h (213:2422)
+                            //   margin: EdgeInsets.fromLTRB(
+                            //       62 * fem, 0 * fem, 64 * fem, 60 * fem),
+                            //   width: double.infinity,
+                            //   decoration: BoxDecoration(
+                            //     borderRadius: BorderRadius.circular(34 * fem),
+                            //   ),
+                            //   child: Center(
+                            //     // bgHp5 (213:2423)
+                            //     child: SizedBox(
+                            //       width: double.infinity,
+                            //       height: 40 * fem,
+                            //       child: Container(
+                            //         decoration: BoxDecoration(
+                            //           borderRadius:
+                            //               BorderRadius.circular(34 * fem),
+                            //           color: const Color(0xffffffff),
+                            //           border: const Border(),
+                            //         ),
+                            //       ),
+                            //     ),
+                            //   ),
+                            // ),
+                            //Container(
                             // autogroupacdwcLZ (KEaCgvb3NEntKzLowCAcDw)
-                            margin: EdgeInsets.fromLTRB(
-                                63.54 * fem, 0 * fem, 63.54 * fem, 18.2 * fem),
-                            width: double.infinity,
-                            height: 57 * fem,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  // controlsbuttonsmallaccenthover (208:1260)
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 0 * fem, 68.71 * fem, 0 * fem),
-                                  width: 91.61 * fem,
-                                  height: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xff087fae),
-                                    borderRadius:
-                                        BorderRadius.circular(3 * fem),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Color(0x282c2738),
-                                        offset: Offset(0 * fem, 12 * fem),
-                                        blurRadius: 12 * fem,
-                                      ),
-                                      BoxShadow(
-                                        color: Color(0x142c2738),
-                                        offset: Offset(0 * fem, 6 * fem),
-                                        blurRadius: 6 * fem,
-                                      ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'Call',
-                                      textAlign: TextAlign.center,
-                                      style: SafeGoogleFont(
-                                        'IBM Plex Sans',
-                                        fontSize: 16 * ffem,
-                                        fontWeight: FontWeight.w600,
-                                        height: 1.3 * ffem / fem,
-                                        color: Color(0xffeaf4f8),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  // controlsbuttonsmallaccenthover (208:1264)
-                                  width: 91.61 * fem,
-                                  height: 50.13 * fem,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xff087fae),
-                                    borderRadius:
-                                        BorderRadius.circular(3 * fem),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Color(0x282c2738),
-                                        offset: Offset(0 * fem, 12 * fem),
-                                        blurRadius: 12 * fem,
-                                      ),
-                                      BoxShadow(
-                                        color: Color(0x142c2738),
-                                        offset: Offset(0 * fem, 6 * fem),
-                                        blurRadius: 6 * fem,
-                                      ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'Book',
-                                      textAlign: TextAlign.center,
-                                      style: SafeGoogleFont(
-                                        'IBM Plex Sans',
-                                        fontSize: 16 * ffem,
-                                        fontWeight: FontWeight.w600,
-                                        height: 1.3 * ffem / fem,
-                                        color: Color(0xffeaf4f8),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            // joinchatJm7 (208:1278)
-                            margin: EdgeInsets.fromLTRB(
-                                63.54 * fem, 0 * fem, 63.54 * fem, 0 * fem),
-                            padding: EdgeInsets.fromLTRB(
-                                68.96 * fem, 54.11 * fem, 67.96 * fem, 0 * fem),
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                              color: Color(0xff087fae),
-                              borderRadius: BorderRadius.circular(3 * fem),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color(0x282c2738),
-                                  offset: Offset(0 * fem, 12 * fem),
-                                  blurRadius: 12 * fem,
-                                ),
-                                BoxShadow(
-                                  color: Color(0x142c2738),
-                                  offset: Offset(0 * fem, 6 * fem),
-                                  blurRadius: 6 * fem,
-                                ),
-                              ],
-                            ),
-                            child: Text(
-                              'Join group chat',
-                              textAlign: TextAlign.center,
-                              style: SafeGoogleFont(
-                                'IBM Plex Sans',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w600,
-                                height: 1.3 * ffem / fem,
-                                color: Color(0xffeaf4f8),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Positioned(
+                            // margin: EdgeInsets.fromLTRB(
+                            //     63.54 * fem, 0 * fem, 63.54 * fem, 18.2 * fem),
+                            // width: double.infinity,
+                            // height: 57 * fem,
+                            // child: Row(
+                            //   crossAxisAlignment: CrossAxisAlignment.start,
+                            //   children: [
+                            //     Container(
+                            //       // controlsbuttonsmallaccenthover (208:1260)
+                            //       margin: EdgeInsets.fromLTRB(
+                            //           0 * fem, 0 * fem, 68.71 * fem, 0 * fem),
+                            //       width: 91.61 * fem,
+                            //       height: double.infinity,
+                            //       decoration: BoxDecoration(
+                            //         color: const Color(0xff087fae),
+                            //         borderRadius:
+                            //             BorderRadius.circular(3 * fem),
+                            //         boxShadow: [
+                            //           BoxShadow(
+                            //             color: const Color(0x282c2738),
+                            //             offset: Offset(0 * fem, 12 * fem),
+                            //             blurRadius: 12 * fem,
+                            //           ),
+                            //           BoxShadow(
+                            //             color: const Color(0x142c2738),
+                            //             offset: Offset(0 * fem, 6 * fem),
+                            //             blurRadius: 6 * fem,
+                            //           ),
+                            //         ],
+                            //       ),
+                            //       child: Center(
+                            //         child: Text(
+                            //           'Call',
+                            //           textAlign: TextAlign.center,
+                            //           style: SafeGoogleFont(
+                            //             'IBM Plex Sans',
+                            //             fontSize: 16 * ffem,
+                            //             fontWeight: FontWeight.w600,
+                            //             height: 1.3 * ffem / fem,
+                            //             color: const Color(0xffeaf4f8),
+                            //           ),
+                            //         ),
+                            //       ),
+                            //     ),
+                            //     Container(
+                            // controlsbuttonsmallaccenthover (208:1264)
+                    //         width: 91.61 * fem,
+                    //         height: 50.13 * fem,
+                    //         decoration: BoxDecoration(
+                    //           color: const Color(0xff087fae),
+                    //           borderRadius: BorderRadius.circular(3 * fem),
+                    //           boxShadow: [
+                    //             BoxShadow(
+                    //               color: const Color(0x282c2738),
+                    //               offset: Offset(0 * fem, 12 * fem),
+                    //               blurRadius: 12 * fem,
+                    //             ),
+                    //             BoxShadow(
+                    //               color: const Color(0x142c2738),
+                    //               offset: Offset(0 * fem, 6 * fem),
+                    //               blurRadius: 6 * fem,
+                    //             ),
+                    //           ],
+                    //         ),
+                    //         child: Center(
+                    //           child: Text(
+                    //             'Book',
+                    //             textAlign: TextAlign.center,
+                    //             style: SafeGoogleFont(
+                    //               'IBM Plex Sans',
+                    //               fontSize: 16 * ffem,
+                    //               fontWeight: FontWeight.w600,
+                    //               height: 1.3 * ffem / fem,
+                    //               color: const Color(0xffeaf4f8),
+                    //             ),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
+                    //         Container(
+                    //           // joinchatJm7 (208:1278)
+                    //           margin: EdgeInsets.fromLTRB(
+                    //               63.54 * fem, 0 * fem, 63.54 * fem, 0 * fem),
+                    //           padding: EdgeInsets.fromLTRB(
+                    //               68.96 * fem, 54.11 * fem, 67.96 * fem, 0 * fem),
+                    //           width: double.infinity,
+                    //           decoration: BoxDecoration(
+                    //             color: const Color(0xff087fae),
+                    //             borderRadius: BorderRadius.circular(3 * fem),
+                    //             boxShadow: [
+                    //               BoxShadow(
+                    //                 color: const Color(0x282c2738),
+                    //                 offset: Offset(0 * fem, 12 * fem),
+                    //                 blurRadius: 12 * fem,
+                    //               ),
+                    //               BoxShadow(
+                    //                 color: const Color(0x142c2738),
+                    //                 offset: Offset(0 * fem, 6 * fem),
+                    //                 blurRadius: 6 * fem,
+                    //               ),
+                    //             ],
+                    //           ),
+                    //           child: Text(
+                    //             'Join group chat',
+                    //             textAlign: TextAlign.center,
+                    //             style: SafeGoogleFont(
+                    //               'IBM Plex Sans',
+                    //               fontSize: 16 * ffem,
+                    //               fontWeight: FontWeight.w600,
+                    //               height: 1.3 * ffem / fem,
+                    //               color: const Color(0xffeaf4f8),
+                    //             ),
+                    //           ),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ),
+                    // Positioned(
                     // addtofavouritesV4u (213:2421)
-                    left: 109 * fem,
-                    top: 630 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 175 * fem,
-                        height: 30 * fem,
-                        child: Text(
-                          'Add to favourites',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.5 * ffem / fem,
-                            color: Color(0xff0097b2),
-                          ),
+                    // left: 109 * fem,
+                    // top: 630 * fem,
+                    // child: Align(
+                    //   child: SizedBox(
+                    //     width: 175 * fem,
+                    //     height: 30 * fem,
+                    //     child: Text(
+                    //       'Add to favourites',
+                    //       style: SafeGoogleFont(
+                    //         'Poppins',
+                    //         fontSize: 20 * ffem,
+                    //         fontWeight: FontWeight.w600,
+                    //         height: 1.5 * ffem / fem,
+                    //         color: const Color(0xff0097b2),
+                    //),
+                    //  ),
+                    // ),
+                    //  ),
+                     ] ),
+              //],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+              child: SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    // icon button 1
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
                         ),
+                        child: const Icon(Icons.home,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
                       ),
                     ),
-                  ),
-                ],
+                    // icon button 2
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.calendar_month,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                    // icon button 3
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.bookmark,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                    //icon button 4
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color.fromRGBO(149, 236, 121,
+                                  0.996)), // Button background color
+                        ),
+                        child: const Icon(Icons.create,
+                            color: Color.fromRGBO(4, 108, 68, 0.906)),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
         ),
-      ),
+          ),
+          ],
     );
   }
 }
+
