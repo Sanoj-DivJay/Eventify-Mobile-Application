@@ -5,19 +5,21 @@ import 'package:myapp/page-1/join_register.dart';
 import 'package:myapp/utils.dart';
 
 class homepage extends StatelessWidget {
+  const homepage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    var _SubmitandValidation;
-    return Container(
+    var SubmitandValidation;
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // homeSPb (128:1150)
         padding: EdgeInsets.fromLTRB(11 * fem, 14 * fem, 0 * fem, 12 * fem),
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: SingleChildScrollView(
@@ -26,7 +28,8 @@ class homepage extends StatelessWidget {
             children: [
               Container(
                 // autogroupyglm937 (MExzpQKXMTrVR9NnvQYGLM)
-                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 13 * fem),
+                margin:
+                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 13 * fem),
                 width: 675 * fem,
                 height: 368 * fem,
                 child: Stack(
@@ -35,7 +38,7 @@ class homepage extends StatelessWidget {
                       // systemlightstatusbardefaultrTK (205:1330)
                       left: 11.5 * fem,
                       top: 0 * fem,
-                      child: Container(
+                      child: SizedBox(
                         width: 356.16 * fem,
                         height: 19 * fem,
                         child: Row(
@@ -54,7 +57,7 @@ class homepage extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   height: 1.2575 * ffem / fem,
                                   letterSpacing: -0.3000000119 * fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -102,7 +105,7 @@ class homepage extends StatelessWidget {
                       // group34063nNu (208:1133)
                       left: 3 * fem,
                       top: 12 * fem,
-                      child: Container(
+                      child: SizedBox(
                         width: 377 * fem,
                         height: 92 * fem,
                         child: Row(
@@ -135,11 +138,11 @@ class homepage extends StatelessWidget {
                                     width: 240 * fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: Color(0x1e767680),
+                                      color: const Color(0x1e767680),
                                       borderRadius:
                                           BorderRadius.circular(22 * fem),
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       // group24nfj (208:1125)
                                       width: double.infinity,
                                       height: double.infinity,
@@ -149,8 +152,11 @@ class homepage extends StatelessWidget {
                                         children: [
                                           Container(
                                             // iconsfsymbolssearchw2q (208:1126)
-                                            margin: EdgeInsets.fromLTRB(0 * fem,
-                                                0 * fem, 13.73 * fem, 4.26 * fem),
+                                            margin: EdgeInsets.fromLTRB(
+                                                0 * fem,
+                                                0 * fem,
+                                                13.73 * fem,
+                                                4.26 * fem),
                                             width: 11.63 * fem,
                                             height: 12.78 * fem,
                                             child: Image.asset(
@@ -169,14 +175,15 @@ class homepage extends StatelessWidget {
                                                 'Poppins',
                                                 fontSize: 15 * ffem,
                                                 fontWeight: FontWeight.w400,
-                                                height: 1.4666666667 * ffem / fem,
+                                                height:
+                                                    1.4666666667 * ffem / fem,
                                                 letterSpacing:
                                                     -0.4079999924 * fem,
-                                                color: Color(0x993c3c43),
+                                                color: const Color(0x993c3c43),
                                               ),
                                             ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             // microphone7rR (208:1129)
                                             width: 19.98 * fem,
                                             height: 29 * fem,
@@ -192,7 +199,7 @@ class homepage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // GDX (208:1130)
                               width: 74 * fem,
                               height: 92 * fem,
@@ -209,7 +216,7 @@ class homepage extends StatelessWidget {
                       // upcomingeventscoB (208:1134)
                       left: 0 * fem,
                       top: 94 * fem,
-                      child: Container(
+                      child: SizedBox(
                         width: 675 * fem,
                         height: 274 * fem,
                         child: Column(
@@ -235,7 +242,7 @@ class homepage extends StatelessWidget {
                                         fontWeight: FontWeight.w500,
                                         height: 1.5 * ffem / fem,
                                         letterSpacing: 0.36 * fem,
-                                        color: Color(0xff3f3b56),
+                                        color: const Color(0xff3f3b56),
                                       ),
                                     ),
                                   ),
@@ -258,7 +265,7 @@ class homepage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // autogroupgha55KP (MEy1QifgGXKjsEqDGagha5)
                               width: double.infinity,
                               height: 241 * fem,
@@ -274,12 +281,12 @@ class homepage extends StatelessWidget {
                                     width: 332.46 * fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: Color(0xffffffff),
+                                      color: const Color(0xffffffff),
                                       borderRadius:
                                           BorderRadius.circular(6 * fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x1e7b7697),
+                                          color: const Color(0x1e7b7697),
                                           offset: Offset(0 * fem, 2 * fem),
                                           blurRadius: 2 * fem,
                                         ),
@@ -339,11 +346,12 @@ class homepage extends StatelessWidget {
                                                   children: [
                                                     Container(
                                                       // january2022w29 (208:1154)
-                                                      margin: EdgeInsets.fromLTRB(
-                                                          0 * fem,
-                                                          0 * fem,
-                                                          0 * fem,
-                                                          1 * fem),
+                                                      margin:
+                                                          EdgeInsets.fromLTRB(
+                                                              0 * fem,
+                                                              0 * fem,
+                                                              0 * fem,
+                                                              1 * fem),
                                                       child: Text(
                                                         '10th January,',
                                                         style: SafeGoogleFont(
@@ -355,12 +363,11 @@ class homepage extends StatelessWidget {
                                                               1.5 * ffem / fem,
                                                           letterSpacing:
                                                               0.26 * fem,
-                                                          color:
-                                                              Color(0xff85819d),
+                                                          color: const Color(
+                                                              0xff85819d),
                                                         ),
                                                       ),
                                                     ),
-                                                    
                                                     Text(
                                                       // greenfiestaqdK (208:1153)
                                                       'Green Fiesta',
@@ -369,36 +376,57 @@ class homepage extends StatelessWidget {
                                                         fontSize: 16 * ffem,
                                                         fontWeight:
                                                             FontWeight.w400,
-                                                        height: 1.5 * ffem / fem,
-                                                        letterSpacing: 0.32 * fem,
-                                                        color: Color(0xff3f3b56),
+                                                        height:
+                                                            1.5 * ffem / fem,
+                                                        letterSpacing:
+                                                            0.32 * fem,
+                                                        color: const Color(
+                                                            0xff3f3b56),
                                                       ),
                                                     ),
                                                   ],
                                                 ),
                                               ),
-                                               Padding(
-                      padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(208, 219, 204, 0.992),
-                            foregroundColor: Color.fromRGBO(14, 17, 16, 0.906),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(100.0),
-                            )),
-                            onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                             JoinRegister()),
-                                  );
-                                },
-                       // onPressed:
-                           // _SubmitandValidation, // Call the validation function
-                        child: Text('Register'),
-                      ),
-                    ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        0.0, 0.0, 0.0, 0.0),
+                                                child: ElevatedButton(
+                                                  style:
+                                                      ElevatedButton.styleFrom(
+                                                          backgroundColor:
+                                                              const Color.fromRGBO(
+                                                                  208,
+                                                                  219,
+                                                                  204,
+                                                                  0.992),
+                                                          foregroundColor:
+                                                              const Color
+                                                                  .fromRGBO(
+                                                                  14,
+                                                                  17,
+                                                                  16,
+                                                                  0.906),
+                                                          shape:
+                                                              RoundedRectangleBorder(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        100.0),
+                                                          )),
+                                                  onPressed: () {
+                                                    Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              const JoinRegister()),
+                                                    );
+                                                  },
+                                                  // onPressed:
+                                                  // _SubmitandValidation, // Call the validation function
+                                                  child: const Text('Register'),
+                                                ),
+                                              ),
                                               Container(
                                                 // joinAvV (208:1157)
                                                 margin: EdgeInsets.fromLTRB(
@@ -409,11 +437,12 @@ class homepage extends StatelessWidget {
                                                 width: 79 * fem,
                                                 height: double.infinity,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xffffffff),
+                                                  color:
+                                                      const Color(0xffffffff),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           12 * fem),
-                                                  border: Border(),
+                                                  border: const Border(),
                                                 ),
                                                 // child: Center(
                                                 //   child: Text(
@@ -429,20 +458,20 @@ class homepage extends StatelessWidget {
                                                 //   ),
                                                 // ),
                                               ),
-                    //                           Padding(
-                    //   padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                    //   child: ElevatedButton(
-                    //     style: ElevatedButton.styleFrom(
-                    //         backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
-                    //         foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
-                    //         shape: RoundedRectangleBorder(
-                    //           borderRadius: BorderRadius.circular(20.0),
-                    //         )),
-                    //     onPressed:
-                    //         _SubmitandValidation, // Call the validation function
-                    //     child: Text('Register'),
-                    //   ),
-                    // ),
+                                              //                           Padding(
+                                              //   padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                                              //   child: ElevatedButton(
+                                              //     style: ElevatedButton.styleFrom(
+                                              //         backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
+                                              //         foregroundColor: Color.fromRGBO(4, 108, 68, 0.906),
+                                              //         shape: RoundedRectangleBorder(
+                                              //           borderRadius: BorderRadius.circular(20.0),
+                                              //         )),
+                                              //     onPressed:
+                                              //         _SubmitandValidation, // Call the validation function
+                                              //     child: Text('Register'),
+                                              //   ),
+                                              // ),
                                             ],
                                           ),
                                         ),
@@ -456,12 +485,12 @@ class homepage extends StatelessWidget {
                                     width: 332.46 * fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: Color(0xffffffff),
+                                      color: const Color(0xffffffff),
                                       borderRadius:
                                           BorderRadius.circular(6 * fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x1e7b7697),
+                                          color: const Color(0x1e7b7697),
                                           offset: Offset(0 * fem, 2 * fem),
                                           blurRadius: 2 * fem,
                                         ),
@@ -473,8 +502,8 @@ class homepage extends StatelessWidget {
                                       children: [
                                         Container(
                                           // autogroupfqavtV7 (MEy1XDUrQKJz9SZfH2FqAV)
-                                          margin: EdgeInsets.fromLTRB(
-                                              0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                          margin: EdgeInsets.fromLTRB(0 * fem,
+                                              0 * fem, 0 * fem, 5 * fem),
                                           width: double.infinity,
                                           height: 192 * fem,
                                           child: Stack(
@@ -490,7 +519,8 @@ class homepage extends StatelessWidget {
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             6 * fem),
-                                                    image: DecorationImage(
+                                                    image:
+                                                        const DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: AssetImage(
                                                         'assets/page-1/images/img-GKB.png',
@@ -504,8 +534,9 @@ class homepage extends StatelessWidget {
                                                       height: 164 * fem,
                                                       child: ClipRRect(
                                                         borderRadius:
-                                                            BorderRadius.circular(
-                                                                6 * fem),
+                                                            BorderRadius
+                                                                .circular(
+                                                                    6 * fem),
                                                         child: Image.asset(
                                                           'assets/page-1/images/img-GKB.png',
                                                           fit: BoxFit.cover,
@@ -548,8 +579,10 @@ class homepage extends StatelessWidget {
                                                             FontWeight.w400,
                                                         height:
                                                             1.185 * ffem / fem,
-                                                        letterSpacing: 0.26 * fem,
-                                                        color: Color(0xff85819d),
+                                                        letterSpacing:
+                                                            0.26 * fem,
+                                                        color: const Color(
+                                                            0xff85819d),
                                                       ),
                                                     ),
                                                   ),
@@ -567,7 +600,7 @@ class homepage extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             height: 1.185 * ffem / fem,
                                             letterSpacing: 0.32 * fem,
-                                            color: Color(0xff3f3b56),
+                                            color: const Color(0xff3f3b56),
                                           ),
                                         ),
                                       ],
@@ -585,7 +618,8 @@ class homepage extends StatelessWidget {
               ),
               Container(
                 // eventforyouJqf (208:1160)
-                margin: EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 19 * fem),
+                margin:
+                    EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 19 * fem),
                 width: 365 * fem,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -610,7 +644,7 @@ class homepage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 height: 1.5 * ffem / fem,
                                 letterSpacing: 0.36 * fem,
-                                color: Color(0xff3f3b56),
+                                color: const Color(0xff3f3b56),
                               ),
                             ),
                           ),
@@ -642,11 +676,11 @@ class homepage extends StatelessWidget {
                       width: double.infinity,
                       height: 88 * fem,
                       decoration: BoxDecoration(
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                         borderRadius: BorderRadius.circular(6 * fem),
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0x1e7b7697),
+                            color: const Color(0x1e7b7697),
                             offset: Offset(0 * fem, 2 * fem),
                             blurRadius: 2 * fem,
                           ),
@@ -689,11 +723,11 @@ class homepage extends StatelessWidget {
                                       fontWeight: FontWeight.w500,
                                       height: 1.5 * ffem / fem,
                                       letterSpacing: 0.32 * fem,
-                                      color: Color(0xff3f3b56),
+                                      color: const Color(0xff3f3b56),
                                     ),
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   // autogrouppfm7RKw (MEy3jKU4r5WtgQQT7sPfm7)
                                   width: 127.12 * fem,
                                   height: 33 * fem,
@@ -703,7 +737,7 @@ class homepage extends StatelessWidget {
                                         // locationLxh (208:1180)
                                         left: 0 * fem,
                                         top: 16 * fem,
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 93.12 * fem,
                                           height: 17 * fem,
                                           child: Row(
@@ -734,7 +768,8 @@ class homepage extends StatelessWidget {
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.5 * ffem / fem,
                                                   letterSpacing: 0.22 * fem,
-                                                  color: Color(0xff85819d),
+                                                  color:
+                                                      const Color(0xff85819d),
                                                 ),
                                               ),
                                             ],
@@ -745,7 +780,7 @@ class homepage extends StatelessWidget {
                                         // time8df (208:1186)
                                         left: 0 * fem,
                                         top: 0 * fem,
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 127.12 * fem,
                                           height: 17 * fem,
                                           child: Row(
@@ -776,7 +811,8 @@ class homepage extends StatelessWidget {
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.5 * ffem / fem,
                                                   letterSpacing: 0.22 * fem,
-                                                  color: Color(0xff85819d),
+                                                  color:
+                                                      const Color(0xff85819d),
                                                 ),
                                               ),
                                             ],
@@ -789,7 +825,7 @@ class homepage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // ribookmarklineGtH (208:1215)
                             width: 28 * fem,
                             height: 28 * fem,
@@ -810,11 +846,11 @@ class homepage extends StatelessWidget {
                           2 * fem, 7 * fem, 15 * fem, 3 * fem),
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                         borderRadius: BorderRadius.circular(6 * fem),
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0x1e7b7697),
+                            color: const Color(0x1e7b7697),
                             offset: Offset(0 * fem, 2 * fem),
                             blurRadius: 2 * fem,
                           ),
@@ -857,11 +893,11 @@ class homepage extends StatelessWidget {
                                       fontWeight: FontWeight.w500,
                                       height: 1.5 * ffem / fem,
                                       letterSpacing: 0.32 * fem,
-                                      color: Color(0xff3f3b56),
+                                      color: const Color(0xff3f3b56),
                                     ),
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   // autogroupua5tbBo (MEy3Ev7j5bj7Md4hKKua5T)
                                   width: double.infinity,
                                   height: 33 * fem,
@@ -871,7 +907,7 @@ class homepage extends StatelessWidget {
                                         // locationwWZ (208:1164)
                                         left: 0 * fem,
                                         top: 16 * fem,
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 94 * fem,
                                           height: 17 * fem,
                                           child: Row(
@@ -902,7 +938,8 @@ class homepage extends StatelessWidget {
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.5 * ffem / fem,
                                                   letterSpacing: 0.22 * fem,
-                                                  color: Color(0xff85819d),
+                                                  color:
+                                                      const Color(0xff85819d),
                                                 ),
                                               ),
                                             ],
@@ -913,7 +950,7 @@ class homepage extends StatelessWidget {
                                         // timeYFT (208:1170)
                                         left: 0 * fem,
                                         top: 0 * fem,
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 131 * fem,
                                           height: 17 * fem,
                                           child: Row(
@@ -944,7 +981,8 @@ class homepage extends StatelessWidget {
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.5 * ffem / fem,
                                                   letterSpacing: 0.22 * fem,
-                                                  color: Color(0xff85819d),
+                                                  color:
+                                                      const Color(0xff85819d),
                                                 ),
                                               ),
                                             ],
@@ -974,11 +1012,11 @@ class homepage extends StatelessWidget {
                     ),
                     Container(
                       // frame3359cPj (208:1193)
-                      margin:
-                          EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 1 * fem, 0 * fem),
                       padding: EdgeInsets.fromLTRB(
                           2 * fem, 3 * fem, 13.92 * fem, 5 * fem),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage(
@@ -1011,11 +1049,12 @@ class homepage extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Container(
+                                SizedBox(
                                   // autogroupq1ruaE5 (MEy4Txug92WQTnPVnTQ1ru)
                                   width: double.infinity,
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         // rasogauXF (208:1220)
@@ -1029,14 +1068,14 @@ class homepage extends StatelessWidget {
                                             fontWeight: FontWeight.w500,
                                             height: 1.5 * ffem / fem,
                                             letterSpacing: 0.32 * fem,
-                                            color: Color(0xff3f3b56),
+                                            color: const Color(0xff3f3b56),
                                           ),
                                         ),
                                       ),
                                       Container(
                                         // timeRVb (208:1203)
-                                        margin: EdgeInsets.fromLTRB(
-                                            0 * fem, 0 * fem, 21 * fem, 0 * fem),
+                                        margin: EdgeInsets.fromLTRB(0 * fem,
+                                            0 * fem, 21 * fem, 0 * fem),
                                         width: double.infinity,
                                         child: Row(
                                           crossAxisAlignment:
@@ -1044,8 +1083,11 @@ class homepage extends StatelessWidget {
                                           children: [
                                             Container(
                                               // ritimelineNQq (208:1205)
-                                              margin: EdgeInsets.fromLTRB(0 * fem,
-                                                  0 * fem, 7 * fem, 2 * fem),
+                                              margin: EdgeInsets.fromLTRB(
+                                                  0 * fem,
+                                                  0 * fem,
+                                                  7 * fem,
+                                                  2 * fem),
                                               width: 11 * fem,
                                               height: 11 * fem,
                                               child: Image.asset(
@@ -1063,7 +1105,7 @@ class homepage extends StatelessWidget {
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.5 * ffem / fem,
                                                 letterSpacing: 0.22 * fem,
-                                                color: Color(0xff85819d),
+                                                color: const Color(0xff85819d),
                                               ),
                                             ),
                                           ],
@@ -1072,11 +1114,12 @@ class homepage extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   // autogroupa8hkp1w (MEy4HZ3Mffc5JBEDPSa8HK)
                                   width: double.infinity,
                                   child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                         // locationy9j (208:1197)
@@ -1099,7 +1142,7 @@ class homepage extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           height: 1.5 * ffem / fem,
                                           letterSpacing: 0.22 * fem,
-                                          color: Color(0xff85819d),
+                                          color: const Color(0xff85819d),
                                         ),
                                       ),
                                     ],
@@ -1127,7 +1170,7 @@ class homepage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(
+                  /*margin: EdgeInsets.only(
                     left: 0.0, right: 0.0, top: 15.0, bottom: 0.0),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -1190,6 +1233,70 @@ class homepage extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),*/
+                  ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+                child: SizedBox(
+                  height: 60,
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      // icon button 1
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color.fromRGBO(149, 236, 121,
+                                    0.996)), // Button background color
+                          ),
+                          child: const Icon(Icons.home,
+                              color: Color.fromRGBO(4, 108, 68, 0.906)),
+                        ),
+                      ),
+                      // icon button 2
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color.fromRGBO(149, 236, 121,
+                                    0.996)), // Button background color
+                          ),
+                          child: const Icon(Icons.calendar_month,
+                              color: Color.fromRGBO(4, 108, 68, 0.906)),
+                        ),
+                      ),
+                      // icon button 3
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color.fromRGBO(149, 236, 121,
+                                    0.996)), // Button background color
+                          ),
+                          child: const Icon(Icons.bookmark,
+                              color: Color.fromRGBO(4, 108, 68, 0.906)),
+                        ),
+                      ),
+                      //icon button 4
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color.fromRGBO(149, 236, 121,
+                                    0.996)), // Button background color
+                          ),
+                          child: const Icon(Icons.create,
+                              color: Color.fromRGBO(4, 108, 68, 0.906)),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
