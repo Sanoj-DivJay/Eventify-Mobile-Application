@@ -32,23 +32,14 @@ class _LoginPageState extends State<LoginPage> {
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
           email: Email, password: Password);
       print("User Logged In!:${userCredential.user!.email}");
-<<<<<<< Updated upstream
 
       if (userCredential.user != null) {
         // Redirect to the homepage
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (context) =>
-                homepage(), // Replace 'YourHomePage()' with the actual homepage widget.
-=======
-      if (userCredential.user != null) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (context) =>
-                HomePage(), // Replace 'HomePage' with the actual name of your home page.
->>>>>>> Stashed changes
+            builder: (context) => homepage(),
           ),
-        );
+        ); // Replace 'YourHomePage()' with the actual homepage widget.
       }
     } catch (e) {
       print("Error During Login!:$e");
