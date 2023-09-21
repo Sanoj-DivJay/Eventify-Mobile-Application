@@ -10,13 +10,13 @@ class JoinRegister extends StatelessWidget {
     double baseWidth = 393;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return Material(
       // joinregisterLSm (205:1521)
-      padding: EdgeInsets.fromLTRB(11 * fem, 45 * fem, 10 * fem, 0 * fem),
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Color(0xffffffff),
-      ),
+      //padding: EdgeInsets.fromLTRB(11 * fem, 45 * fem, 10 * fem, 0 * fem),
+      //width: double.infinity,
+      // decoration: BoxDecoration(
+      //   color: Color(0xffffffff),
+      // ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
