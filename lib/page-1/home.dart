@@ -812,4 +812,158 @@ class homepage extends StatelessWidget {
                                                 height: 11*fem,
                                               ),
                                             ),
+
+                                            Text(
+                                              // amto500pmZDB (208:1187)
+                                              '09:00AM To 5:00PM ',
+                                              style: SafeGoogleFont (
+                                                'Poppins',
+                                                fontSize: 11*ffem,
+                                                fontWeight: FontWeight.w400,
+                                                height: 1.5*ffem/fem,
+                                                letterSpacing: 0.22*fem,
+                                                color: Color(0xff85819d),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          // ribookmarklineGtH (208:1215)
+                          width: 28*fem,
+                          height: 28*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/ri-bookmark-line.png',
+                            width: 28*fem,
+                            height: 28*fem,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    // foodpartyeventnrd (208:1161)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 29*fem),
+                    padding: EdgeInsets.fromLTRB(2*fem, 7*fem, 15*fem, 3*fem),
+                    width: double.infinity,
+                    decoration: BoxDecoration (
+                      color: Color(0xffffffff),
+                      borderRadius: BorderRadius.circular(6*fem),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x1e7b7697),
+                          offset: Offset(0*fem, 2*fem),
+                          blurRadius: 2*fem,
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          // imgGG1 (208:1163)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 16*fem, 0*fem),
+                          width: 78*fem,
+                          height: 78*fem,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(4*fem),
+                            child: Image.asset(
+                              'assets/page-1/images/img-pem.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          // autogroupwrttA6V (MEy3A5vScz3WwgEmmmWRTT)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 95*fem, 9*fem),
+                          width: 131*fem,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                // sportsfiesta6F3 (208:1176)
+                                margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 4*fem),
+                                child: Text(
+                                  'Sports Fiesta',
+                                  style: SafeGoogleFont (
+                                    'Poppins',
+                                    fontSize: 16*ffem,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1.5*ffem/fem,
+                                    letterSpacing: 0.32*fem,
+                                    color: Color(0xff3f3b56),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                // autogroupua5tbBo (MEy3Ev7j5bj7Md4hKKua5T)
+                                width: double.infinity,
+                                height: 33*fem,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      // locationwWZ (208:1164)
+                                      left: 0*fem,
+                                      top: 16*fem,
+                                      child: Container(
+                                        width: 94*fem,
+                                        height: 17*fem,
+                                        child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              // rimappin2line5Ms (208:1166)
+                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6*fem, 2*fem),
+                                              width: 11*fem,
+                                              height: 11*fem,
+                                              child: Image.asset(
+                                                'assets/page-1/images/location-mAR.png',
+                                                width: 11*fem,
+                                                height: 11*fem,
+                                              ),
+                                            ),
+                                            Text(
+                                              // nsbmgroundo2y (208:1165)
+                                              'NSBM Ground',
+                                              style: SafeGoogleFont (
+                                                'Poppins',
+                                                fontSize: 11*ffem,
+                                                fontWeight: FontWeight.w400,
+                                                height: 1.5*ffem/fem,
+                                                letterSpacing: 0.22*fem,
+                                                color: Color(0xff85819d),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      // timeYFT (208:1170)
+                                      left: 0*fem,
+                                      top: 0*fem,
+                                      child: Container(
+                                        width: 131*fem,
+                                        height: 17*fem,
+                                        child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              // ritimelineg6m (208:1172)
+                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 2*fem),
+                                              width: 11*fem,
+                                              height: 11*fem,
+                                              child: Image.asset(
+                                                'assets/page-1/images/ri-time-line-xyf.png',
+                                                width: 11*fem,
+                                                height: 11*fem,
+                                              ),
+                                            ),
                                             
