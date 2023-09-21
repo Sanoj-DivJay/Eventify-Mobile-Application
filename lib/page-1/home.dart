@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-=======
 //import 'package:myapp/page-1/create_event.dart';
->>>>>>> Stashed changes
+
 import 'package:myapp/utils.dart';
 
 class homepage extends StatelessWidget {

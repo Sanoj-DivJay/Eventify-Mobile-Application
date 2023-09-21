@@ -1,16 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/join_register.dart';
-import 'package:myapp/page-1/loading_screen.dart';
+<<<<<<< Updated upstream
+import 'package:myapp/page-1/register.dart';
+=======
+import 'package:myapp/page-1/event_details.dart';
+>>>>>>> Stashed changes
 import 'package:myapp/utils.dart';
 
 import 'firebase_options.dart';
-//import 'package:myapp/page-1/loading_screen.dart';
-// import 'package:myapp/page-1/home.dart';
-// import 'package:myapp/page-1/calendar.dart';
-// import 'package:myapp/page-1/dashboard.dart';
-// import 'package:myapp/page-1/map.dart';
-// import 'package:myapp/page-1/event_details.dart';
 //import 'package:myapp/page-1/event_register.dart';
 // import 'package:myapp/page-1/create-event.dart';
 // import 'package:myapp/page-1/saved-upcoming-events.dart';
@@ -40,7 +37,11 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           body: SingleChildScrollView(
-            child: JoinRegister(),
+<<<<<<< Updated upstream
+            child: RegisterPage(),
+=======
+            child: EvetntDetails(),
+>>>>>>> Stashed changes
           ),
         ));
   }
