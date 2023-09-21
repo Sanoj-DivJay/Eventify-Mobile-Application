@@ -339,7 +339,7 @@ class JoinRegister extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 48.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromRGBO(149, 236, 121, 0.996),
