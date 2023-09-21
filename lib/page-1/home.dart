@@ -966,4 +966,96 @@ class homepage extends StatelessWidget {
                                                 height: 11*fem,
                                               ),
                                             ),
+                                            Text(
+                                              // pmto1200amz7T (208:1171)
+                                              '04:00PM To 12:00AM ',
+                                              style: SafeGoogleFont (
+                                                'Poppins',
+                                                fontSize: 11*ffem,
+                                                fontWeight: FontWeight.w400,
+                                                height: 1.5*ffem/fem,
+                                                letterSpacing: 0.22*fem,
+                                                color: Color(0xff85819d),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          // ribookmarklineHsF (208:1221)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
+                          width: 28*fem,
+                          height: 28*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/ri-bookmark-line.png',
+                            width: 28*fem,
+                            height: 28*fem,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    // frame3359cPj (208:1193)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
+                    padding: EdgeInsets.fromLTRB(2*fem, 3*fem, 13.92*fem, 5*fem),
+                    decoration: BoxDecoration (
+                      image: DecorationImage (
+                        fit: BoxFit.cover,
+                        image: AssetImage (
+                          'assets/page-1/images/card.png',
+                        ),
+                      ),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          // imghvy (208:1196)
+                          margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 16*fem, 0*fem),
+                          width: 78*fem,
+                          height: 78*fem,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(4*fem),
+                            child: Image.asset(
+                              'assets/page-1/images/img.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          // autogroupebobdpd (MEy4AZF1q7vjTVpoqjeboB)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 76*fem, 19*fem),
+                          width: 150*fem,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                // autogroupq1ruaE5 (MEy4Txug92WQTnPVnTQ1ru)
+                                width: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      // rasogauXF (208:1220)
+                                      margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 3*fem),
+                                      child: Text(
+                                        'Rasoga',
+                                        style: SafeGoogleFont (
+                                          'Poppins',
+                                          fontSize: 16*ffem,
+                                          fontWeight: FontWeight.w500,
+                                          height: 1.5*ffem/fem,
+                                          letterSpacing: 0.32*fem,
+                                          color: Color(0xff3f3b56),
+                                        ),
+                                      ),
+                                    ),
                                             
