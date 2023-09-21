@@ -319,7 +319,7 @@ class homepage extends StatelessWidget {
                                           // autogroupc6cdHpm (MEy1jnxEFcD4jnJRgBc6cD)
                                           margin: EdgeInsets.fromLTRB(0 * fem,
                                               0 * fem, 5.4 * fem, 0 * fem),
-                                          width: double.infinity,
+                                          width: 370,
                                           height: 45 * fem,
                                           child: Row(
                                             crossAxisAlignment:
@@ -329,9 +329,9 @@ class homepage extends StatelessWidget {
                                                 // autogrouperlv1PP (MEy1p8AM1UCZbFTPgUerLV)
                                                 margin: EdgeInsets.fromLTRB(
                                                     0 * fem,
-                                                    0 * fem,
-                                                    94.94 * fem,
-                                                    0 * fem),
+                                                    1 * fem,
+                                                    12.94 * fem,
+                                                    1 * fem),
                                                 height: double.infinity,
                                                 child: Column(
                                                   crossAxisAlignment:
@@ -345,7 +345,7 @@ class homepage extends StatelessWidget {
                                                           0 * fem,
                                                           1 * fem),
                                                       child: Text(
-                                                        '10 - 12 January, 2022',
+                                                        '10th January,',
                                                         style: SafeGoogleFont(
                                                           'Poppins',
                                                           fontSize: 13 * ffem,
@@ -384,7 +384,7 @@ class homepage extends StatelessWidget {
                             backgroundColor: Color.fromRGBO(208, 219, 204, 0.992),
                             foregroundColor: Color.fromRGBO(14, 17, 16, 0.906),
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
+                              borderRadius: BorderRadius.circular(100.0),
                             )),
                             onPressed: () {
                                   Navigator.push(
