@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/calendar.dart';
+import 'package:myapp/page-1/create_event.dart';
+import 'package:myapp/page-1/home.dart';
+import 'package:myapp/page-1/saved-upcoming_events.dart';
 import 'package:myapp/utils.dart';
 
 class JoinRegister extends StatelessWidget {
@@ -164,7 +168,7 @@ class JoinRegister extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          /*Container(
             margin: const EdgeInsets.only(
                 left: 0.0, right: 0.0, top: 15.0, bottom: 0.0),
             decoration: BoxDecoration(
@@ -228,6 +232,94 @@ class JoinRegister extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),*/
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+            child: SizedBox(
+              height: 60,
+              width: double.infinity,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  // icon button 1
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const homepage()),
+                        );
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color.fromRGBO(149, 236, 121,
+                                0.996)), // Button background color
+                      ),
+                      child: const Icon(Icons.home,
+                          color: Color.fromRGBO(4, 108, 68, 0.906)),
+                    ),
+                  ),
+                  // icon button 2
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Calender()),
+                        );
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color.fromRGBO(149, 236, 121,
+                                0.996)), // Button background color
+                      ),
+                      child: const Icon(Icons.calendar_month,
+                          color: Color.fromRGBO(4, 108, 68, 0.906)),
+                    ),
+                  ),
+                  // icon button 3
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Upcomingevents()),
+                        );
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color.fromRGBO(149, 236, 121,
+                                0.996)), // Button background color
+                      ),
+                      child: const Icon(Icons.bookmark,
+                          color: Color.fromRGBO(4, 108, 68, 0.906)),
+                    ),
+                  ),
+                  //icon button 4
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CreateEvent()),
+                        );
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color.fromRGBO(149, 236, 121,
+                                0.996)), // Button background color
+                      ),
+                      child: const Icon(Icons.create,
+                          color: Color.fromRGBO(4, 108, 68, 0.906)),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
