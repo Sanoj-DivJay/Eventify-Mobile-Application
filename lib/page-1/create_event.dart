@@ -6,6 +6,9 @@ import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:google_maps_webservice/places.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
+import 'package:myapp/page-1/calendar.dart';
+import 'package:myapp/page-1/home.dart';
+import 'package:myapp/page-1/saved-upcoming_events.dart';
 import 'package:myapp/utils.dart';
 
 class CreateEvent extends StatefulWidget {
@@ -461,7 +464,12 @@ class _CreateEventState extends State<CreateEvent> {
                     // icon button 1
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => homepage()),
+                          );
+                        },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
                               const Color.fromRGBO(149, 236, 121,
@@ -474,7 +482,12 @@ class _CreateEventState extends State<CreateEvent> {
                     // icon button 2
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Calender()),
+                          );
+                        },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
                               const Color.fromRGBO(149, 236, 121,
@@ -487,7 +500,13 @@ class _CreateEventState extends State<CreateEvent> {
                     // icon button 3
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Upcomingevents()),
+                          );
+                        },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
                               const Color.fromRGBO(149, 236, 121,
@@ -500,7 +519,13 @@ class _CreateEventState extends State<CreateEvent> {
                     //icon button 4
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CreateEvent()),
+                          );
+                        },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
                               const Color.fromRGBO(149, 236, 121,
