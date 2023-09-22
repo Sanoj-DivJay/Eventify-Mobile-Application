@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/register.dart';
+import 'package:myapp/page-1/loading_screen.dart';
 import 'package:myapp/utils.dart';
 
 import 'firebase_options.dart';
@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
+        home: const Scaffold(
           body: SingleChildScrollView(
-            child: RegisterPage(),
+            child: LoadingScreen(),
           ),
         ));
   }
