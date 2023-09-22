@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.test">
    <application
-        android:label="test"
+        android:label="Eventify"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -21,9 +21,7 @@
               android:resource="@style/NormalTheme"
               
               />
-              <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value= "AIzaSyACq8prZe8IA-7OkNpsh8MJKaKA0lbBIag"/>
+              
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -35,5 +33,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value= "AIzaSyCG878s1kBDY-i_lUVjaGPzFgGZqhgKB6I"/>
     </application>
 </manifest>

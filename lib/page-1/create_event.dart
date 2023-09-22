@@ -73,8 +73,7 @@ class _CreateEventState extends State<CreateEvent> {
         EventName.text.isEmpty ||
         Organizer.text.isEmpty ||
         timeInput.text.isEmpty ||
-        LocationInput.text.isEmpty ||
-        priceInput.text.isEmpty) {
+        LocationInput.text.isEmpty) {
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -404,7 +403,7 @@ class _CreateEventState extends State<CreateEvent> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(55, 655, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(55, 730, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
@@ -420,7 +419,7 @@ class _CreateEventState extends State<CreateEvent> {
                         ),
                         if (SelectedImage != null)
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(55, 600, 25, 0),
+                            padding: const EdgeInsets.fromLTRB(55, 680, 25, 0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(30.0),
                               child: Image.file(
@@ -432,7 +431,7 @@ class _CreateEventState extends State<CreateEvent> {
                             ),
                           ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(255, 655, 25, 0),
+                          padding: const EdgeInsets.fromLTRB(255, 730, 25, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
