@@ -3,6 +3,7 @@ import 'package:myapp/page-1/calendar.dart';
 import 'package:myapp/page-1/create_event.dart';
 import 'package:myapp/page-1/event_details.dart';
 import 'package:myapp/page-1/join_register.dart';
+import 'package:myapp/page-1/saved-upcoming_events.dart';
 //import 'package:myapp/page-1/create_event.dart';
 
 import 'package:myapp/utils.dart';
@@ -1294,7 +1295,7 @@ class homepage extends StatelessWidget {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                             EvetntDetails()),
+                                             Upcomingevents()),
                                   );
                                 },
                           style: ButtonStyle(
