@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/calendar.dart';
+import 'package:myapp/page-1/create_event.dart';
+import 'package:myapp/page-1/event_details.dart';
 import 'package:myapp/page-1/join_register.dart';
 //import 'package:myapp/page-1/create_event.dart';
 
@@ -1246,7 +1249,14 @@ class homepage extends StatelessWidget {
                       // icon button 1
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                             homepage()),
+                                  );
+                                },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
                                 const Color.fromRGBO(149, 236, 121,
@@ -1259,7 +1269,14 @@ class homepage extends StatelessWidget {
                       // icon button 2
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                             Calender()),
+                                  );
+                                },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
                                 const Color.fromRGBO(149, 236, 121,
@@ -1272,7 +1289,14 @@ class homepage extends StatelessWidget {
                       // icon button 3
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                             EvetntDetails()),
+                                  );
+                                },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
                                 const Color.fromRGBO(149, 236, 121,
@@ -1285,7 +1309,14 @@ class homepage extends StatelessWidget {
                       //icon button 4
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const CreateEvent()),
+                                  );
+                                },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
                                 const Color.fromRGBO(149, 236, 121,
